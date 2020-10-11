@@ -1,0 +1,49 @@
+.button_menu {
+	column-count: 2;
+	column-width: 40%;
+	margin-bottom: 20px;
+}
+
+.site_search, .button {
+	color: white;
+ 	background-color: transparent;
+	font-size: 15px;
+	padding: 10px;
+	border: 2px solid #e2001a;
+	display: block;
+}
+
+.site_search {
+	width: 90%;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: initial;
+	margin-right: initial;
+}
+
+.button {
+	width: 90%;
+	text-align: center;
+	margin-left: 0px;
+}
+
+.button:hover {
+	border: 2px solid #b0081c;
+	transition: 0.5s;
+}
+
+/* Transformation */
+@media screen and (max-width: 720px) {
+	.button_menu {
+		column-count: 1;
+	}
+	.button {
+		margin-bottom: 20px;
+	}
+}
+
+@media print {
+  .button_menu {
+    display: none;
+  }
+}

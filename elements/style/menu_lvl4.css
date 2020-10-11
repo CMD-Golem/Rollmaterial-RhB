@@ -1,0 +1,66 @@
+main {
+	max-width: 1200px;
+}
+
+.header_h1 {
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.header_p {
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 40px;
+	font-weight: bold;
+}
+
+.content {
+	display: flex;
+  flex-wrap: wrap;
+  border-top: 3px solid #808080;
+  margin-top: 20px;
+	page-break-after: always;
+	page-break-inside: avoid;
+}
+
+.content_left {
+	flex: 30%;
+	padding: 20px;
+}
+
+
+.content_img {
+	width: 100%;
+}
+
+
+.content_right {
+	flex: 60%;
+	margin-left: 20px;
+	padding-right: 3%;
+}
+
+
+/* Transformation */
+@media screen and (max-width: 1240px) {
+	.content {
+		flex-direction: column;
+	}
+
+	main {
+		max-width: 800px;
+	}
+
+	.content_img {
+		width: 80%;
+		display: block;
+ 	 	margin-left: auto;
+  	margin-right: auto;
+	}
+}
+
+@media print {
+  .content {
+    border-top: none;
+  }
+}

@@ -1,0 +1,148 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #3B3A3D;
+}
+
+.header_center {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+#background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.welcome_screen_center {
+  text-align: center;
+  margin-top: 30vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  width: 40vw;
+}
+
+
+
+/* Search */
+.search_box {
+  color: white;
+  background-color: transparent;
+  font-size: 18px;
+  padding: 11px;
+  border: 4px solid #e2001a;
+  width: 90%;
+}
+
+.search_outputs {
+  padding: 11px;
+  overflow: auto;
+  max-height: 30vh;
+}
+
+.search_output:first-child {
+  border-top: 2px solid #808080;
+}
+
+.search_output {
+  border-bottom: 2px solid #808080;
+  padding: 2px;
+}
+
+.search_output:hover {
+  background-color: rgba(49, 47, 51, 0.5);
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.search_output p {
+  font-size: 18px;
+  margin-top: 0px;
+}
+
+
+
+
+
+/* Erkunden */
+.welcome_screen_scroll_center {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome_screen_scroll {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  border-radius: 10px;
+  width: 200px;
+  bottom: 30px;
+  text-decoration-line: none;
+  color: white;
+}
+
+.welcome_screen_scroll:hover {
+  background-color: rgba(128, 128, 128, 0.7);
+}
+
+
+
+/* Transformation when width*/
+@media screen and (max-width: 720px) {
+  .welcome_screen_img {
+    display: none;
+  }
+  .welcome_screen_center {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .welcome_screen_center {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header_center img {
+    display: none;
+  }
+}
+
+/* Transformation when height*/
+@media screen and (max-height: 850px) {
+  .welcome_screen_center {
+    margin-top: 10vh;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .welcome_screen_scroll_center {
+    display: none;
+  }
+}
+
+
+
+/* Scrollbar */
+.search_outputs::-webkit-scrollbar {
+  width: 4px;
+}
+.search_outputs::-webkit-scrollbar-track {
+  background: #312f33;
+  border-radius: 2px;
+}
+.search_outputs::-webkit-scrollbar-thumb {
+  background: #808080;
+  border-radius: 2px;
+}

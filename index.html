@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+<title>Rollmaterial RhB</title>
+<meta name="description" content="Verschaffen Sie sich einen Überblick vom Rollmaterial der Rhätischen Bahn.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="elements/style/index.css"/>
+<link rel="stylesheet" type="text/css" href="elements/style/style.css"/>
+<link rel="stylesheet" type="text/css" href="elements/style/menu_lvl1.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+<link rel="icon" href="elements/favicon.png">
+</head>
+
+<body>
+<!--Header-->
+<header>
+	<a class="header_center" href="">
+		<img src="elements/favicon.png" style="width: 80px; height: 80px; margin-top: 20px; margin-right: 20px; ">
+        <h1 style="text-align: center;">Rollmaterial RhB</h1>   
+	</a>
+</header>
+
+<!--Welcome screen-->
+<div id="background">
+    <div>
+        <div class="welcome_screen_center">
+            <p style="font-weight: bold;">Herzlich Willkommen auf Rollmaterial RhB.</p>
+            <p>Verschaffen Sie sich einen Überblick vom Rollmaterial der Rhätischen Bahn.</p>
+            <div class="search">
+                <input class="search_box" id="search" type="text" placeholder="Suchen">
+                <div class="search_outputs" id="match-list"></div>
+            </div>
+        </div>
+        <div class="welcome_screen_scroll_center" id="explore">
+            <a class="welcome_screen_scroll" href="#erkunden">
+                <p style="color: white">▼ Erkunden ▼</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!--Content-->
+<main>
+    <div id="erkunden"></div>
+    <div style="height:10vw;"></div>
+
+
+
+	<div class="selimg_outline">
+
+    	<a class="selimg_spacing" href="data/lokomotiven.html">
+    		<div class="selimg_container">
+    			<img class="selimg_img" src="elements/pic/lokomotiven.jpg">
+    			<div class="selimg_overlay"  style="background-color: #2f4c2b;">
+    				<div class="selimg_text">Lokomotiven</div>
+    			</div>
+    		</div>
+    	</a>
+
+    	<a class="selimg_spacing" href="data/personenwagen.html">
+    		<div class="selimg_container">
+    			<img class="selimg_img" src="elements/pic/personenwagen.jpg">
+    			<div class="selimg_overlay"  style="background-color: #803034;">
+    				<div class="selimg_text">Personenwagen</div>
+    			</div>
+    		</div>
+    	</a>
+
+    	<a class="selimg_spacing" href="data/gepaeckwagen.html">
+    		<div class="selimg_container">
+    			<img class="selimg_img" src="elements/pic/gepaeckwagen.jpg">
+    			<div class="selimg_overlay" style="background-color: #31459c;">
+    				<div class="selimg_text">Gepäckwagen</div>
+    			</div>
+    		</div>
+    	</div>
+	</a>
+
+    <div class="selimg_outline">
+
+        <a class="selimg_spacing" href="data/gueterwagen.html">
+            <div class="selimg_container">
+                <img class="selimg_img" src="elements/pic/gueterwagen.jpg">
+                <div class="selimg_overlay" style="background-color: #5b493d;">
+                    <div class="selimg_text">Güterwagen</div>
+                </div>
+            </div>
+        </a>
+
+        <a class="selimg_spacing" href="data/dienstwagen.html">
+            <div class="selimg_container">
+                <img class="selimg_img" src="elements/pic/dienstwagen.jpg">
+                <div class="selimg_overlay" style="background-color: #555655;">
+                    <div class="selimg_text">Dienstwagen</div>
+                </div>
+            </div>
+        </a>
+
+        <a class="selimg_spacing" href="data/gleisbaumaschinen.html">
+            <div class="selimg_container">
+                <img class="selimg_img" src="elements/pic/gleisbaumaschinen.jpg">
+                <div class="selimg_overlay" style="background-color: #906d11;">
+                    <div class="selimg_text">Gleisbaumaschinen</div>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <div style="height:10vw;"></div>
+
+</main>
+
+<!--Scripts-->
+<script language="javascript" type="text/javascript" src="elements/javascript/search.js"></script>
+<script language="javascript" type="text/javascript" src="elements/javascript/background.js"></script>
+
+<!--Footer-->
+<script language="javascript" type="text/javascript" src="elements/nav/footer.js"></script>
+
+
+</body>
+</html>
