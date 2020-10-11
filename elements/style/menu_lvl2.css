@@ -1,0 +1,38 @@
+.selbox {
+	display: flex;
+	flex-wrap: wrap;
+	padding-right: 3%;
+}
+
+.selbox:hover {
+	background-color: #312f33;
+}
+
+.selbox_left {
+	flex: 40%;
+  padding: 20px;
+}
+
+.selbox_img {
+	width: 100%;
+}
+
+.selbox_right {
+	flex: 50%;
+	margin-left: 20px;
+}
+
+
+/* Transformation */
+@media screen and (max-width: 800px) {
+	.selbox {
+		flex-direction: column;
+	}
+	.selbox_img {
+		width: 80%;
+		display: block;
+ 	 	margin-left: auto;
+  	margin-right: auto;
+	}
+	
+}

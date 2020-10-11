@@ -1,0 +1,177 @@
+main {
+	max-width: 1200px;
+}
+
+header {
+	margin-bottom: 50px;
+}
+
+.header_h1 {
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.header_p {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+
+/* Content */
+.content {
+	display: flex;
+  flex-wrap: wrap;
+}
+
+.hide_pc {
+	display: none;
+}
+
+.hide_mobile {
+	display: block;
+}
+
+/* Pictures */
+.left_space {
+	flex: 40%;
+	margin: 20px;
+}
+
+img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.site_search {
+	width: 70%;
+	color: white;
+ 	background-color: transparent;
+	font-size: 15px;
+	padding: 10px;
+	border: 2px solid #e2001a;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* Data Table */
+.right_space {
+	flex: 50%;
+	margin-left: 20px;
+}
+
+.group {
+	page-break-inside: avoid;
+}
+
+.data_table {
+	padding-right: 3%;
+}
+
+
+/* Spoiler*/
+.spoiler {
+	cursor: pointer;
+	margin-bottom: 0px;
+}
+
+.spoiler:hover {
+	background-color: #808080;
+}
+
+.spoiler:after {
+    content: "\002B";
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+.spoiler.active:after {
+    content: "\2212";
+}
+
+.spoiler_content {
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.2s ease-out;
+}
+
+
+
+
+/* Transformation*/
+@media screen and (max-width: 1200px) {
+	.hide_mobile {
+		display: none;
+	}
+	.hide_pc {
+		display: block;
+	}
+	.content {
+		flex-direction: column-reverse;
+	}
+
+	main {
+		max-width: 800px;
+	}
+
+	header {
+		width: 60%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover; 
+		display: block;
+ 		margin-left: auto;
+		margin-right: auto;
+		height: 200px;
+	}
+
+	.header_background {
+		background-color: rgba(0, 0, 0, 0.7);
+		width: 100%;
+		height: 100%;
+	}
+
+	img {
+		width: 80%;
+		display: block;
+ 	 	margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+@media screen and (max-width: 720px) {
+	header {
+		width: 90%;
+	}
+
+	.right_space {
+		margin-left: 0px;
+	}
+
+	.left_space {
+		margin: 0px;
+	}
+}
+
+
+@media print {
+  .spoiler {
+  	display: none;
+  }
+  .spoiler.active {
+  	display: block;
+  }
+  .spoiler:after {
+  	display: none;
+  }
+  .spoiler_box {
+  	page-break-inside: avoid;
+  }
+}

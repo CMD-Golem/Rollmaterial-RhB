@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /elements/
+Disallow: /info/
+Disallow: /style/
+Disallow: /404.html
