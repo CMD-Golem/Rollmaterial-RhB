@@ -2,6 +2,7 @@ nav {
   padding-right: 15%;
   padding-left: 15%;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
   z-index: 2;
   background-color: #3B3A3D;
