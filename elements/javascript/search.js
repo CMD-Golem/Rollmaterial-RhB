@@ -8,12 +8,12 @@ const explore = document.getElementById('explore');
 
 // Search search.json and filter it
 const searchData = async searchText => {
-    const res = await fetch('https://cmd-golem.github.io/json/search.json');
+    const res = await fetch('https://raw.githubusercontent.com/CMD-Golem/rollmaterial-rhb/master/elements/search.json');
     const resJson = await res.json();
     const regex = new RegExp(`^${searchText}`, 'gi');
     // Recursion.
     const found = data => (Array.isArray(data) ? data.find(found) : data.match(regex));
-    let matches = resJson.filter(data => (found(data.type) || found(data.name_1) || found(data.name_2) || found(data.art) || found(data.numbers)));
+    let matches = resJson.filter(data => (found(data.type) || found(data.searchdata)));
 
 	if(searchText.length === 0) {
 		matches = [];
@@ -41,7 +41,7 @@ const outputHtml = matches => {
 			<div class="search_output">
 				<a class="disable_link" href="${match.link}">
 					<h2>${match.type}&#8199;${match.number}</h2>
-					<p>${match.name}<p>
+					<p>${match.description}<p>
 				</a>
 			</div>
 
