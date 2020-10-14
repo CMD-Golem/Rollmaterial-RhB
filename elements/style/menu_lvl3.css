@@ -22,7 +22,7 @@ header {
 /* Content */
 .content {
 	display: flex;
-  flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .hide_pc {
@@ -71,36 +71,9 @@ img {
 	padding-right: 3%;
 }
 
-
-/* Spoiler*/
-.spoiler {
-	cursor: pointer;
-	margin-bottom: 0px;
+table {
+	margin-bottom: 50px;
 }
-
-.spoiler:hover {
-	background-color: #808080;
-}
-
-.spoiler:after {
-    content: "\002B";
-    color: white;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-    margin-right: 15px;
-}
-
-.spoiler.active:after {
-    content: "\2212";
-}
-
-.spoiler_content {
-	overflow: hidden;
-	max-height: 0;
-	transition: max-height 0.2s ease-out;
-}
-
 
 
 
@@ -158,20 +131,4 @@ img {
 	.left_space {
 		margin: 0px;
 	}
-}
-
-
-@media print {
-  .spoiler {
-  	display: none;
-  }
-  .spoiler.active {
-  	display: block;
-  }
-  .spoiler:after {
-  	display: none;
-  }
-  .spoiler_box {
-  	page-break-inside: avoid;
-  }
 }
