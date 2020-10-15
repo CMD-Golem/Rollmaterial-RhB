@@ -1,100 +1,100 @@
 nav {
-  padding-right: 15%;
-  padding-left: 15%;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  z-index: 2;
-  background-color: #3B3A3D;
+	padding-right: 15%;
+	padding-left: 15%;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	z-index: 2;
+	background-color: #3B3A3D;
 }
 
 
 .nav a {
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  color: white;
+	float: left;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	color: white;
 }
 
 .nav a:hover {
-  background-color: #312f33;
+	background-color: #312f33;
 }
 
 .nav .nav_menu {
-  display: none;
-  float: left;
+	display: none;
+	float: left;
 }
 
 .nav .nav_shrink {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .nav .nav_search {
-  float: right;
-  display: block;
+	float: right;
+	display: block;
 }
 
 
 @media screen and (max-width: 1060px) {
-  
-  .nav .nav_shrink {
-    display: none;
-  }
+	
+	.nav .nav_shrink {
+		display: none;
+	}
 
-  .nav .nav_menu {
-    float: right;
-    display: block;
-  }
+	.nav .nav_menu {
+		float: right;
+		display: block;
+	}
 
-  .nav.nav_resp .nav_menu {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
+	.nav.nav_resp .nav_menu {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
 
-  .nav.nav_resp .nav_search {
-    position: absolute;
-    right: 46.88px;
-    top: 0;
-  }
+	.nav.nav_resp .nav_search {
+		position: absolute;
+		right: 46.88px;
+		top: 0;
+	}
 
-  .nav.nav_resp a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+	.nav.nav_resp a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
 
-  .nav.nav_resp {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: left;
-    position: relative;
-  }
+	.nav.nav_resp {
+		float: none;
+		display: block;
+		width: 100%;
+		text-align: left;
+		position: relative;
+	}
 }
 
 
 @media screen and (max-width: 1450px) {
-  nav, .nav_searchbar {
-    padding-right: 2%;
-    padding-left: 2%;
-  }
+	nav, .nav_searchbar {
+		padding-right: 2%;
+		padding-left: 2%;
+	}
 }
 
 @media screen and (max-width: 720px) {
-  nav, .nav_searchbar {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
+	nav, .nav_searchbar {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
 }
 
 @media print {
-  nav {
-    display: none;
-  }
+	nav {
+		display: none;
+	}
 }

@@ -43,7 +43,7 @@
 }
 
 @media print {
-  .button_menu {
-    display: none;
-  }
+	.button_menu {
+		display: none;
+	}
 }

@@ -1,16 +1,19 @@
 /* Table */
 table {
 	border-collapse: collapse;
-	margin-left: 10px;
 	width: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+tr:hover {
+	background-color: #312f33;
 }
 
 td {
 	padding: 10px;
 	border-bottom: 1px solid #808080;
 	user-select: all;
-	width: 100%;
-
 }
 
 .table_6 {
@@ -21,18 +24,28 @@ td {
 	width: 20%;
 }
 
-tr:hover {
-	background-color: #312f33;
+h3 {
+  background-color: #3B3A3D;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-top: 1px solid #808080;
+  font-size: 20px;
+  width: 100%;
 }
 
 
+
 /* Transformation */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
 	table {
 		margin-left: 0px;
+		margin-right: 0px;
 	}
 	td {
-		padding: 3px;
+		padding: 5px;
+	}
+	h3 {
+		width: calc(100% - 20px);
 	}
 }
 
@@ -66,6 +79,13 @@ tr:hover {
 	transition: max-height 0.2s ease-out;
 }
 
+.spoiler_content section {
+	margin-left: 10px;
+	margin-bottom: 50px;
+	border-bottom: 1px solid #808080;
+	padding-left: 10px;
+}
+
 
 /* Print */
 @media print {
@@ -85,5 +105,8 @@ tr:hover {
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     padding: 5px;
+  }
+  h3 {
+    border-top: none;
   }
 }

@@ -1,7 +1,11 @@
+main {
+	padding: 20px;
+}
+
 .selbox {
 	display: flex;
-	flex-wrap: wrap;
-	padding-right: 3%;
+	padding-right: 4%;
+	margin-bottom: 20px;
 }
 
 .selbox:hover {
@@ -9,30 +13,43 @@
 }
 
 .selbox_left {
-	flex: 40%;
-  padding: 20px;
+	min-width: 350px;
+	margin-top: 20px;
+	margin-right: 40px;
+}
+
+
+.selbox_right {
+	width: 100%;
 }
 
 .selbox_img {
 	width: 100%;
 }
 
-.selbox_right {
-	flex: 50%;
-	margin-left: 20px;
-}
-
 
 /* Transformation */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
+	.selbox_left {
+		margin-right: 20px;
+	}
+}
+
+@media screen and (max-width: 700px) {
 	.selbox {
 		flex-direction: column;
 	}
+	.selbox_left {
+		min-width: 0;
+		margin-right: 0;
+	}
 	.selbox_img {
 		width: 80%;
+		max-height: 200px;
+		object-fit: cover;
 		display: block;
- 	 	margin-left: auto;
-  	margin-right: auto;
+		margin-right: auto;
+		margin-left: auto;
 	}
 	
 }
