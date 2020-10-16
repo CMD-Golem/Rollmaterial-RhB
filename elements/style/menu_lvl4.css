@@ -8,7 +8,6 @@ h1 {
 
 .content {
 	display: flex;
-	flex-wrap: wrap;
 	border-top: 3px solid #808080;
 	margin-top: 20px;
 	page-break-after: always;
@@ -16,8 +15,8 @@ h1 {
 }
 
 .content_left {
-	flex: 30%;
-	padding: 20px;
+	flex: 40%;
+	margin: 20px;
 }
 
 .content_img {
@@ -25,9 +24,9 @@ h1 {
 }
 
 .content_right {
-	flex: 60%;
+	flex: 50%;
 	margin-left: 20px;
-	margin-right: 20px;
+	padding-right: 3%;
 }
 
 
@@ -47,9 +46,15 @@ h1 {
  	 	margin-left: auto;
 		margin-right: auto;
 	}
+}
+
+@media screen and (max-width: 720px) {
 	.content_right {
 		margin-left: 0px;
-		margin-right: 0px;
+	}
+
+	.content_left {
+		margin: 0px;
 	}
 }
 
