@@ -24,6 +24,7 @@ header {
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 90vh;
+	min-height: 600px;
 	display: flex;
 	justify-content: center;
 }
