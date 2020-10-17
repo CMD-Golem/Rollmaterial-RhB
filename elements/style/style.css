@@ -14,6 +14,7 @@ body {
 	background-color: #2a292c;
 	color: white;
 	font-size: 20px;
+	min-width: 300px;
 }
 
 /* Main */
@@ -28,13 +29,13 @@ h1 {
 	color: #e2001a;
 	font-size: 40px;
 	font-family: 'Anton';
-  text-align: center;
+	text-align: center;
 }
 
 h2 {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
 }
 
 u {
@@ -76,8 +77,8 @@ a:active {
 
 
 input:focus:hover, input:focus {
-		outline: none;
-		border-radius:0;
+	outline: none;
+	border-radius:0;
 }
 
 
@@ -86,39 +87,69 @@ footer {
 	background-color: #3B3A3D;
 	margin-top: auto;
 	height: 200px;
-}
-
-.footer_content {
 	padding-right: 15%;
 	padding-left: 15%;
 	padding-top: 15px;
-	color: white;
+	font-size: 12px;
+	text-align: center;
 }
 
-.footer_flex {
+.footer_text {
 	display: flex;
-	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+.footer_links {
+	font-size: 20px;
+	flex-grow: 1;
+	text-align: left;
+	display: flex;
+}
+
+.footer_links a:not(:last-child) {
+	margin-right: 50px;
+}
+
+.footer_copyright {
+	text-align: right;
+	flex-grow: 1;
 }
 
 
 /**Transformation**/
-@media screen and (max-width: 720px) {
-	footer {
-		height: 250px;
+@media screen and (max-width: 600px) {
+	.footer_links {
+		flex-direction: column;
+		text-align: center;
+	}
+	.footer_links a:not(:last-child) {
+		margin-right: 0px;
 	}
 }
 
+@media screen and (max-width: 900px) {
+	footer {
+		height: 250px;
+		padding: 10px;
+	}	
+}
 
-@media screen and (max-width: 1100px) {
-	.footer_flex {
+@media screen and (max-width: 1200px) {
+	.footer_text {
 		flex-direction: column;
+	}
+	.footer_links {
+		justify-content: center;
+		margin-bottom: 10px;
+	}
+
+	.footer_copyright {
+		text-align: center;
 	}
 	main {
 		padding: 10px;
 	}
 }
-
-
 
 
 @media print {
@@ -132,6 +163,7 @@ footer {
 	}
 }
 
+
 img {
-		pointer-events: none;
+	pointer-events: none;
 }

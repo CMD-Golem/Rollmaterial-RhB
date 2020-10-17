@@ -1,3 +1,6 @@
+body {
+	min-width: 400px;
+}
 main {
 	max-width: 1200px;
 }
@@ -55,6 +58,7 @@ h1 {
 
 	.content_left {
 		margin: 0px;
+		margin-top: 20px;
 	}
 }
 

@@ -5,7 +5,9 @@ main {
 .selbox {
 	display: flex;
 	padding-right: 4%;
-	margin-bottom: 20px;
+	padding-left: 4%;
+	padding-bottom: 2%;
+	padding-top: 2%;
 }
 
 .selbox:hover {
@@ -30,8 +32,14 @@ main {
 
 /* Transformation */
 @media screen and (max-width: 950px) {
+	main {
+		padding: 10px;
+	}
 	.selbox_left {
 		margin-right: 20px;
+	}
+	.selbox {
+		padding: 2%;
 	}
 }
 
