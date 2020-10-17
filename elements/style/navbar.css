@@ -8,7 +8,6 @@ nav {
 	background-color: #3B3A3D;
 }
 
-
 .nav a {
 	float: left;
 	display: block;
@@ -34,15 +33,14 @@ nav {
 	margin-right: auto;
 }
 
-.nav .nav_search {
-	float: right;
-	display: block;
-}
-
 
 @media screen and (max-width: 1060px) {
 	.nav .nav_shrink {
 		display: none;
+	}
+
+	.nav_home {
+		margin-bottom: 3px;
 	}
 
 	.nav .nav_menu {
@@ -53,12 +51,6 @@ nav {
 	.nav.nav_resp .nav_menu {
 		position: absolute;
 		right: 0;
-		top: 0;
-	}
-
-	.nav.nav_resp .nav_search {
-		position: absolute;
-		right: 46.88px;
 		top: 0;
 	}
 
@@ -79,14 +71,14 @@ nav {
 
 
 @media screen and (max-width: 1450px) {
-	nav, .nav_searchbar {
+	nav {
 		padding-right: 2%;
 		padding-left: 2%;
 	}
 }
 
 @media screen and (max-width: 720px) {
-	nav, .nav_searchbar {
+	nav {
 		padding-right: 0px;
 		padding-left: 0px;
 	}
