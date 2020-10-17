@@ -38,7 +38,13 @@ function fixBrokenImages(url) {
 
 //set width
 
-var mainwidth = document.getElementsByTagName("main")[0].offsetWidth;
-if (mainwidth <= 400) {
-    document.getElementsByTagName("nav")[0].setAttribute("style", "width:" + mainwidth + "px");
+window.resize = mainWidth;
+
+function mainWidth() {
+  var mainwidth = document.getElementsByTagName("main")[0].offsetWidth;
+  if (mainwidth <= 400) {
+      document.getElementsByTagName("nav")[0].setAttribute("style", "width:" + mainwidth + "px");
+  }
 }
+
+
