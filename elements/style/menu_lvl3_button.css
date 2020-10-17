@@ -1,7 +1,7 @@
 .button_menu {
-	column-count: 2;
-	column-width: 40%;
 	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
 }
 
 .site_search, .button {
@@ -10,11 +10,12 @@
 	font-size: 15px;
 	padding: 10px;
 	border: 2px solid #e2001a;
-	display: block;
+	width: 90%;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .site_search {
-	width: 90%;
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: initial;
@@ -22,7 +23,6 @@
 }
 
 .button {
-	width: 90%;
 	text-align: center;
 	margin-left: 0px;
 }
@@ -35,15 +35,12 @@
 /* Transformation */
 @media screen and (max-width: 720px) {
 	.button_menu {
-		column-count: 1;
+		flex-direction: column;
 	}
 	.button {
 		margin-bottom: 20px;
 	}
-}
-
-@media print {
-	.button_menu {
-		display: none;
+	.site_search, .button {
+		width: 93%;
 	}
 }

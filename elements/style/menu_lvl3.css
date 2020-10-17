@@ -1,3 +1,6 @@
+body {
+	min-width: 400px;
+}
 main {
 	max-width: 1200px;
 }
@@ -13,10 +16,6 @@ h1 {
 /* Content */
 .content {
 	display: flex;
-}
-
-.hide_pc {
-	display: none;
 }
 
 .hide_mobile {
@@ -72,11 +71,9 @@ table {
 	.hide_mobile {
 		display: none;
 	}
-	.hide_pc {
-		display: block;
-	}
+
 	.content {
-		flex-direction: column-reverse;
+		flex-direction: column;
 	}
 
 	main {
