@@ -31,7 +31,7 @@ img {
 }
 
 .site_search {
-	width: 70%;
+	width: 96%;
 	color: white;
  	background-color: transparent;
 	font-size: 15px;
@@ -107,5 +107,11 @@ table {
 
 	.left_space {
 		margin: 0px;
+	}
+}
+
+@media print {
+	.site_search {
+		display: none;
 	}
 }

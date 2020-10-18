@@ -69,6 +69,11 @@ a:active {
 }
 
 
+.underlined {
+	text-decoration-line: underline;
+}
+
+
 .disable_link:link, .disable_link:visited, .disable_link:hover, .disable_link:active {
 	color: inherit;
 	text-decoration-line: none;
