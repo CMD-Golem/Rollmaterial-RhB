@@ -2,7 +2,7 @@
 <html lang="de">
 
 <head>
-<title>Rollmaterial RhB - ABe 8/12 3501 - 3515</title>
+<title>Rollmaterial RhB - ABe 8/12</title>
 <meta name="description" content="ABe 8/12 3501 - 3515 (ZTZ, Allegra)">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
@@ -10,7 +10,6 @@
 <link rel="stylesheet" type="text/css" href="../../../elements/style/navbar.css"/>
 <link rel="stylesheet" type="text/css" href="../../../elements/style/table.css"/>
 <link rel="stylesheet" type="text/css" href="../../../elements/style/menu_lvl3.css"/>
-<link rel="stylesheet" type="text/css" href="../../../elements/style/menu_lvl3_button.css"/>
 <link rel="icon" href="../../../elements/favicon.png">
 </head>
 
@@ -21,7 +20,7 @@
 
 <script type="text/javascript">
 	document.getElementById("lokomotiven").style.backgroundColor = "#2f4c2b";
-	var header_img = "url('../../../elements/pic/lokomotiven/triebzuege/abe8-12_3501/1.jpg')";
+	var header_img = "url('../../../elements/pic/lokomotiven/triebzuege/abe4-16_3101/1.jpg')";
 </script>
 
 <!--Content-->
@@ -32,28 +31,23 @@
 	</header>
 	
 	<div class="content">
-
 		<div class="left_space">
-			<div class="button_menu">
-				<a class="button disable_link" href="abe8-12_3501/einzelwagen.html" title="Klicke für mehr Informationen">Einzelwagen</a>
-				<input class="site_search" type="text" id="Site_Search" onkeyup="siteSearch()" placeholder="Tabelle Durchsuchen...">
-			</div>
-			
+			<input class="site_search" type="text" id="Site_Search" onkeyup="siteSearch()" placeholder="Tabelle Durchsuchen...">
 			<img class="hide_mobile" src="../../../elements/pic/lokomotiven/triebzuege/abe8-12_3501/1.jpg">
 			<img class="hide_mobile" src="../../../elements/pic/lokomotiven/triebzuege/abe8-12_3501/2.jpg">
 
+		
 		</div>
-
 
 		<div class="right_space">
 			<div class="data_table" id="data_table">
 				<div class="group">
 					<h3>Allgemein</h3>
 					<table>
-						<div class="list" style="display: none;">Baujahr, Einsatz, Steuerung, Leistung, Elektrische Bremse</div>
+						<div class="list" style="display: none;">Baujahr, Einsatz, Antriebstechnik, Leistung, Elektrische Bremse, Depot</div>
 						<tr>
 							<td class="table_6">Baujahr</td>
-							<td class="table_r">2010 - 2011</td>
+							<td class="table_r">2010 - 2011 / Umbau 2020</td>
 						</tr>
 						<tr>
 							<td class="table_6">Einsatz</td>
@@ -69,7 +63,11 @@
 						</tr>
 						<tr>
 							<td class="table_6">Elektrische Bremse</td>
-							<td class="table_r"><u>Bremswiderstände / Rekuperation</u></td>
+							<td class="table_r">Bremswiederstände / Rekuperation</td>
+						</tr>
+						<tr>
+							<td class="table_6">Depot</td><!--Nur wenn vorhanden-->
+							<td class="table_r">Landquart</td>
 						</tr>
 					</table>
 				</div>
@@ -77,30 +75,46 @@
 				<div class="group">
 					<h3>Technische Daten</h3>
 					<table>
-						<div class="list" style="display: none;">Geschwindigkeit, Länge, Gewicht, Bremsgewicht, Magnetschienenbremse, Feststellbremse</div>
+						<div class="list" style="display: none;">Geschwindigkeit, Länge, Gewicht, Bremsgewicht, Magnetschienenbremse, Feststellbremse, Zusatz-Bremse, Kesseldruck, Wasservorrat, Kohlenvorrat</div>
 						<tr>
 							<td class="table_6">Geschwindigkeit</td>
-							<td class="table_r">100 km/h</td>
+							<td class="table_r">100 km/h <small>(Zugreihe A)</small></td>
 						</tr>
 						<tr>
 							<td class="table_6">Länge</td>
 							<td class="table_r">49.50 m</td>
 						</tr>
 						<tr>
-							<td class="table_6">Gewicht <small>(Tara / Burtto)</small></td>
-							<td class="table_r">106 t / 122 t</td>
+							<td class="table_6">Gewicht</td>
+							<td class="table_r">106 t</td>
 						</tr>
 						<tr>
 							<td class="table_6">Bremsgewicht</td>
-							<td class="table_r">116 t / 136 t</td>
+							<td class="table_r">116 t</td>
 						</tr>
 						<tr>
-							<td class="table_6">Magnetschienen&shy;bremse</td><!--Löschbar-->
-							<td class="table_r">20t <small>(BG total = 156 t)</small></td>
+							<td class="table_6">Magnetschienenbremse</td><!--Nur wenn vorhanden-->
+							<td class="table_r">20t &#8199; <small>(BG total = 156 t)</small></td>
 						</tr>
 						<tr>
 							<td class="table_6">Feststellbremse</td>
-							<td class="table_r">Fsp 122 kN <small>(H 60 t)</small></td>
+							<td class="table_r">Fsp 122 kN &#8199; <small>(H 60 t)</small></td>
+						</tr>
+						<tr>
+							<td class="table_6">Zusatz-Bremse</td><!--Nur wenn vorhanden-->
+							<td class="table_r">Bremszylinder - Verrigelung</td>
+						</tr>
+						<tr>
+							<td class="table_6">Kesseldruck</td><!--Nur wenn vorhanden-->
+							<td class="table_r">12 bar</td>
+						</tr>
+						<tr>
+							<td class="table_6">Wasservorrat</td><!--Nur wenn vorhanden-->
+							<td class="table_r">9.9 m<sup>3</sup></td>
+						</tr>
+						<tr>
+							<td class="table_6">Kohlenvorrat</td><!--Nur wenn vorhanden-->
+							<td class="table_r">2.5 t</td>
 						</tr>
 					</table>
 				</div>
@@ -108,10 +122,18 @@
 				<div class="group">
 					<h3>Fahrzeugausrüstung</h3>
 					<table>
-						<div class="list" style="display: none;">Vielfachsteuerung, Zugsicherung, Heizleitung, Speiseluft-Leitung, Bremssystem, Steuerleitung Spurpflug, Türen, Notfalleinrichtung</div>
+						<div class="list" style="display: none;">Zugvorrichtung, Stossvorrichtung, Vielfachsteuerung, Funkfernsteuerung, Zugsicherung, Heizleitung, Speiseluft-Leitung, Bremssystem, LBT-Leitung, Steuerleitung Spurpflug, Ladefläche</div>
+						<tr>
+							<td class="table_6">Zug-/ Stossvorrichtung</td><!--Nur wenn speziell-->
+							<td class="table_r">Automatische Kupplung (Schwab) / Stangenpuffer</td>
+						</tr>
 						<tr>
 							<td class="table_6">Vielfachsteuerung</td>
 							<td class="table_r">WTB-Zugbus <small>(MZST)</small></td>
+						</tr>
+						<tr>
+							<td class="table_6">Funkfernsteuerung</td><!--Nur wenn vorhanden-->
+							<td class="table_r">ja</td>
 						</tr>
 						<tr>
 							<td class="table_6">Zugsicherung</td>
@@ -130,73 +152,36 @@
 							<td class="table_r">Vakuum-Hauptleitung<br>Druckluft-Hauptleitung <small>(Dual-Bremse)</small></td>
 						</tr>
 						<tr>
-							<td class="table_6">Steuerleitung Spurpflug</td>
+							<td class="table_6">LBT-Leitung</td><!--Nur wenn nicht vorhanden-->
+							<td class="table_r">nein</td>
+						</tr>
+						<tr>
+							<td class="table_6">Steuerleitung Spurpflug</td><!--Nur wenn vorhanden-->
 							<td class="table_r">ja</td>
 						</tr>
 						<tr>
-							<td class="table_6">Türen</td>
-							<td class="table_r">Aussenbündig, elektrisch</td>
-						</tr>
-						<tr>
-							<td class="table_6">Notfalleinrichtung</td>
-							<td class="table_r">NBA</td>
+							<td class="table_6">Ladefläche</td><!--Nur wenn vorhanden-->
+							<td class="table_r">Mulde seitlich kippbar, 7.3 m<sup>3</sup><br>Zuladung 4t</td>
 						</tr>
 					</table>
 				</div>
 
-				<div class="group">
-					<h3>Fahrgastausstattung</h3>
-					<table>
-						<div class="list" style="display: none;">Plätze 1. Klasse, Plätze 2. Klasse, Klappsitze, Niederflureinstiege, Rollstuhlplätze, WC, Velohaken, Fahrgastinfosystem, Zugzielanzeigen, Fahrgastzählung</div>
-						<tr>
-							<td class="table_6">Plätze 1. Klasse</td>
-							<td class="table_r">24</td>
-						</tr>
-						<tr>
-							<td class="table_6">Plätze 2. Klasse</td>
-							<td class="table_r">76</td>
-						</tr>
-						<tr>
-							<td class="table_6">Klappsitze</td>
-							<td class="table_r">14</td>
-						</tr>
-						<tr>
-							<td class="table_6">Niederflureinstiege</td>
-							<td class="table_r">1</td>
-						</tr>
-						<tr>
-							<td class="table_6">Rollstuhlplätze</td>
-							<td class="table_r">2 <small>(bis max. 6 Rollstühle)</small></td>
-						</tr>
-						<tr>
-							<td class="table_6">WC</td>
-							<td class="table_r">1x geschlossen, rollstuhltauglich</td>
-						</tr>
-						<tr>
-							<td class="table_6">Velohaken</td>
-							<td class="table_r">4</td>
-						</tr>
-						<tr>
-							<td class="table_6">Fahrgastinfosystem</td>
-							<td class="table_r">KIS</td>
-						</tr>
-						<tr>
-							<td class="table_6">Zugzielanzeigen</td>
-							<td class="table_r">innen und aussen</td>
-						</tr>
-						<tr>
-							<td class="table_6">Fahrgastzählung</td>
-							<td class="table_r">AFZ - Master <small>(ABe 8/12&#8199;3509 - 3515)</small></td>
-						</tr>
-					</table>
-				</div>
+			</div>
+		</div>
 
-				
-			</div><!--Data Table-->
 
-		</div><!--Right Space-->
 		
-	</div><!--Content-->
+	</div>
+
+<div class="spoiler_box">
+	<h3 class="spoiler" title="Klicke für mehr Informationen">Ausrangierte Fahrzeuge</h3>
+	<div class="spoiler_content">
+		<table>
+			<tr><td class="table_2">Ge 4/4<sup>I</sup></td><td class="table_2">601</td><td>1989</td><td></td></tr>
+			<tr><td class="table_2">Ge 4/4<sup>I</sup></td><td class="table_2">603</td><td>1992 <small>(Unfall)</small></td><td></td></tr>
+		</table>
+	</div>
+</div>
 
 <div class="spoiler_box">
 	<h3 class="spoiler" title="Klicke für mehr Informationen">Fernsteuerbar von</h3>
@@ -209,6 +194,7 @@
 			<tr><td>Bt 52801 - 52808</td><td></td></tr>	
 		</table>
 	</div>
+</div>
 		
 
 	
@@ -274,14 +260,13 @@
 
 		
 
-	<div style="height: 40px;"></div>
+<div style="height: 40px;"></div>
 
 </main>
 
 <!--Script-->
 <script language="javascript" type="text/javascript" src="../../../elements/javascript/spoiler.js"></script>
 <script language="javascript" type="text/javascript" src="../../../elements/javascript/site_search.js"></script>
-<script language="javascript" type="text/javascript" src="../../../elements/javascript/header_img.js"></script>
 
 <!--Footer-->
 <script language="javascript" type="text/javascript" src="../../../elements/nav/footer.js"></script>
