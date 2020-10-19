@@ -74,6 +74,10 @@ a:active {
 	text-decoration-line: underline;
 }
 
+.strike {
+	text-decoration-line: line-through;
+}
+
 
 .disable_link:link, .disable_link:visited, .disable_link:hover, .disable_link:active {
 	color: inherit;
