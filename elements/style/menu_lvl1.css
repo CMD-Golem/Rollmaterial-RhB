@@ -30,7 +30,7 @@ img {
 	transition: 0.5s;
 }
 
-.container:hover .overlay {
+.container:hover .overlay, .content_link:focus .overlay {
 	bottom: 0;
 	height: 100%;
 }

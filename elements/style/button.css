@@ -1,36 +1,40 @@
-.button_menu {
-	margin-bottom: 20px;
-	display: flex;
-	justify-content: center;
-}
-
-.site_search, .button {
+.button {
+	text-align: center;
 	color: white;
  	background-color: transparent;
 	font-size: 15px;
 	padding: 10px;
 	border: 2px solid #e2001a;
 	width: 90%;
+	margin-right: 10px;
+}
+
+.button:hover, .button:focus {
+	border: 2px solid #b0081c;
+	transition: 0.5s;
+}
+
+/* Menu 3 (next to site search) */
+.button_menu {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+
+.button_menu .site_search {
+	width: 90%;
 	margin-left: 10px;
 	margin-right: 10px;
 }
 
-.site_search {
+.button_menu .site_search {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: initial;
 	margin-right: initial;
 }
 
-.button {
-	text-align: center;
-	margin-left: 0px;
-}
-
-.button:hover {
-	border: 2px solid #b0081c;
-	transition: 0.5s;
-}
 
 /* Transformation */
 @media screen and (max-width: 720px) {
@@ -38,9 +42,7 @@
 		flex-direction: column;
 	}
 	.button {
+		margin-right: 0px;
 		margin-bottom: 20px;
-	}
-	.site_search, .button {
-		width: 93%;
 	}
 }
