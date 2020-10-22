@@ -63,12 +63,19 @@ header {
 
 .search_output {
 	border-bottom: 2px solid #808080;
-	padding: 2px;
 }
 
-.search_output:hover {
+.search_output a {
+	display:inline-block;
+	width: 100%;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.search_output a:hover, .search_output a:focus {
 	background-color: rgba(49, 47, 51, 0.5);
 }
+
 
 .search_output h2 {
 	margin-bottom: 5px;
@@ -96,7 +103,7 @@ header {
 	bottom: 30px;
 }
 
-.explore:hover {
+.explore:hover, .explore:focus {
 	background-color: rgba(128, 128, 128, 0.7);
 }
 
