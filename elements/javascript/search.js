@@ -13,7 +13,7 @@ const searchData = async searchText => {
     const regex = new RegExp(`^${searchText}`, 'gi');
     // Recursion.
     const found = data => (Array.isArray(data) ? data.find(found) : data.match(regex));
-    let matches = resJson.filter(data => (found(data.type) || found(data.searchdata)));
+    let matches = resJson.filter(data => (found(data.searchdata)));
 
 	if(searchText.length === 0) {
 		matches = [];
@@ -41,7 +41,7 @@ const outputHtml = matches => {
 			<div class="search_output">
 				<a class="disable_link" href="${match.link}">
 					<h2>${match.type}&#8199;${match.number}</h2>
-					<p>${match.description}<p>
+					<p>${match.description}</p>
 				</a>
 			</div>
 
@@ -53,3 +53,15 @@ const outputHtml = matches => {
 
 
 search.addEventListener('input', () => searchData(search.value));
+search.addEventListener('click', () => searchData(search.value));
+
+
+//Open first child if user press enter
+function enter() {
+	var pressedKey = event.key;
+
+	if (pressedKey == "Enter") {
+		url = matchList.getElementsByClassName("link")[0].href
+		window.location.href = url;
+	}
+}
