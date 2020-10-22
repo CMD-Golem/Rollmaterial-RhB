@@ -61,6 +61,11 @@ a:active {
 	color: #b80015;
 }
 
+a:focus {
+	color: #b0081c;
+	outline: none;
+}
+
 ::selection {
 	background-color: #e2001a;
 }

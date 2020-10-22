@@ -10,7 +10,7 @@ main {
 	padding-top: 2%;
 }
 
-.selbox:hover {
+.selbox:hover, .selbox:focus {
 	background-color: #312f33;
 }
 

@@ -18,8 +18,13 @@ nav {
 	color: white;
 }
 
-.nav a:hover {
+.nav_home, .nav_shrink {
+	padding-bottom: 3px;
+}
+
+.nav a:hover, .nav a:focus {
 	background-color: #312f33;
+	outline: none;
 }
 
 .nav .nav_menu {
@@ -42,7 +47,7 @@ nav {
 	.nav_home {
 		margin-bottom: 3px;
 	}
-
+	
 	.nav .nav_menu {
 		float: right;
 		display: block;
