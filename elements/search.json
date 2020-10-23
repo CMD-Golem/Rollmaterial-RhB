@@ -21,10 +21,10 @@
 	{"type":"Ge 6/6<sup>II</sup>", "description":"BoBoBo", "number":"701 - 707", "searchdata":["Ge 6/6II", "BoBoBo", "Lokomotiven"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/lokomotiven/ge6-6_701.html"},
 	{"type":"Ge 6/6<sup>II</sup>", "description":"BoBoBo", "number":"701 - 702", "searchdata":["701", "702"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/lokomotiven/ge6-6_701/ge6-6_701.html"},
 	{"type":"Ge 6/6<sup>II</sup>", "description":"BoBoBo", "number":"703 - 707", "searchdata":["703", "704", "705", "706", "707"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/lokomotiven/ge6-6_701/ge6-6_703.html"},
-	{"type":"Gmf 4/4", "description":"", "number":"242 - 243", "searchdata":["Gmf 4/4", "242", "243"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/rangierlokomotiven/gmf4-4_242.html"},
-	{"type":"Gmf 4/4", "description":"", "number":"23401 - 23404", "searchdata":["Gmf 4/4", "23401", "23402", "23403", "23404"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/rangierlokomotiven/gmf4-4_23401.html"},
-	{"type":"Ge 3/3", "description":"", "number":"214 - 215", "searchdata":["Ge 3/3", "214", "215"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/rangierlokomotiven/ge3-3_214.html"},
-	{"type":"Gm 3/3", "description":"Moyse", "number":"231 - 233", "searchdata":["Gm 3/3", "Moyse", "231", "232", "233"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/rangierlokomotiven/gm3-3_231.html"},
-	{"type":"Gm 4/4", "description":"", "number":"241", "searchdata":["Gm 4/4", "241"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/rangierlokomotiven/gm4-4_241.html"},
-	{"type":"Geaf 2/2", "description":"", "number":"20601 - 20607", "searchdata":["Geaf 2/2", "20601", "20602", "20603", "20604", "20605", "20606", "20607"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/rangierlokomotiven/geaf2-2_20601.html"}
+	{"type":"Gmf 4/4", "description":"", "number":"242 - 243", "searchdata":["Gmf 4/4", "Rangierlokomotiven", "242", "243"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/rangierlokomotiven/gmf4-4_242.html"},
+	{"type":"Gmf 4/4", "description":"", "number":"23401 - 23404", "searchdata":["Gmf 4/4", "Rangierlokomotiven", "23401", "23402", "23403", "23404"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/rangierlokomotiven/gmf4-4_23401.html"},
+	{"type":"Ge 3/3", "description":"", "number":"214 - 215", "searchdata":["Ge 3/3", "Rangierlokomotiven", "214", "215"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/rangierlokomotiven/ge3-3_214.html"},
+	{"type":"Gm 3/3", "description":"Moyse", "number":"231 - 233", "searchdata":["Gm 3/3", "Moyse", "Rangierlokomotiven", "231", "232", "233"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/rangierlokomotiven/gm3-3_231.html"},
+	{"type":"Gm 4/4", "description":"", "number":"241", "searchdata":["Gm 4/4", "Rangierlokomotiven", "241"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/rangierlokomotiven/gm4-4_241.html"},
+	{"type":"Geaf 2/2", "description":"", "number":"20601 - 20607", "searchdata":["Geaf 2/2", "Rangierlokomotiven", "20601", "20602", "20603", "20604", "20605", "20606", "20607"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/rangierlokomotiven/geaf2-2_20601.html"}
 ]
