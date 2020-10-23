@@ -39,7 +39,7 @@ const outputHtml = matches => {
 	if (matches.length > 0) {
 		const html = matches.map(match => `
 			<div class="search_output">
-				<a class="disable_link" href="${match.link}">
+				<a class="link disable_link" href="${match.link}">
 					<h2>${match.type}&#8199;${match.number}</h2>
 					<p>${match.description}</p>
 				</a>
