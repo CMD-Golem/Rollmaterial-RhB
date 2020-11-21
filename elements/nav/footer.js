@@ -19,19 +19,9 @@ for (i = 0; i < notdef.length; i++) {
 
 
 
-
-// fix broken images https://stackoverflow.com/a/980951
-window.onload = fixBrokenImages;
-
-
-function fixBrokenImages(url) {
-    var img = document.getElementsByTagName('img');
-    var i=0, l=img.length;
-    for (;i<l;i++) {
-        var t = img[i];
-        if(t.naturalWidth === 0){
-            //this image is broken
-            t.src = "https://rollmaterial-rhb.netlify.app/elements/noimage.png";
-        }
-    }
+// fix broken images https://stackoverflow.com/a/980951 / lazy loading
+var images = document.getElementsByTagName("img");
+for (i = 0; i < images.length; i++) {
+	images[i].onerror = function() {this.onerror=null;this.src="https://rollmaterial-rhb.netlify.app/elements/noimage.png";}
+	images[i].loading = "lazy";
 }
