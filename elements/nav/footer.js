@@ -19,7 +19,7 @@ for (i = 0; i < notdef.length; i++) {
 
 
 
-// fix broken images https://stackoverflow.com/a/980951 / lazy loading
+// fix broken images / lazy loading
 var images = document.getElementsByTagName("img");
 for (i = 0; i < images.length; i++) {
 	images[i].onerror = function() {this.onerror=null;this.src="https://rollmaterial-rhb.netlify.app/elements/noimage.png";}
