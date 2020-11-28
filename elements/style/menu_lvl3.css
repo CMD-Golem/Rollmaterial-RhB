@@ -1,5 +1,14 @@
 main {
-	max-width: 1200px;
+	width: 1200px;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and (max-width: 1240px) {
+	main {
+		width: calc(100vw - 40px);
+	}
 }
 header {
 	margin-bottom: 50px;
@@ -71,10 +80,6 @@ table {
 
 	.content {
 		flex-direction: column;
-	}
-
-	main {
-		max-width: 800px;
 	}
 
 	header {
