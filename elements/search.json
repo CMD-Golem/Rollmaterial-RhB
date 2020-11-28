@@ -43,5 +43,12 @@
 	{"type":"Ta 1/2", "description":"", "number":"80", "searchdata":["Ta 1/2", "Rangiertraktoren", "80"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/rangiertraktoren/ta1-2_80.html"},
 	{"type":"Taf 2/2", "description":"", "number":"29591 - 29593", "searchdata":["Taf 2/2", "Rangiertraktoren"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/rangiertraktoren/taf2-2_29591.html"},
 	{"type":"Taf 2/2", "description":"", "number":"29591 - 29592", "searchdata":["29591", "29592"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/rangiertraktoren/taf2-2_29591/taf2-2_29591.html"},
-	{"type":"Taf 2/2", "description":"", "number":"29593", "searchdata":["29593"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/rangiertraktoren/taf2-2_29591/taf2-2_29593.html"}	
+	{"type":"Taf 2/2", "description":"", "number":"29593", "searchdata":["29593"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/rangiertraktoren/taf2-2_29591/taf2-2_29593.html"},
+	{"type":"Xm 2/2", "description":"", "number":"9912", "searchdata":["Xm 2/2", "Dienstfahrzeuge", "9912"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/dienstfahrzeuge/xm2-2_9912.html"},
+	{"type":"Xm 2/2", "description":"", "number":"9916", "searchdata":["Xm 2/2", "Dienstfahrzeuge", "9916"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/dienstfahrzeuge/xm2-2_9916.html"},
+	{"type":"Xm 2/2", "description":"", "number":"9917", "searchdata":["Xm 2/2", "Dienstfahrzeuge", "9917"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/dienstfahrzeuge/xm2-2_9917.html"},
+	{"type":"Xmf 2/2", "description":"", "number":"9921", "searchdata":["Xmf 2/2", "Dienstfahrzeuge", "9921"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/dienstfahrzeuge/xmf2-2_9921.html"},
+	{"type":"Xmf 4/4", "description":"", "number":"24403 - 24404", "searchdata":["Xmf 4/4", "Dienstfahrzeuge", "24403", "24404"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/dienstfahrzeuge/xmf4-4_24403.html"},
+	{"type":"Xmf 6/6", "description":"", "number":"24401", "searchdata":["Xmf 6/6", "Dienstfahrzeuge", "24401"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/dienstfahrzeuge/xmf6-6_24401.html"},
+	{"type":"Xmf 6/6", "description":"", "number":"24402", "searchdata":["Xmf 6/6", "Dienstfahrzeuge", "24402"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/dienstfahrzeuge/xmf6-6_24402.html"}
 ]

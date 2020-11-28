@@ -1,5 +1,14 @@
 main {
-	max-width: 1200px;
+	width: 1200px;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and (max-width: 1240px) {
+	main {
+		width: calc(100vw - 40px);
+	}
 }
 h1 {
 	margin-bottom: 0px;
@@ -34,10 +43,6 @@ h1 {
 @media screen and (max-width: 1000px) {
 	.content {
 		flex-direction: column;
-	}
-
-	main {
-		max-width: 800px;
 	}
 
 	.content_img {
