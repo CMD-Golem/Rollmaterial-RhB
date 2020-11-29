@@ -1,1 +1,18 @@
-document.write('<nav><div class="nav" id="Menu"><a class="nav_home" href="https://rollmaterial-rhb.netlify.app/">Home</a><a class="nav_shrink" href="https://rollmaterial-rhb.netlify.app/data/lokomotiven.html" id="lokomotiven">Lokomotiven</a><a class="nav_shrink" href="https://rollmaterial-rhb.netlify.app/data/personenwagen.html" id="personenwagen">Personenwagen</a><a class="nav_shrink" href="https://rollmaterial-rhb.netlify.app/data/gepaeckwagen.html" id="gepaeckwagen">Gep&auml;ckwagen</a><a class="nav_shrink" href="https://rollmaterial-rhb.netlify.app/data/gueterwagen.html" id="gueterwagen">G&uuml;terwagen</a><a class="nav_shrink" href="https://rollmaterial-rhb.netlify.app/data/dienstwagen.html" id="dienstwagen">Dienstwagen</a><a class="nav_shrink" href="https://rollmaterial-rhb.netlify.app/data/gleisbaumaschinen.html" id="gleisbaumaschinen">Gleisbaumaschinen</a><a class="nav_menu" href="javascript:void(0);" onclick="MenuFunction()">&#9776;</a></div></nav>')
+const navbar = `
+<nav>
+	<input type="checkbox" id="menu">
+	<label for="menu" class="nav_menu nav_hover"></label>
+	<a class="nav_home disable_link nav_hover" href="https://rollmaterial-rhb.netlify.app/"><img src="../../elements/nav/home.svg"><p>Home</p></a>
+	<a class="nav_search disable_link nav_hover" href="https://rollmaterial-rhb.netlify.app/data.html/"><img src="../../elements/nav/search.svg"></a>
+	<ul class="nav_list">
+		<li><a class="nav_link disable_link nav_hover" href="https://rollmaterial-rhb.netlify.app/data/lokomotiven.html" id="lokomotiven">Lokomotiven</a></li>
+		<li><a class="nav_link disable_link nav_hover" href="https://rollmaterial-rhb.netlify.app/data/personenwagen.html" id="personenwagen">Personenwagen</a></li>
+		<li><a class="nav_link disable_link nav_hover" href="https://rollmaterial-rhb.netlify.app/data/gepaeckwagen.html" id="gepaeckwagen">Gep&auml;ckwagen</a></li>
+		<li><a class="nav_link disable_link nav_hover" href="https://rollmaterial-rhb.netlify.app/data/gueterwagen.html" id="gueterwagen">G&uuml;terwagen</a></li>
+		<li><a class="nav_link disable_link nav_hover" href="https://rollmaterial-rhb.netlify.app/data/dienstwagen.html" id="dienstwagen">Dienstwagen</a></li>
+		<li><a class="nav_link disable_link nav_hover" href="https://rollmaterial-rhb.netlify.app/data/gleisbaumaschinen.html" id="gleisbaumaschinen">Gleisbaumaschinen</a></li>
+	</ul>
+</nav>
+`;
+
+document.write(navbar)

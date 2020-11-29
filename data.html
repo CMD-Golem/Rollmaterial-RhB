@@ -2,7 +2,7 @@
 <html lang="de">
 
 <head>
-<title>404 - Seite nicht gefunden</title>
+<title>Rollmaterial-RhB - Suche</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="https://rollmaterial-rhb.netlify.app/elements/style/index.css"/>
@@ -15,29 +15,25 @@
 
 <!--Header-->
 <header>
-    <a class="header_center disable_link" href="https://rollmaterial-rhb.netlify.app/">
-        <img class="header_icon" src="https://rollmaterial-rhb.netlify.app/elements/favicon.png">
-        <h1>404 - Seite nicht gefunden</h1>   
-    </a>
+	<a class="header_center disable_link" href="https://rollmaterial-rhb.netlify.app/">
+		<img class="header_icon" src="https://rollmaterial-rhb.netlify.app/elements/favicon.png">
+		<h1>Suche</h1>   
+	</a>
 </header>
 
 
 <!--Content-->
 <main style="text-align: center;">
-    
-	<p>Diese Seite konnte nicht gefunden werden</p>
-	<p>Bitte gehen Sie zurück oder beginnen Sie von der <a href="https://rollmaterial-rhb.netlify.app/">Startseite</a> aus neu.</p>
+   
+	<div class="search">
+		<input class="search_box" id="search" type="text" placeholder="Suchen" onkeydown="enter(event)">
+		<div style="height: 20px;"></div>
+		<div class="search_outputs" id="match-list" style="max-height: none;"></div>
+	</div>
 
-    <div style="height:5vw;"></div>
+	<div id="explore"></div>
 
-    <div class="search">
-        <input class="search_box" id="search" type="text" placeholder="Suchen" onkeydown="enter(event)">
-        <div class="search_outputs" id="match-list"></div>
-    </div>
-
-    <div id="explore"></div>
-
-    <div style="height:5vw;"></div>
+	<div style="height:5vw;"></div>
 
 </main>
 
