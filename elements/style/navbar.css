@@ -63,16 +63,14 @@ nav img {
 
 /* Menu Button */
 .nav_menu {
-	font-size: 30px;
-	float: right;
-	padding: 2px 16px;
-	padding-bottom: 5.5px;
 	cursor: pointer;
 	display: none;
-}
-
-.nav_menu::after {
-	content: "\2630";
+	float: right;
+	padding: 0 16px;
+	padding-top: 8px;
+	height: 40px;
+	width: 40px;
+	background: transparent url('https://rollmaterial-rhb.netlify.app/elements/nav/menu.svg') center/contain no-repeat;
 }
 
 #menu {
@@ -144,12 +142,7 @@ nav img {
 	#menu:checked ~ .nav_menu {
 		position: sticky;
 		z-index: 3;
-		font-size: 27px;
-		padding-bottom: 4px;
-	}
-
-	#menu:checked ~ .nav_menu::after {
-		content: "\2573";
+		background: transparent url('https://rollmaterial-rhb.netlify.app/elements/nav/close.svg') center/contain no-repeat;
 	}
 }
 
