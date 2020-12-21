@@ -10,6 +10,7 @@
 <link rel="stylesheet" type="text/css" href="../../../../elements/style/navbar.css"/>
 <link rel="stylesheet" type="text/css" href="../../../../elements/style/table.css"/>
 <link rel="stylesheet" type="text/css" href="../../../../elements/style/menu_lvl3.css"/>
+<link rel="stylesheet" type="text/css" href="../../../../elements/style/button.css"/>
 <link rel="icon" href="../../../../elements/favicon.png">
 </head>
 
@@ -32,7 +33,11 @@
 	
 	<div class="content">
 		<div class="left_space">
-			<input class="site_search" type="text" id="Site_Search" onkeyup="siteSearch()" placeholder="Tabelle Durchsuchen...">
+			<div class="button_menu">
+				<a class="button disable_link" href="ge4-4_611/werbefahrzeuge.html" title="Klicke für mehr Informationen">Werbefahrzeuge</a>
+				<input class="site_search" type="text" id="Site_Search" onkeyup="siteSearch()" placeholder="Tabelle Durchsuchen...">
+			</div>
+
 			<img class="hide_mobile" src="../../../../elements/pic/lokomotiven/lokomotiven/ge4-4_611_d/1.jpg">
 			<img class="hide_mobile" src="../../../../elements/pic/lokomotiven/lokomotiven/ge4-4_611_d/2.jpg">
 
@@ -44,7 +49,7 @@
 				<div class="group">
 					<h3>Allgemein</h3>
 					<table>
-						<div class="list" style="display: none;">Baujahr, Einsatz, Antriebstechnik, Leistung, Elektrische Bremse</div>
+						<div class="list" style="display: none;">Baujahr, Einsatz, Antriebstechnik, Leistung, Ergänzungsbremse</div>
 						<tr>
 							<td class="table_6">Baujahr</td>
 							<td class="table_r">1973</td>
@@ -55,15 +60,15 @@
 						</tr>
 						<tr>
 							<td class="table_6">Antriebstechnik</td>
-							<td class="table_r">Thyristor-Anschnittsteuerung</td>
+							<td class="table_r">Thyristor-Anschnitt&shy;steuerung</td>
 						</tr>
 						<tr>
 							<td class="table_6">Leistung</td>
 							<td class="table_r">2300 PS / 1700 kW</td>
 						</tr>
 						<tr>
-							<td class="table_6">Elektrische Bremse</td>
-							<td class="table_r">Bremswiderstände</td>
+							<td class="table_6">Ergänzungs&shy;bremse</td>
+							<td class="table_r">elektrische Bremswider&shy;stände</td>
 						</tr>
 					</table>
 				</div>
@@ -98,13 +103,17 @@
 				<div class="group">
 					<h3>Fahrzeugausrüstung</h3>
 					<table>
-						<div class="list" style="display: none;">Vielfachsteuerung, Zugsicherung, Heizleitung, Speiseluft-Leitung, Bremssystem</div>
+						<div class="list" style="display: none;">Nylatron-Pufferplatten, Vielfachsteuerung, Zugbeeinflussung, Heizleitung, Speiseluft-Leitung, Bremssystem</div>
+						<tr>
+							<td class="table_6">Nylatron-Pufferplatten</td><!--Nur bei Lokomotiven und Rangierlokomotiven-->
+							<td class="table_r">keine</td>
+						</tr>
 						<tr>
 							<td class="table_6">Vielfachsteuerung</td>
 							<td class="table_r">WTB-Zugbus <small>(MZST)</small></td>
 						</tr>
 						<tr>
-							<td class="table_6">Zugsicherung</td>
+							<td class="table_6">Zugbeeinflussung</td>
 							<td class="table_r">ZSI 127</td>
 						</tr>
 						<tr>
@@ -168,15 +177,15 @@
 		<table>
 			<tr>
 				<td class="table_2">Tfz bremst</td>
-				<td>Reihe R/D, V max. 90 km/h, BG 37 t, Einreihung beliebig, Speiseluft verbinden.</td>
+				<td>Einreihung beliebig, BG 37 t, V max. 90 km/h, Reihe R/D<br>Hauptleitung <small>(Vakuum und/oder Druckluft)</small> und Speiseleitung verbinden.</td>
 			</tr>
 			<tr>
 				<td class="table_2">Tfz ungebremst</td>
-				<td>Reihe R, V max. 90 km/h, BG 0 t, Einreihung beliebig.</td>
+				<td>Nur im Ausnahmefall zulässig.</td>
 			</tr>
 			<tr>
-				<td class="table_2">Tfz auf Stwg</td>
-				<td>Reihe R, V max. 90 km/h, BG 50 t, Tfz mit Vielfachsteuerung und Speiseluft verbinden.</td>
+				<td class="table_2">Mit 2. Ge 4/4<sup>II</sup></td>
+				<td>Einreihung als MT, BG 50 t, V max. 90 km/h, Reihe R<br>Hauptleitung <small>(Vakuum und Druckluft)</small> + Speiseleitung + Mehrzugsteuerleitung + Heizleitung verbinden, geschleppte Lok auf Steuerwagen-Betrieb umstellen, Auslösen oder Mitbremsen der Lok möglich.</td>
 			</tr>
 		</table>
 	</div>

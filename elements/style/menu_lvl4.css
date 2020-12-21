@@ -23,6 +23,25 @@ h1 {
 	page-break-inside: avoid;
 }
 
+.content_gallery {
+	margin-top: 20px;
+	page-break-after: always;
+	page-break-inside: avoid;
+}
+
+.content_gallery h3 {
+	text-align: center;
+}
+
+.content_gallery_flex {
+	display: flex;
+}
+
+.content_single {
+	width: 40%;
+	margin: 20px auto;
+}
+
 .content_left {
 	flex: 40%;
 	margin: 20px;
@@ -38,10 +57,9 @@ h1 {
 	padding-right: 3%;
 }
 
-
 /* Transformation */
 @media screen and (max-width: 1000px) {
-	.content {
+	.content, .content_gallery_flex {
 		flex-direction: column;
 	}
 
@@ -50,6 +68,9 @@ h1 {
 		display: block;
  	 	margin-left: auto;
 		margin-right: auto;
+	}
+	.content_single {
+		width: 95%;
 	}
 }
 
