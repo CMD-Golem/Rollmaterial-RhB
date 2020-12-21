@@ -152,3 +152,9 @@ nav img {
 		width: 100%;
 	}
 }
+
+@media print {
+	nav {
+		display: none;
+	}
+}
