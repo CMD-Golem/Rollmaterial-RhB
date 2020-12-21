@@ -39,6 +39,8 @@ h3 {
 
 
 
+
+
 /* Transformation */
 @media screen and (max-width: 800px) {
 	table {
@@ -56,6 +58,24 @@ h3 {
 @media screen and (max-width: 700px) {
 	.table_r {
 		text-align: right;
+	}
+}
+
+@media (max-width: 800px) {
+	.table_top, .table_top thead, .table_top tbody, .table_top th, .table_top td, .table_top tr {
+		display: block;
+	}
+	.table_top tr {
+		margin-bottom: 20px;
+	}
+	.table_top td {
+		width: 100%;
+	}
+	.table_top td:first-child {
+		border-bottom: none;
+	}
+	.table_top td:not(:first-child) {
+		padding-left: 20px;
 	}
 }
 
