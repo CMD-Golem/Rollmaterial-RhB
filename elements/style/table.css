@@ -86,6 +86,10 @@ h3 {
 	margin-bottom: 0px;
 }
 
+h3.spoiler {
+	width: calc(100% - 20px);
+}
+
 .spoiler:hover {
 	background-color: #808080;
 }
