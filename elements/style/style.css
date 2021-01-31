@@ -52,22 +52,12 @@ u {
 }
 
 
-a:link {
+a:link, a:visited {
 	color: #e2001a;
 }
-
-a:visited {
-	color: #e2001a;
-}
-
-a:hover {
+a:hover, a:active {
 	color: #b80015;
 }
-
-a:active {
-	color: #b80015;
-}
-
 a:focus {
 	color: #b0081c;
 	outline: none;
@@ -75,6 +65,10 @@ a:focus {
 
 ::selection {
 	background-color: #e2001a;
+}
+
+h1::selection, a::selection {
+	background-color: #808080;
 }
 
 ::placeholder {
@@ -156,7 +150,7 @@ footer {
 	}	
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
 	.footer_text {
 		flex-direction: column;
 	}

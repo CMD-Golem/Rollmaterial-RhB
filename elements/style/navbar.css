@@ -140,8 +140,6 @@ nav img {
 	}
 
 	#menu:checked ~ .nav_menu {
-		position: sticky;
-		z-index: 3;
 		background: transparent url('https://rollmaterial-rhb.netlify.app/elements/nav/close.svg') center/contain no-repeat;
 	}
 }
