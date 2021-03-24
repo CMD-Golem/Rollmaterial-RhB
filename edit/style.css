@@ -1,0 +1,11 @@
+select {
+	padding: 10px 20px;
+	border-top: 1px solid #808080;
+	background: #3B3A3D;
+	border-radius: 4px;
+	color: white;
+}
+
+select:focus {
+	outline: none;
+}
