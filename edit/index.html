@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+<title>Rollmaterial RhB - Edit Mode</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../elements/style/style.css"/>
+<link rel="stylesheet" type="text/css" href="../elements/style/navbar.css"/>
+<link rel="stylesheet" type="text/css" href="../elements/style/table.css"/>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="icon" href="../elements/favicon.png">
+</head>
+
+<body>
+
+<!--Menu-->
+<script language="javascript" type="text/javascript" src="javascript/navbar.js"></script>
+
+<!--Content-->
+<main>
+<p>Wähle die korrekten Bedingungen aus:</p>
+<select id="main_group">
+	<option value="unset">Wähle die Main Group</option>
+	<option value="dienstwagen">Dienstwagen</option>
+	<option value="gepaeckwagen">Gepäckwagen</option>
+	<option value="gleisbaumaschinen">Gleisbaumaschinen</option>
+	<option value="gueterwagen">Güterwagen</option>
+	<option value="lokomotiven">Lokomotiven</option>
+	<option value="personenwagen">Personenwagen</option>
+	<option value="triebwagen">Triebwagen</option>
+</select>
+
+
+<div id="main_table"></div>
+
+
+
+
+
+
+
+<!--Spoiler Box-->
+<div style="height: 40px;"></div>
+
+<div class="spoiler_box"><!-- Class table_top hinzufügen wenn zwei Spalten vorhanden -->
+	<h3 class="spoiler" title="Klicke für mehr Informationen">Fernsteuerbar von</h3>
+	<div class="spoiler_content">
+		<table>
+			<tr><td>ABe 4/4 46 - 47 (max. 2 TZ)</td></tr>
+			<tr><td>Xe 4/4 23201, 27201 (max. 2 TZ)</td></tr>
+			<tr><td>Gem 4/4 801 - 802 (max. 2 TZ)</td></tr>
+		</table>
+	</div>
+</div>
+
+
+<div class="spoiler_box">
+	<h3 class="spoiler" title="Klicke für mehr Informationen">Triebfahrzeug geschleppt überführen</h3>
+	<div class="spoiler_content">
+		<table class="table_top">
+			<tr>
+				<td class="table_2">Tfz bremst:</td>
+				<td>Einreihung hinter Zuglok, BG 43 t, V max. 65 km/h, Reihe R/D<br>Hauptleitung <small>(Vakuum)</small> und Speiseluft verbinden.</td>
+			</tr>
+			<tr>
+				<td class="table_2">Tfz ungebremst:</td>
+				<td>Nur im Ausnahmefall zulässig.</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+
+<div style="height: 40px;"></div>
+
+</main>
+
+<!--Script-->
+<script language="javascript" type="text/javascript" src="../elements/javascript/spoiler.js"></script>
+<script language="javascript" type="text/javascript" src="javascript/var.js"></script>
+<script language="javascript" type="text/javascript" src="javascript/app.js"></script>
+
+<!--Footer-->
+<script language="javascript" type="text/javascript" src="../elements/nav/footer.js"></script>
+
+</body>
+</html>
