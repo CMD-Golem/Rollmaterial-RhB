@@ -1,6 +1,6 @@
 select {
 	padding: 10px 20px;
-	border-top: 1px solid #808080;
+	border: 1px solid #808080;
 	background: #3B3A3D;
 	border-radius: 4px;
 	color: white;
@@ -8,4 +8,76 @@ select {
 
 select:focus {
 	outline: none;
+}
+
+input[type=text] {
+	padding: 10px 20px;
+	border: 1px solid #808080;
+	background: #3B3A3D;
+	border-radius: 4px;
+	color: white;
+	width: 150px;
+}
+
+hr {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.path {
+	display: inline-block;
+}
+
+
+/* Tooltip */
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip p {
+	visibility: hidden;
+	width: 300px;
+	background-color: #3B3A3D;
+	color: #fff;
+	text-align: left;
+	border-radius: 6px;
+	padding: 5px 10px;
+	
+	position: absolute;
+	z-index: 1;
+	top: 100%;
+	left: 50%;
+	margin-left: -150px;
+}
+
+.tooltip:hover p {
+	visibility: visible;
+}
+
+
+/* Checkbox */
+.pathbox {
+	display: inline-block;
+}
+input[type=checkbox] {
+	display: none;
+}
+
+.checkbox + label::before {
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  border: 2px solid #E2001A;
+  background-color: transparent;
+  display: block;
+  content: "";
+  float: left;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+.checkbox:checked + label::before {
+  box-shadow: inset 0px 0px 0px 2.5px #333333;
+  background-color: #E2001A;
 }

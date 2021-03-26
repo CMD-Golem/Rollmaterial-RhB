@@ -1,4 +1,16 @@
-var data = [{test:"Test Item", max:true, min:8}];
+function download() {
+var data = [{main_group:"", group_color:"", sub_group:"", type:"", numbers:"", description:"", id:"", path:"", type_meta:""}];
+
+data[0].main_group = main_group;
+data[0].group_color = group_color;
+data[0].sub_group = sub_group;
+data[0].type = type;
+data[0].numbers = numbers;
+data[0].description = description;
+data[0].id = id;
+data[0].path = path;
+data[0].type_meta = type_meta;
+
 
 const html_top = data.map(item => `
 <!DOCTYPE html>
@@ -6,7 +18,7 @@ const html_top = data.map(item => `
 
 <head>
 <title>Rollmaterial RhB - ${item.type} ${item.numbers}</title>
-<meta name="description" content="${item.type} ${item.numbers} (${item.description})">
+<meta name="description" content="${item.type_meta} ${item.numbers} (${item.description})">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="${item.path}../../../elements/style/style.css"/>
@@ -49,7 +61,7 @@ const html_top = data.map(item => `
 const html_center = "</div></div></div>"
 
 
-const html_top = data.map(item => `
+const html_bottom = data.map(item => `
 <div style="height: 40px;"></div>
 
 </main>
@@ -68,24 +80,23 @@ const html_top = data.map(item => `
 `)
 
 // #####################################################
-function download(filename, text) {
-    var element = document.createElement('a');
-    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-    element.setAttribute('download', filename);
+html_table = document.getElementById("main_table").innerHTML;
 
-    element.style.display = 'none';
-    document.body.appendChild(element);
 
-    element.click();
+// #####################################################
+var filename = "Rollmaterial-RhB.html"
+var filename = id + ".html"
+var text = html_top + html_table + html_center + html_bottom;
 
-    document.body.removeChild(element);
+var element = document.createElement('a');
+element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+element.setAttribute('download', filename);
+
+element.style.display = 'none';
+document.body.appendChild(element);
+
+element.click();
+
+document.body.removeChild(element);
+
 }
-
-// Start file download.
-document.getElementById("dwn-btn").addEventListener("click", function(){
-    // Generate download of hello.txt file with some content
-    var text = document.getElementById("text-val").value;
-    var filename = "hello.html";
-    
-    download(filename, text);
-}, false);
