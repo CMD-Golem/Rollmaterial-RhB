@@ -1,3 +1,32 @@
+var store_test = `
+<div class="group">
+	<h3>Allgemein</h3>
+	<table>
+		<div class="list" style="display: none;"></div>
+		<tr>
+			<td class="table_6">Baujahr</td>
+			<td class="table_r">2010 - 2011 / Umbau 1990</td>
+		</tr>
+		<tr>
+			<td class="table_6">Einsatz</td>
+			<td class="table_r">StN, ChA, BB</td>
+		</tr>
+		<tr>
+			<td class="table_6">Ausrangiert</td><!--Nur wenn vorhanden-->
+			<td class="table_r">2356, 2359 - 2365</td>
+		</tr>
+		<tr>
+			<td class="table_6">Noch vorhanden</td><!--Nur wenn vorhanden-->
+			<td class="table_r">2356, 2359 - 2365</td>
+		</tr>
+		<tr>
+			<td class="table_6">Depot</td><!--Nur wenn vorhanden-->
+			<td class="table_r">Landquart</td>
+		</tr>
+	</table>
+</div>
+`
+
 var store_dienstwagen = `
 <div class="group">
 	<h3>Allgemein</h3>

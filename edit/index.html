@@ -19,20 +19,59 @@
 
 <!--Content-->
 <main>
+<h1>Edit Mode</h1>
 <p>Wähle die korrekten Bedingungen aus:</p>
-<select id="main_group">
-	<option value="unset">Wähle die Main Group</option>
-	<option value="dienstwagen">Dienstwagen</option>
-	<option value="gepaeckwagen">Gepäckwagen</option>
-	<option value="gleisbaumaschinen">Gleisbaumaschinen</option>
-	<option value="gueterwagen">Güterwagen</option>
-	<option value="lokomotiven">Lokomotiven</option>
-	<option value="personenwagen">Personenwagen</option>
-	<option value="triebwagen">Triebwagen</option>
-</select>
+<div id="selection">
+	<select id="main_group">
+		<option value="unset">Wähle die Main Group</option>
+		<option value="dienstwagen">Dienstwagen</option>
+		<option value="gepaeckwagen">Gepäckwagen</option>
+		<option value="gleisbaumaschinen">Gleisbaumaschinen</option>
+		<option value="gueterwagen">Güterwagen</option>
+		<option value="lokomotiven">Lokomotiven</option>
+		<option value="personenwagen">Personenwagen</option>
+		<option value="triebwagen">Lokomotiven mit Personenbereich</option>
+	</select>
+	<select id="sub_group">
+		<option value="unset">Wähle zuerst die Main Group</option>
+	</select>
+	<div class="pathbox">
+		<input type="checkbox" id="path" class="checkbox"><label for="path">Seite wird eine Unterseite</label>
+	</div>
+</div>
+
+<p>Fahrzeug Namen:</p>
+<div>
+	<div class="tooltip">
+		<input type="text" id="type" placeholder="Typen Namen">
+		<p>Beispiele: Ge 4/4<sup>II</sup> / Geaf 2/2<br><br>Schreibe &#60;sup&#62;..&#60;/sup&#62; um den Text hoch zu schreiben.</p>
+	</div>
+	<div class="tooltip">
+		<input type="text" id="numbers" placeholder="Fahrzeugnummer">
+		<p>Beispiele: 50 / 50 - 60<br>Wenn nicht mehr alle vorhanden dann 50 ... 60</p>
+	</div>
+	<div class="tooltip">
+		<input type="text" id="description" placeholder="Weitere Namen des Typen">
+		<p>Beispiele: BoBo I / ZTZ, Allegra</p>
+	</div>
+	<div class="tooltip">
+		<input type="text" id="id" placeholder="ID">
+		<p>Beispiel: abe4-16_3111<br>Alles klein, keine Leerzeichen, Schrägstrich mit - ersetzten, Erste Fahrzeugnummer mit _ verbinden</p>
+	</div>
+	<div class="tooltip">
+		<input type="text" id="type_meta" placeholder="Typen Name für Meta Tag">
+		<p>Beispiel: Ge 4/4¹¹<br>Keine HTML-Tags (Nur Plain Text)</p>
+	</div>
+</div>
+
+<hr>
 
 
 <div id="main_table"></div>
+
+<hr>
+
+<div id="save_table" style="display: block;"></div>
 
 
 
@@ -80,6 +119,7 @@
 <script language="javascript" type="text/javascript" src="../elements/javascript/spoiler.js"></script>
 <script language="javascript" type="text/javascript" src="javascript/var.js"></script>
 <script language="javascript" type="text/javascript" src="javascript/app.js"></script>
+<script language="javascript" type="text/javascript" src="javascript/file.js"></script>
 
 <!--Footer-->
 <script language="javascript" type="text/javascript" src="../elements/nav/footer.js"></script>
