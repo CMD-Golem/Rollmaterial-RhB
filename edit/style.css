@@ -1,3 +1,4 @@
+/* Selection Menu*/
 select {
 	padding: 10px 20px;
 	border: 1px solid #808080;
@@ -28,6 +29,33 @@ hr {
 	display: inline-block;
 }
 
+/* Mark Editing*/
+.only_here {
+	color: red;
+}
+
+.not_here {
+	color: orange;
+}
+
+/* Preview */
+#preview {
+	display: none;
+	z-index: 6;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: #2A292C;
+	text-align: center;
+	scrollbar-width: none;
+}
+
+#preview::-webkit-scrollbar {
+	display: none;
+}
 
 /* Tooltip */
 .tooltip {
@@ -80,4 +108,34 @@ input[type=checkbox] {
 .checkbox:checked + label::before {
   box-shadow: inset 0px 0px 0px 2.5px #333333;
   background-color: #E2001A;
+}
+
+/* Description Box*/
+.ladegewicht_box {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.ladegewicht_box .ladegewicht_table {
+	user-select: all;
+	background-color: unset;
+}
+
+/* Spoiler Edit*/
+.spoiler {
+	cursor: auto;
+}
+.spoiler:hover {
+	background-color: #3B3A3D;
+}
+.spoiler:after {
+	display: none;
+}
+.spoiler_content section {
+	margin-bottom: 0;
+}
+.spoiler_content {
+	max-height: unset;
+	margin-bottom: 50px;
 }

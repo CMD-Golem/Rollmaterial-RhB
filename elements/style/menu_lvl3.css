@@ -123,4 +123,10 @@ table {
 	.site_search {
 		display: none;
 	}
+	.left_space {
+		flex: 30%;
+	}
+	.right_space {
+		flex: 60%;
+	}
 }

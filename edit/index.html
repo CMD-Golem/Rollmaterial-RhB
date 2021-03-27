@@ -13,65 +13,122 @@
 </head>
 
 <body>
+<nav>
+	<a class="nav_home disable_link nav_hover" href="https://rollmaterial-rhb.netlify.app/" title="Home"><img src="https://rollmaterial-rhb.netlify.app/elements/favicon.png"><p>Rollmaterial-RhB</p></a>
+	<span class="nav_search disable_link nav_hover" title="Download HTML-Datei" onclick="generate()"><img src="../elements/nav/download.svg"></span>
+</nav>
 
-<!--Menu-->
-<script language="javascript" type="text/javascript" src="javascript/navbar.js"></script>
 
-<!--Content-->
 <main>
-<h1>Edit Mode</h1>
-<p>Wähle die korrekten Bedingungen aus:</p>
-<div id="selection">
-	<select id="main_group">
-		<option value="unset">Wähle die Main Group</option>
-		<option value="dienstwagen">Dienstwagen</option>
-		<option value="gepaeckwagen">Gepäckwagen</option>
-		<option value="gleisbaumaschinen">Gleisbaumaschinen</option>
-		<option value="gueterwagen">Güterwagen</option>
-		<option value="lokomotiven">Lokomotiven</option>
-		<option value="personenwagen">Personenwagen</option>
-		<option value="triebwagen">Lokomotiven mit Personenbereich</option>
-	</select>
-	<select id="sub_group">
-		<option value="unset">Wähle zuerst die Main Group</option>
-	</select>
-	<div class="pathbox">
-		<input type="checkbox" id="path" class="checkbox"><label for="path">Seite wird eine Unterseite</label>
-	</div>
-</div>
-
-<p>Fahrzeug Namen:</p>
+<!--Auswahl-->
 <div>
-	<div class="tooltip">
-		<input type="text" id="type" placeholder="Typen Namen">
-		<p>Beispiele: Ge 4/4<sup>II</sup> / Geaf 2/2<br><br>Schreibe &#60;sup&#62;..&#60;/sup&#62; um den Text hoch zu schreiben.</p>
+	<h1>Edit Mode</h1>
+	<p>Wähle die korrekten Bedingungen aus:</p>
+	<div id="selection">
+		<select id="main_group">
+			<option value="unset">Wähle die Main Group</option>
+			<option value="dienstwagen">Dienstwagen</option>
+			<option value="gepaeckwagen">Gepäckwagen</option>
+			<option value="gleisbaumaschinen">Gleisbaumaschinen</option>
+			<option value="gueterwagen">Güterwagen</option>
+			<option value="lokomotiven">Lokomotiven</option>
+			<option value="personenwagen">Personenwagen</option>
+			<option value="triebwagen">Lokomotiven mit Personenbereich</option>
+		</select>
+		<select id="sub_group">
+			<option value="unset">Wähle zuerst die Main Group</option>
+		</select>
+		<div class="pathbox">
+			<input type="checkbox" id="path" class="checkbox"><label for="path">Seite wird eine Unterseite</label>
+		</div>
 	</div>
-	<div class="tooltip">
-		<input type="text" id="numbers" placeholder="Fahrzeugnummer">
-		<p>Beispiele: 50 / 50 - 60<br>Wenn nicht mehr alle vorhanden dann 50 ... 60</p>
+
+	<p>Fahrzeug Namen:</p>
+	<div>
+		<div class="tooltip">
+			<input type="text" id="type" placeholder="Typen Namen">
+			<p>Beispiele: Ge 4/4<sup>II</sup> / Geaf 2/2<br><br>Schreibe &#60;sup&#62;..&#60;/sup&#62; um den Text hoch zu schreiben.</p>
+		</div>
+		<div class="tooltip">
+			<input type="text" id="numbers" placeholder="Fahrzeugnummer">
+			<p>Beispiele: 50 / 50 - 60<br>Wenn nicht mehr alle vorhanden dann 50 ... 60</p>
+		</div>
+		<div class="tooltip">
+			<input type="text" id="description" placeholder="Weitere Namen des Typen">
+			<p>Beispiele: BoBo I / ZTZ, Allegra</p>
+		</div>
+		<div class="tooltip">
+			<input type="text" id="id" placeholder="ID">
+			<p>Beispiel: abe4-16_3111<br>Alles klein, keine Leerzeichen, Schrägstrich mit - ersetzten, Erste Fahrzeugnummer mit _ verbinden</p>
+		</div>
+		<div class="tooltip">
+			<input type="text" id="type_meta" placeholder="Typen Name für Meta Tag">
+			<p>Beispiel: Ge 4/4¹¹<br>Keine HTML-Tags (Nur Plain Text)</p>
+		</div>
 	</div>
-	<div class="tooltip">
-		<input type="text" id="description" placeholder="Weitere Namen des Typen">
-		<p>Beispiele: BoBo I / ZTZ, Allegra</p>
-	</div>
-	<div class="tooltip">
-		<input type="text" id="id" placeholder="ID">
-		<p>Beispiel: abe4-16_3111<br>Alles klein, keine Leerzeichen, Schrägstrich mit - ersetzten, Erste Fahrzeugnummer mit _ verbinden</p>
-	</div>
-	<div class="tooltip">
-		<input type="text" id="type_meta" placeholder="Typen Name für Meta Tag">
-		<p>Beispiel: Ge 4/4¹¹<br>Keine HTML-Tags (Nur Plain Text)</p>
-	</div>
+	<hr>
 </div>
 
-<hr>
+<!--Beschreibung-->
+<div>
+	<p><span style="color: red;">Nur wenn vorhanden </span><span> | </span><span style="color: orange;"> Nur wenn nicht vorhanden</span></p>
 
+	<div>Text Hochstellen: <span style="user-select: all;">&#60;sup&#62;..&#60;/sup&#62;</span></div>
+	<div>Kleiner Text: <span style="user-select: all;">&#60;small&#62;..&#60;/small&#62;</span></div>
+	<div>Text unterstreichen: <span style="user-select: all;">&#60;span class="underlined"&#62;..&#60;/span&#62;</span></div>
+	<div>Text durchstreichen: <span style="user-select: all;">&#60;span class="strike"&#62;..&#60;/span&#62;</span></div>
+	<div>Link: <span style="user-select: all;">&#60;a href="url"&#62;..&#60;/a&#62;</span></div>
+	<div>Undefinierte Angaben: <span style="user-select: all;">&#60;u&#62;..&#60;/u&#62;</span></div>
+	<br>
+	<div class="ladegewicht_box">
+		<div>Raster Ladegewicht: </div>
+		<div style="width: 20px"></div>
+		<table class="ladegewicht_table">
+			<tr>
+				<td class="ladegewicht_top">80R</td>
+				<td class="ladegewicht_top">80A</td>
+			</tr>
+			<tr>
+				<td class="ladegewicht_bottom">12 t</td>
+				<td class="ladegewicht_bottom">23 t</td>
+			</tr>
+		</table>
+		<div style="width: 20px"></div>
+		<table class="ladegewicht_table">
+			<tr>
+				<td class="ladegewicht_top">80R</td>
+				<td class="ladegewicht_top">80A</td>
+				<td class="ladegewicht_top">60D</td>
+			</tr>
+			<tr>
+				<td class="ladegewicht_bottom">12 t</td>
+				<td class="ladegewicht_bottom">23 t</td>
+				<td class="ladegewicht_bottom">30 t</td>
+			</tr>
+		</table>
+		<div style="width: 20px"></div>
+		<table class="ladegewicht_table">
+			<tr>
+				<td class="ladegewicht_top">80R</td>
+				<td class="ladegewicht_top">80A</td>
+				<td class="ladegewicht_top">60B</td>
+				<td class="ladegewicht_top">60D</td>
+			</tr>
+			<tr>
+				<td class="ladegewicht_bottom">12 t</td>
+				<td class="ladegewicht_bottom">23 t</td>
+				<td class="ladegewicht_bottom">30 t</td>
+				<td class="ladegewicht_bottom">40 t</td>
+			</tr>
+		</table>
+	</div>
+	<hr>
+</div>
 
 <div id="main_table"></div>
-
+<div id="save_table" style="display: none;"></div>
 <hr>
 
-<div id="save_table" style="display: block;"></div>
 
 
 
@@ -80,35 +137,72 @@
 
 
 <!--Spoiler Box-->
-<div style="height: 40px;"></div>
+<div id="spoiler_box">
 
-<div class="spoiler_box"><!-- Class table_top hinzufügen wenn zwei Spalten vorhanden -->
-	<h3 class="spoiler" title="Klicke für mehr Informationen">Fernsteuerbar von</h3>
+<div class="spoiler_box">
+	<h3 class="spoiler" contenteditable="true" title="Klicke für mehr Informationen">Ausrangierte Fahrzeuge</h3>
 	<div class="spoiler_content">
 		<table>
-			<tr><td>ABe 4/4 46 - 47 (max. 2 TZ)</td></tr>
-			<tr><td>Xe 4/4 23201, 27201 (max. 2 TZ)</td></tr>
-			<tr><td>Gem 4/4 801 - 802 (max. 2 TZ)</td></tr>
+			<tr contenteditable="true"><td class="table_2">601</td><td>1989</td></tr>
+			<tr contenteditable="true"><td class="table_2">603</td><td>1992</td></tr>
+		</table>
+	</div>
+</div>
+
+
+<div class="spoiler_box"><!-- Class table_top hinzufügen wenn zwei Spalten vorhanden -->
+	<h3 class="spoiler" contenteditable="true" title="Klicke für mehr Informationen">Fernsteuerbar von</h3>
+	<div class="spoiler_content">
+		<table class="table_top">
+			<tr contenteditable="true"><td>ABe 8/12 (max. 3 TZ)</td><td></td></tr>
+			<tr contenteditable="true"><td>ABe 4/16 (max. 3 TZ)</td><td></td></tr>
 		</table>
 	</div>
 </div>
 
 
 <div class="spoiler_box">
-	<h3 class="spoiler" title="Klicke für mehr Informationen">Triebfahrzeug geschleppt überführen</h3>
+	<h3 class="spoiler" contenteditable="true" title="Klicke für mehr Informationen">Vorgaben Fahrdienstvorschriften (FDV)</h3>
+	<div class="spoiler_content">
+		<section contenteditable="true">
+			<p>Der ganze Triebzug ist betrieblich nicht trennbar und gilt als 1 Fahrzeug.</p>
+			<p>Für unbegleitete Züge besteht der Triebzug aus 3 aussenbündigen Wagen
+			</br>(1.Triebkopf = Lok, Mittelwagen und 2.Triebkopf = 2 aussenbündige Wagen).
+			</br>Somit dürfen max. 4 nicht aussenbündige Wagen angehängt werden.</p>
+		</section>
+	</div>
+</div>
+
+
+<div class="spoiler_box">
+	<h3 class="spoiler" contenteditable="true" title="Klicke für mehr Informationen">Triebfahrzeug geschleppt überführen</h3>
 	<div class="spoiler_content">
 		<table class="table_top">
-			<tr>
+			<tr contenteditable="true">
 				<td class="table_2">Tfz bremst:</td>
-				<td>Einreihung hinter Zuglok, BG 43 t, V max. 65 km/h, Reihe R/D<br>Hauptleitung <small>(Vakuum)</small> und Speiseluft verbinden.</td>
+				<td>Einreihung beliebig, BG 0 t, V max. 35 km/h, Reihe A<br>Hauptleitung <small>(Vakuum und/oder Druckluft)</small> und Speiseluft verbinden.</td>
 			</tr>
-			<tr>
+			<tr contenteditable="true">
 				<td class="table_2">Tfz ungebremst:</td>
-				<td>Nur im Ausnahmefall zulässig.</td>
+				<td>Nicht möglich.</td>
 			</tr>
 		</table>
 	</div>
 </div>
+
+
+<div class="spoiler_box">
+	<h3 class="spoiler" contenteditable="true" title="Klicke für mehr Informationen">Namen Fahrzeug</h3>
+	<div class="spoiler_content">
+		<table>
+			<tr contenteditable="true"><td class="table_2">601</td><td>Albula</td></tr>
+			<tr contenteditable="true"><td class="table_2">603</td><td>Badus</td></tr>
+		</table>
+	</div>
+</div>
+</div>
+<hr>
+<div id="save_spoiler"></div>
 
 
 <div style="height: 40px;"></div>
@@ -116,7 +210,6 @@
 </main>
 
 <!--Script-->
-<script language="javascript" type="text/javascript" src="../elements/javascript/spoiler.js"></script>
 <script language="javascript" type="text/javascript" src="javascript/var.js"></script>
 <script language="javascript" type="text/javascript" src="javascript/app.js"></script>
 <script language="javascript" type="text/javascript" src="javascript/file.js"></script>

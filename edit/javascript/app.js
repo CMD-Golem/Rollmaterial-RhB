@@ -6,7 +6,7 @@ var type = ""; // Typen Bezeichnung: Ge 4/4¹
 var numbers = ""; // Fahrzeugnummer: 601 / 601 - 605 / 601 ... 605
 var description = ""; // Andere Namen für das Fahrzeuge: Allegra / BoBo I
 var id = ""; // Id für Dateiname und Pfad: ge4-4_601
-var path = ""; // Braucht es ein weiteres ../
+var path = "../../../"; // Braucht es ein weiteres ../
 var type_meta = ""; // Gleich wie Type nur sup text wird ersetzt (Plain Text)
 
 
@@ -34,7 +34,7 @@ function showMainGroup() {
 		already_sel = true;
 		main_group = sel_main_group.value;
 		if (sel_main_group.value == "dienstwagen") {
-			document.getElementById("main_table").innerHTML = store_test;
+			document.getElementById("main_table").innerHTML = store_dienstwagen;
 			document.getElementById("sub_group").innerHTML = '<option value="unset">Wähle die Sub Group</option><option value="dienstwagen_8xxx">Dienstwagen 8xxx</option><option value="dienstwagen_90xx">Dienstwagen 90xx</option><option value="dienstwagen_91xx">Dienstwagen 91xx</option><option value="dienstwagen_93xx">Dienstwagen 93xx</option><option value="dienstwagen_94xx">Dienstwagen 94xx</option><option value="dienstwagen_98xx">Dienstwagen 98xx</option><option value="dienstwagen_91xxx">Dienstwagen 91xxx</option><option value="dienstwagen_92xxx">Dienstwagen 92xxx</option><option value="dienstwagen_93xxx">Dienstwagen 93xxx</option><option value="dienstwagen_94xxx">Dienstwagen 94xxx</option><option value="dienstwagen_95xxx">Dienstwagen 95xxx</option><option value="dienstwagen_96xxx">Dienstwagen 96xxx</option><option value="dienstwagen_97xxx">Dienstwagen 97xxx</option><option value="dienstwagen_98xxx">Dienstwagen 98xxx</option><option value="dienstwagen_99xxx">Dienstwagen 99xxx</option><option value="privatwagen_100xx">Privatwagen 100xx</option><option value="privatwagen_101xx">Privatwagen 101xx</option>';
 			group_color = "#555655";
 		}
@@ -79,7 +79,32 @@ function showMainGroup() {
 
 // Get Sub Group
 var sel_sub_group = document.getElementById("sub_group");
-sel_sub_group.addEventListener("change", function(){ sub_group = sel_sub_group.value; });
+sel_sub_group.addEventListener("change", showSubGroup);
+
+function showSubGroup() {
+	sub_group = sel_sub_group.value;
+
+	// Pufferplatten
+	if (main_table.getElementsByClassName("pufferplatten").length != 0) {
+		if (sel_sub_group.value == "lokomotiven" || sel_sub_group.value == "rangierlokomotiven") {
+			main_table.getElementsByClassName("pufferplatten")[0].classList.remove("only_here");
+		}
+		else {
+			main_table.getElementsByClassName("pufferplatten")[0].classList.add("only_here");
+		}
+	}
+	
+	// Funkfernsteuerung
+	if (main_table.getElementsByClassName("fernsteuerung").length != 0) {
+		if (sel_sub_group.value == "rangiertraktoren") {
+			main_table.getElementsByClassName("fernsteuerung")[0].classList.remove("only_here");
+		}
+		else {
+			main_table.getElementsByClassName("fernsteuerung")[0].classList.add("only_here");
+		}
+	}
+	
+}
 
 // Get Type, Numbers and Description
 var el_type = document.getElementById("type");
@@ -116,7 +141,7 @@ el_path.addEventListener("change", getPath);
 
 function getPath() {
 	if (el_path.checked == true) {
-		path = "../";
+		path = "../../../../";
 	}
 	else {
 		path = "";
@@ -142,7 +167,7 @@ function getTypeMeta() {
 }
 
 
-function test() {
+function showData() {
 	console.log(path + main_group + "/" + sub_group + "/" + id);
 	console.log("Type: " + type + " " + numbers);
 	console.log("Description: " + description);
@@ -151,33 +176,39 @@ function test() {
 }
 
 
+
+// #############################################################################
+// Spoiler
+var spoiler_tr = document.getElementsByClassName("spoiler_box");
+for (var i = 0; i < spoiler_tr.length; i++) {
+	spoiler_tr[i].addEventListener("keyup", e => {
+		if (event.ctrlKey && (event.which == 13 || event.keyCode == 13) ) {
+			var clone = e.target.cloneNode(true);
+			if (e.target.nextSibling) {
+				e.target.parentNode.insertBefore(clone, e.target.nextSibling);
+			}
+			else {
+				e.target.parentNode.appendChild(clone);
+			}
+		}
+		if (event.ctrlKey && (event.which == 46 || event.keyCode == 46) ) {
+			if (e.target.previousSibling) {
+				e.target.previousSibling.focus();
+			}
+			else {
+				e.target.nextSibling.focus();
+			}
+			e.target.remove();
+		}
+	});
+}
+
+
+
+
 // #############################################################################
 // Add HTML Tags when out of focus
 function convertit(text) {
 	var newtext = text.innerHTML.replace(/&lt;/g, "<").replace(/&gt;/g, ">");
 	text.innerHTML = newtext;
 }
-
-
-
-function removeEmpty() {
-	var main_table = document.getElementById("main_table");
-	var save_table = document.getElementById("save_table");
-	save_table.innerHTML = main_table.innerHTML;
-
-	var table_tr = save_table.getElementsByTagName("tr");
-	for (var i = 0; i < table_tr.length; i++) {
-		var table_td = table_tr[i].getElementsByClassName("table_r")[0];
-
-		if (table_td.innerHTML == "") {
-			var table_el = table_tr[i];
-			setTimeout(function(){ removeEmptyTd(table_el) }, 10);
-		}
-	}
-	function removeEmptyTd(element) {
-		//console.log(element);
-		element.remove();
-	}
-}
-
-//removeAttribute("contenteditable")
