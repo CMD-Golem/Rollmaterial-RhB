@@ -29,12 +29,12 @@ td {
 }
 
 h3 {
-  background-color: #3B3A3D;
-  padding: 10px;
-  margin-bottom: 5px;
-  border-top: 1px solid #808080;
-  font-size: 20px;
-  width: 100%;
+	background-color: #3B3A3D;
+	padding: 10px;
+	margin-bottom: 5px;
+	border-top: 1px solid #808080;
+	font-size: 20px;
+	width: 100%;
 }
 
 
@@ -127,23 +127,57 @@ h3.spoiler {
 
 /* Print */
 @media print {
-  .spoiler {
+	.spoiler {
 		display: none;
-  }
-  .spoiler.active {
+	}
+	.spoiler.active {
 		display: block;
-  }
-  .spoiler:after {
+	}
+	.spoiler:after {
 		display: none;
-  }
-  .spoiler_box {
+	}
+	.spoiler_box {
 		page-break-inside: avoid;
-  }
-  td {
-	border-color: 1px solid black;
+	}
+	td {
+		padding: 5px;
+	}
+	tr:first-child {
+		border-top: 1px solid #808080;
+	}
+	h3 {
+		border-top: none;
+	}
+}
+
+
+/* Raster Ladegewicht */
+.ladegewicht_table {
+	width: auto;
+	margin: 0px;
+}
+
+.ladegewicht_table tr:hover {
+	background-color: transparent;
+}
+
+.ladegewicht_table td {
 	padding: 5px;
-  }
-  h3 {
-	border-top: none;
-  }
+	border-left: 1px solid #808080;
+	border-right: 1px solid #808080;
+}
+
+.ladegewicht_top {
+	border-bottom: 1px solid #808080;
+}
+
+.ladegewicht_bottom {
+	border-top: 1px solid #808080;
+	border-bottom: 0 none;
+}
+
+@media screen and (max-width: 700px) {
+	.ladegewicht_table {
+		float: right;
+	}
 }

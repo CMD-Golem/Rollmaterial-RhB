@@ -1,254 +1,225 @@
-var store_test = `
-<div class="group">
-	<h3>Allgemein</h3>
-	<table>
-		<div class="list" style="display: none;"></div>
-		<tr>
-			<td class="table_6">Baujahr</td>
-			<td class="table_r">2010 - 2011 / Umbau 1990</td>
-		</tr>
-		<tr>
-			<td class="table_6">Einsatz</td>
-			<td class="table_r">StN, ChA, BB</td>
-		</tr>
-		<tr>
-			<td class="table_6">Ausrangiert</td><!--Nur wenn vorhanden-->
-			<td class="table_r">2356, 2359 - 2365</td>
-		</tr>
-		<tr>
-			<td class="table_6">Noch vorhanden</td><!--Nur wenn vorhanden-->
-			<td class="table_r">2356, 2359 - 2365</td>
-		</tr>
-		<tr>
-			<td class="table_6">Depot</td><!--Nur wenn vorhanden-->
-			<td class="table_r">Landquart</td>
-		</tr>
-	</table>
-</div>
-`
-
 var store_dienstwagen = `
-<div class="group">
-	<h3>Allgemein</h3>
-	<table>
-		<div class="list" style="display: none;"></div>
-		<tr>
-			<td class="table_6">Baujahr</td>
-			<td class="table_r">2010 - 2011 / Umbau 1990</td>
-		</tr>
-		<tr>
-			<td class="table_6">Einsatz</td>
-			<td class="table_r">StN, ChA, BB</td>
-		</tr>
-		<tr>
-			<td class="table_6">Ausrangiert</td><!--Nur wenn vorhanden-->
-			<td class="table_r">2356, 2359 - 2365</td>
-		</tr>
-		<tr>
-			<td class="table_6">Noch vorhanden</td><!--Nur wenn vorhanden-->
-			<td class="table_r">2356, 2359 - 2365</td>
-		</tr>
-		<tr>
-			<td class="table_6">Depot</td><!--Nur wenn vorhanden-->
-			<td class="table_r">Landquart</td>
-		</tr>
-	</table>
-</div>
+				<div class="group">
+					<h3>Allgemein</h3>
+					<table>
+						<div class="list" style="display: none;"></div>
+						<tr>
+							<td class="table_6">Baujahr</td>
+							<td class="table_r">2010 - 2011 / Umbau 1990</td>
+						</tr>
+						<tr>
+							<td class="table_6">Einsatz</td>
+							<td class="table_r">StN, ChA, BB</td>
+						</tr>
+						<tr>
+							<td class="table_6 only_here">Ausrangiert</td><!--Nur wenn vorhanden-->
+							<td class="table_r">2356, 2359 - 2365</td>
+						</tr>
+						<tr>
+							<td class="table_6 only_here">Noch vorhanden</td><!--Nur wenn vorhanden-->
+							<td class="table_r">2356, 2359 - 2365</td>
+						</tr>
+						<tr>
+							<td class="table_6 only_here">Depot</td><!--Nur wenn vorhanden-->
+							<td class="table_r">Landquart</td>
+						</tr>
+					</table>
+				</div>
 
-<div class="group">
-	<h3>Technische Daten</h3>
-	<table>
-		<div class="list" style="display: none;"></div>
-		<tr>
-			<td class="table_6">Geschwindigkeit max.</td>
-			<td class="table_r">100 km/h <small>(Reihe R)</small></td>
-		</tr>
-		<tr>
-			<td class="table_6">Länge</td>
-			<td class="table_r">49.50 m</td>
-		</tr>
-		<tr>
-			<td class="table_6">Gewicht <small>(Tara)</small></td>
-			<td class="table_r">15'300 kg</td>
-		</tr>
-		<tr>
-			<td class="table_6">Raster Ladegewicht</td>
-			<td class="table_r">
-				<table class="ladegewicht_table">
-					<tr>
-						<td class="ladegewicht_top">80R</td>
-						<td class="ladegewicht_top">80A</td>
-						<td class="ladegewicht_top">60D</td>
-					</tr>
-					<tr>
-						<td class="ladegewicht_bottom">12 t</td>
-						<td class="ladegewicht_bottom">23 t</td>
-						<td class="ladegewicht_bottom">30 t</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-		<tr>
-			<td class="table_6">Bremsgewicht</td>
-			<td class="table_r">L13 <small class="underlined">U16</small> B18 <small class="underlined">U24</small> B24</td>
-		</tr>
-		<tr>
-			<td class="table_6">Feststellbremse</td>
-			<td class="table_r">H 17 / 44 kN <small>(H 60 t)</small></td>
-		</tr>
-	</table>
-</div>
+				<div class="group">
+					<h3>Technische Daten</h3>
+					<table>
+						<div class="list" style="display: none;"></div>
+						<tr>
+							<td class="table_6">Geschwindigkeit max.</td>
+							<td class="table_r">100 km/h <small>(Reihe R)</small></td>
+						</tr>
+						<tr>
+							<td class="table_6">Länge</td>
+							<td class="table_r">49.50 m</td>
+						</tr>
+						<tr>
+							<td class="table_6">Gewicht <small>(Tara)</small></td>
+							<td class="table_r">15'300 kg</td>
+						</tr>
+						<tr>
+							<td class="table_6">Raster Ladegewicht</td>
+							<td class="table_r">
+								<table class="ladegewicht_table">
+									<tr>
+										<td class="ladegewicht_top">80R</td>
+										<td class="ladegewicht_top">80A</td>
+										<td class="ladegewicht_top">60D</td>
+									</tr>
+									<tr>
+										<td class="ladegewicht_bottom">12 t</td>
+										<td class="ladegewicht_bottom">23 t</td>
+										<td class="ladegewicht_bottom">30 t</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td class="table_6">Bremsgewicht</td>
+							<td class="table_r">L13 <small class="underlined">U16</small> B18 <small class="underlined">U24</small> B24</td>
+						</tr>
+						<tr>
+							<td class="table_6">Feststellbremse</td>
+							<td class="table_r">H 17 / 44 kN <small>(H 60 t)</small></td>
+						</tr>
+					</table>
+				</div>
 
-<div class="group">
-	<h3>Fahrzeugausrüstung</h3>
-	<table>
-		<div class="list" style="display: none;"></div>
-		<tr>
-			<td class="table_6">Zug- / Stossvorrichtung</td><!--Nur wenn vorhanden-->
-			<td class="table_r">Automatische Kupplung <small>(Schwab)</small> / Stangenpuffer</td>
-		</tr>
-		<tr>
-			<td class="table_6">Heizleitung</td>
-			<td class="table_r">StN und BB</td>
-		</tr>
-		<tr>
-			<td class="table_6">Speiseluft-Leitung</td>
-			<td class="table_r">ja</td>
-		</tr>
-		<tr>
-			<td class="table_6">Bremsleitungen</td>
-			<td class="table_r">Vakuum-Hauptleitung<br>Druckluft-Hauptleitung <small>(Dual-Bremse)</small></td>
-		</tr>
-		<tr>
-			<td class="table_6">Bremssystem</td>
-			<td class="table_r">Vakuum-Hauptleitung<br>Druckluft-Hauptleitung <small>(Dual-Bremse)</small></td>
-		</tr>
-		<tr>
-			<td class="table_6">Bremszahnrad</td><!--Nur wenn vorhanden-->
-			<td class="table_r">ja</td>
-		</tr>
-		<tr>
-			<td class="table_6">LBT-Leitung</td>
-			<td class="table_r">nein</td>
-		</tr>
-	</table>
-</div>
+				<div class="group">
+					<h3>Fahrzeugausrüstung</h3>
+					<table>
+						<div class="list" style="display: none;"></div>
+						<tr>
+							<td class="table_6 only_here">Zug- / Stossvorrichtung</td><!--Nur wenn vorhanden-->
+							<td class="table_r">Automatische Kupplung <small>(Schwab)</small> / Stangenpuffer</td>
+						</tr>
+						<tr>
+							<td class="table_6">Heizleitung</td>
+							<td class="table_r">StN und BB</td>
+						</tr>
+						<tr>
+							<td class="table_6">Speiseluft-Leitung</td>
+							<td class="table_r">ja</td>
+						</tr>
+						<tr>
+							<td class="table_6">Bremsleitungen</td>
+							<td class="table_r">Vakuum-Hauptleitung<br>Druckluft-Hauptleitung <small>(Dual-Bremse)</small></td>
+						</tr>
+						<tr>
+							<td class="table_6">Bremssystem</td>
+							<td class="table_r">Vakuum-Hauptleitung<br>Druckluft-Hauptleitung <small>(Dual-Bremse)</small></td>
+						</tr>
+						<tr>
+							<td class="table_6 only_here">Bremszahnrad</td><!--Nur wenn vorhanden-->
+							<td class="table_r">ja</td>
+						</tr>
+						<tr>
+							<td class="table_6">LBT-Leitung</td>
+							<td class="table_r">keine</td>
+						</tr>
+					</table>
+				</div>
 
-<div class="group">
-	<h3>Fahrzeugaufbau</h3>
-	<table>
-		<div class="list" style="display: none;"></div>
-		<tr>
-			<td class="table_6">Ladefläche</td><!--Nur wenn vorhanden-->
-			<td class="table_r">5.9 m<sup>2</sup></td>
-		</tr>
-		<tr>
-			<td class="table_6">Plattformlänge</td><!--Nur wenn vorhanden-->
-			<td class="table_r">4.95 m</td>
-		</tr>
-		<tr>
-			<td class="table_6">Tankinhalt</td><!--Nur wenn vorhanden-->
-			<td class="table_r">42'000 Liter</td>
-		</tr>
-		<tr>
-			<td class="table_6">Ladevolumen</td><!--Nur wenn vorhanden-->
-			<td class="table_r">34.0 m<sup>3</sup></td>
-		</tr>
+				<div class="group">
+					<h3>Fahrzeugaufbau</h3>
+					<table>
+						<div class="list" style="display: none;"></div>
+						<tr>
+							<td class="table_6 only_here">Ladefläche</td><!--Nur wenn vorhanden-->
+							<td class="table_r">5.9 m<sup>2</sup></td>
+						</tr>
+						<tr>
+							<td class="table_6 only_here">Plattformlänge</td><!--Nur wenn vorhanden-->
+							<td class="table_r">4.95 m</td>
+						</tr>
+						<tr>
+							<td class="table_6 only_here">Tankinhalt</td><!--Nur wenn vorhanden-->
+							<td class="table_r">42'000 Liter</td>
+						</tr>
+						<tr>
+							<td class="table_6 only_here">Ladevolumen</td><!--Nur wenn vorhanden-->
+							<td class="table_r">34.0 m<sup>3</sup></td>
+						</tr>
 
-		<!-- Rungen, Seitenwände, Bühnengeländer, Spanngurte, Containeraufnahme, Gleitbahn Rollcontainer -->
-		<tr>
-			<td class="table_6">Rungen</td><!--Gruppe 1-->
-			<td class="table_r">drehbar / fest, verschraubt</td>
-		</tr>
-		<tr>
-			<td class="table_6">Seitenwände</td><!--Gruppe 1-->
-			<td class="table_r">abklappbar</td>
-		</tr>
-		<tr>
-			<td class="table_6">Bühnengeländer</td><!--Gruppe 1-->
-			<td class="table_r">steckbar</td>
-		</tr>
-		<tr>
-			<td class="table_6">Spanngurte</td><!--Gruppe 1-->
-			<td class="table_r">ja</td>
-		</tr>
-		<tr>
-			<td class="table_6">Containeraufnahme</td><!--Gruppe 1-->
-			<td class="table_r">nein</td>
-		</tr>
-		<tr>
-			<td class="table_6">Gleitbahn Rollcontainer</td><!--Gruppe 1-->
-			<td class="table_r">nein</td>
-		</tr>
+						<!-- Rungen, Seitenwände, Bühnengeländer, Spanngurte, Containeraufnahme, Gleitbahn Rollcontainer -->
+						<tr>
+							<td class="table_6 only_here">Rungen</td><!--Gruppe 1-->
+							<td class="table_r">drehbar / fest, verschraubt</td>
+						</tr>
+						<tr>
+							<td class="table_6 only_here">Seitenwände</td><!--Gruppe 1-->
+							<td class="table_r">abklappbar</td>
+						</tr>
+						<tr>
+							<td class="table_6 only_here">Bühnengeländer</td><!--Gruppe 1-->
+							<td class="table_r">steckbar</td>
+						</tr>
+						<tr>
+							<td class="table_6 only_here">Spanngurte</td><!--Gruppe 1-->
+							<td class="table_r">ja</td>
+						</tr>
+						<tr>
+							<td class="table_6 only_here">Containeraufnahme</td><!--Gruppe 1-->
+							<td class="table_r">keine</td>
+						</tr>
+						<tr>
+							<td class="table_6 only_here">Gleitbahn Rollcontainer</td><!--Gruppe 1-->
+							<td class="table_r">keine</td>
+						</tr>
 
-		<!-- Aufbau -->
-		<tr>
-			<td class="table_6">Aufbau</td><!--Gruppe 2-->
-			<td class="table_r">Weichentraggerüst</td>
-		</tr>
+						<!-- Aufbau -->
+						<tr>
+							<td class="table_6 only_here">Aufbau</td><!--Gruppe 2-->
+							<td class="table_r">Weichentraggerüst</td>
+						</tr>
 
-		<!-- Beladung -->
-		<tr>
-			<td class="table_6">Giraffe</td><!--Gruppe 3-->
-			<td class="table_r"></td>
-		</tr>
+						<!-- Beladung -->
+						<tr>
+							<td class="table_6 only_here">Giraffe</td><!--Gruppe 3-->
+							<td class="table_r"></td>
+						</tr>
 
-		<!-- Stirnseite 1, Stirnseite 2 -->
-		<tr>
-			<td class="table_6">Stirnseite 1 <small>(Handbremse)</small></td><!--Gruppe 4-->
-			<td class="table_r">automatische Kupplung</td>
-		</tr>
-		<tr>
-			<td class="table_6">Stirnseite 2</td><!--Gruppe 4-->
-			<td class="table_r">Behelfsführerstand</td>
-		</tr>
+						<!-- Stirnseite 1, Stirnseite 2 -->
+						<tr>
+							<td class="table_6 only_here">Stirnseite 1 <small>(Handbremse)</small></td><!--Gruppe 4-->
+							<td class="table_r">automatische Kupplung</td>
+						</tr>
+						<tr>
+							<td class="table_6 only_here">Stirnseite 2</td><!--Gruppe 4-->
+							<td class="table_r">Behelfsführerstand</td>
+						</tr>
 
-		<tr>
-			<td class="table_6">Einschränkung</td><!--Nur wenn vorhanden-->
-			<td class="table_r">Fahrzeug mit Lademassüberschreitung</td>
-		</tr>
-		<tr>
-			<td class="table_6">Spezielles</td>
-			<td class="table_r">Darf ohne Container nur ungebremst verkehren</td>
-		</tr>
-	</table>
-</div>
+						<tr>
+							<td class="table_6 only_here">Einschränkung</td><!--Nur wenn vorhanden-->
+							<td class="table_r">Fahrzeug mit Lademassüberschreitung</td>
+						</tr>
+						<tr>
+							<td class="table_6 only_here">Spezielles</td>
+							<td class="table_r">Darf ohne Container nur ungebremst verkehren</td>
+						</tr>
+					</table>
+				</div>
 
-<div class="group"><!--Nur wenn vorhanden-->
-	<h3>Gewichte mit aufgesetztem Aufbau <small>(Förderband)</small></h3>
-	<table>
-		<div class="list" style="display: none;"></div>
-		<tr>
-			<td class="table_6">Gewicht <small>(Tara)</small></td>
-			<td class="table_r">26'590 kg</td>
-		</tr>
-		<tr>
-			<td class="table_6">Raster Ladegewicht</td>
-			<td class="table_r">
-				<table class="ladegewicht_table">
-					<tr>
-						<td class="ladegewicht_top">80R</td>
-						<td class="ladegewicht_top">80A</td>
-						<td class="ladegewicht_top">60D</td>
-					</tr>
-					<tr>
-						<td class="ladegewicht_bottom">12 t</td>
-						<td class="ladegewicht_bottom">23 t</td>
-						<td class="ladegewicht_bottom">30 t</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-		<tr>
-			<td class="table_6">Bremsgewicht</td>
-			<td class="table_r">L13 <small class="underlined">U16</small> B18 <small class="underlined">U24</small> B24</td>
-		</tr>
-		<tr>
-			<td class="table_6">Feststellbremse</td>
-			<td class="table_r">H 17 / 44 kN</td>
-		</tr>
-	</table>
-</div>
+				<div class="group"><!--Nur wenn vorhanden-->
+					<h3 class="only_here">Gewichte mit aufgesetztem Aufbau</h3>
+					<table>
+						<div class="list" style="display: none;"></div>
+						<tr>
+							<td class="table_6">Gewicht <small>(Tara)</small></td>
+							<td class="table_r">26'590 kg</td>
+						</tr>
+						<tr>
+							<td class="table_6">Raster Ladegewicht</td>
+							<td class="table_r">
+								<table class="ladegewicht_table">
+									<tr>
+										<td class="ladegewicht_top">80R</td>
+										<td class="ladegewicht_top">80A</td>
+										<td class="ladegewicht_top">60D</td>
+									</tr>
+									<tr>
+										<td class="ladegewicht_bottom">12 t</td>
+										<td class="ladegewicht_bottom">23 t</td>
+										<td class="ladegewicht_bottom">30 t</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td class="table_6">Bremsgewicht</td>
+							<td class="table_r">L13 <small class="underlined">U16</small> B18 <small class="underlined">U24</small> B24</td>
+						</tr>
+						<tr>
+							<td class="table_6">Feststellbremse</td>
+							<td class="table_r">H 17 / 44 kN</td>
+						</tr>
+					</table>
+				</div>
 `
 
 // #################################################################################################
@@ -266,15 +237,15 @@ var store_gepaeckwagen = `
 			<td class="table_r">StN, ChA, BB</td>
 		</tr>
 		<tr>
-			<td class="table_6">Ausrangiert</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Ausrangiert</td><!--Nur wenn vorhanden-->
 			<td class="table_r">2356, 2359 - 2365</td>
 		</tr>
 		<tr>
-			<td class="table_6">Noch vorhanden</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Noch vorhanden</td><!--Nur wenn vorhanden-->
 			<td class="table_r">2356, 2359 - 2365</td>
 		</tr>
 		<tr>
-			<td class="table_6">Depot</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Depot</td><!--Nur wenn vorhanden-->
 			<td class="table_r">Landquart</td>
 		</tr>
 	</table>
@@ -312,7 +283,7 @@ var store_gepaeckwagen = `
 	<table>
 		<div class="list" style="display: none;"></div>
 		<tr>
-			<td class="table_6">Zug- / Stossvorrichtung</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Zug- / Stossvorrichtung</td><!--Nur wenn vorhanden-->
 			<td class="table_r">Automatische Kupplung <small>(Schwab)</small> / Stangenpuffer</td>
 		</tr>
 		<tr>
@@ -320,7 +291,7 @@ var store_gepaeckwagen = `
 			<td class="table_r">WTB-Zugbus <small>(MZST)</small></td>
 		</tr>
 		<tr>
-			<td class="table_6">Zugbeeinflussung</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Zugbeeinflussung</td><!--Nur wenn vorhanden-->
 			<td class="table_r">ZSI 127</td>
 		</tr>
 		<tr>
@@ -340,12 +311,12 @@ var store_gepaeckwagen = `
 			<td class="table_r">Vakuumgesteuerte Druckluftbremse<br>Vakuumbremse<br>Druckluftbremse</td>
 		</tr>
 		<tr>
-			<td class="table_6">Bremszahnrad</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Bremszahnrad</td><!--Nur wenn vorhanden-->
 			<td class="table_r">ja</td>
 		</tr>
 		<tr>
-			<td class="table_6">LBT-Leitung</td><!--Nur wenn nicht vorhanden-->
-			<td class="table_r">nein</td>
+			<td class="table_6 not_here">LBT-Leitung</td><!--Nur wenn nicht vorhanden-->
+			<td class="table_r">keine</td>
 		</tr>
 		<tr>
 			<td class="table_6">Türen</td>
@@ -353,14 +324,14 @@ var store_gepaeckwagen = `
 		</tr>
 		<tr>
 			<td class="table_6">Schiebetor</td>
-			<td class="table_r">Manuell, überwacht, elektrisch verrigelt</td>
+			<td class="table_r">Manuell, überwacht, elektrisch verriegelt</td>
 		</tr>
 		<tr>
 			<td class="table_6">Notfalleinrichtung</td>
 			<td class="table_r">NBA</td>
 		</tr>
 		<tr>
-			<td class="table_6">Halbfaltenbalg-Lochung</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Halbfaltenbalg-Lochung</td><!--Nur wenn vorhanden-->
 			<td class="table_r">ja</td>
 		</tr>
 	</table>
@@ -391,11 +362,11 @@ var store_gepaeckwagen = `
 			<td class="table_r">KIS</td>
 		</tr>
 		<tr>
-			<td class="table_6">Zugzielanzeigen</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Zugzielanzeigen</td><!--Nur wenn vorhanden-->
 			<td class="table_r">innen und aussen</td>
 		</tr>
 		<tr>
-			<td class="table_6">Videoüberwachung</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Videoüberwachung</td><!--Nur wenn vorhanden-->
 			<td class="table_r">ja</td>
 		</tr>
 	</table>
@@ -449,7 +420,7 @@ var store_gleisbaumaschinen = `
 			<td class="table_r">106 t</td>
 		</tr>
 		<tr>
-			<td class="table_6">Gewicht <small>(Tara / Zuladung)</small></td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Gewicht <small>(Tara / Zuladung)</small></td><!--Nur wenn vorhanden-->
 			<td class="table_r">50.0 t <small>(Wagen)</small> / 12.0 t <small>(Kran)</small></td>
 		</tr>
 		<tr>
@@ -457,7 +428,7 @@ var store_gleisbaumaschinen = `
 			<td class="table_r">116 t</td>
 		</tr>
 		<tr>
-			<td class="table_6">Magnetschienenbremse</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Magnetschienenbremse</td><!--Nur wenn vorhanden-->
 			<td class="table_r">20t <small>(nur in Eigenfahrt / BG total = 82 t)</small></td>
 		</tr>
 		<tr>
@@ -472,11 +443,11 @@ var store_gleisbaumaschinen = `
 	<table>
 		<div class="list" style="display: none;"></div>
 		<tr>
-			<td class="table_6">Zug-/ Stossvorrichtung</td><!--Nur wenn speziell-->
+			<td class="table_6 only_here">Zug-/ Stossvorrichtung</td><!--Nur wenn vorhanden-->
 			<td class="table_r">Automatische Kupplung (Schwab) / Stangenpuffer</td>
 		</tr>
 		<tr>
-			<td class="table_6">Nylatron-Pufferplatten</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Nylatron-Pufferplatten</td><!--Nur wenn vorhanden-->
 			<td class="table_r">ja</td>
 		</tr>
 		<tr>
@@ -496,7 +467,7 @@ var store_gleisbaumaschinen = `
 			<td class="table_r">ja</td>
 		</tr>
 		<tr>
-			<td class="table_6">Ladefläche</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Ladefläche</td><!--Nur wenn vorhanden-->
 			<td class="table_r">22.0 m<sup>2</sup></td>
 		</tr>
 	</table>
@@ -527,7 +498,7 @@ var store_gleisbaumaschinen = `
 			<td class="table_r">60 t</td>
 		</tr>
 		<tr>
-			<td class="table_6">Zugehöriger Materialwagen</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Zugehöriger Materialwagen</td><!--Nur wenn vorhanden-->
 			<td class="table_r"><a href="">P10174</a></td>
 		</tr>
 	</table>
@@ -549,15 +520,15 @@ var store_gueterwagen = `
 			<td class="table_r">StN, ChA, BB</td>
 		</tr>
 		<tr>
-			<td class="table_6">Ausrangiert</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Ausrangiert</td><!--Nur wenn vorhanden-->
 			<td class="table_r">2356, 2359 - 2365</td>
 		</tr>
 		<tr>
-			<td class="table_6">Noch vorhanden</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Noch vorhanden</td><!--Nur wenn vorhanden-->
 			<td class="table_r">2356, 2359 - 2365</td>
 		</tr>
 		<tr>
-			<td class="table_6">Depot</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Depot</td><!--Nur wenn vorhanden-->
 			<td class="table_r">Landquart</td>
 		</tr>
 	</table>
@@ -612,11 +583,11 @@ var store_gueterwagen = `
 	<table>
 		<div class="list" style="display: none;"></div>
 		<tr>
-			<td class="table_6">Zug- / Stossvorrichtung</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Zug- / Stossvorrichtung</td><!--Nur wenn vorhanden-->
 			<td class="table_r">Automatische Kupplung <small>(Schwab)</small> / Stangenpuffer</td>
 		</tr>
 		<tr>
-			<td class="table_6">Vielfachsteuerung</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Vielfachsteuerung</td><!--Nur wenn vorhanden-->
 			<td class="table_r">WTB-Zugbus <small>(MZST)</small></td>
 		</tr>
 		<tr>
@@ -636,12 +607,12 @@ var store_gueterwagen = `
 			<td class="table_r">Vakuumgesteuerte Druckluftbremse<br>Vakuumbremse<br>Druckluftbremse</td>
 		</tr>
 		<tr>
-			<td class="table_6">Bremszahnrad</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Bremszahnrad</td><!--Nur wenn vorhanden-->
 			<td class="table_r">ja</td>
 		</tr>
 		<tr>
 			<td class="table_6">LBT-Leitung</td>
-			<td class="table_r">nein</td>
+			<td class="table_r">keine</td>
 		</tr>
 	</table>
 </div>
@@ -651,27 +622,27 @@ var store_gueterwagen = `
 	<table>
 		<div class="list" style="display: none;"></div>
 		<tr>
-			<td class="table_6">Ladefläche</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Ladefläche</td><!--Nur wenn vorhanden-->
 			<td class="table_r">5.9 m<sup>2</sup></td>
 		</tr>
 		<tr>
-			<td class="table_6">Tankinhalt</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Tankinhalt</td><!--Nur wenn vorhanden-->
 			<td class="table_r">42'000 Liter</td>
 		</tr>
 		<tr>
-			<td class="table_6">Ladevolumen</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Ladevolumen</td><!--Nur wenn vorhanden-->
 			<td class="table_r">34.0 m<sup>3</sup></td>
 		</tr>
 		<tr>
-			<td class="table_6">Schiebetor</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Schiebetor</td><!--Nur wenn vorhanden-->
 			<td class="table_r">Isolierte Schiebewände</td>
 		</tr>
 		<tr>
-			<td class="table_6">Kühlaggregat</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Kühlaggregat</td><!--Nur wenn vorhanden-->
 			<td class="table_r">ja</td>
 		</tr>
 		<tr>
-			<td class="table_6">Bodenheizung</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Bodenheizung</td><!--Nur wenn vorhanden-->
 			<td class="table_r">StN und BB</td>
 		</tr>
 
@@ -694,11 +665,11 @@ var store_gueterwagen = `
 		</tr>
 		<tr>
 			<td class="table_6">Containeraufnahme</td><!--Gruppe 1-->
-			<td class="table_r">nein</td>
+			<td class="table_r">keine</td>
 		</tr>
 		<tr>
 			<td class="table_6">Gleitbahn Rollcontainer</td><!--Gruppe 1-->
-			<td class="table_r">nein</td>
+			<td class="table_r">keine</td>
 		</tr>
 
 		<!-- Aufbau, Aufteilung, Schüttung, Rüttler, Förderbandaufnahme, Kippvorrichtung, Zusätzliche Schüttklappe, Beladungsanzeige -->
@@ -730,11 +701,11 @@ var store_gueterwagen = `
 		</tr>
 		<tr>
 			<td class="table_6">Zusätzliche Schüttklappe</td><!--Gruppe 4-->
-			<td class="table_r">nein</td>
+			<td class="table_r">keine</td>
 		</tr>
 		<tr>
 			<td class="table_6">Beladungsanzeige</td><!--Gruppe 4-->
-			<td class="table_r">nein</td>
+			<td class="table_r">keine</td>
 		</tr>
 
 		<tr>
@@ -745,7 +716,7 @@ var store_gueterwagen = `
 </div>
 
 <div class="group"><!--Nur wenn vorhanden-->
-	<h3>Gewichte mit aufgesetztem Aufbau <small>(Förderband)</small></h3>
+	<h3 class="only_here">Gewichte mit aufgesetztem Aufbau</h3>
 	<table>
 		<div class="list" style="display: none;"></div>
 		<tr>
@@ -808,7 +779,7 @@ var store_lokomotiven = `
 			<td class="table_r">Bremswiderstände / Rekuperationbremse</td>
 		</tr>
 		<tr>
-			<td class="table_6">Depot</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Depot</td><!--Nur wenn vorhanden-->
 			<td class="table_r">Landquart</td>
 		</tr>
 	</table>
@@ -835,7 +806,7 @@ var store_lokomotiven = `
 			<td class="table_r">116 t</td>
 		</tr>
 		<tr>
-			<td class="table_6">Magnetschienenbremse</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Magnetschienenbremse</td><!--Nur wenn vorhanden-->
 			<td class="table_r">20 t <small>(BG total = 156 t)</small></td>
 		</tr>
 		<tr>
@@ -843,19 +814,19 @@ var store_lokomotiven = `
 			<td class="table_r">Fsp 122 kN <small>(H 60 t)</small></td>
 		</tr>
 		<tr>
-			<td class="table_6">Zusatz-Bremse</td><!--Nur wenn vorhanden-->
-			<td class="table_r">Bremszylinder - Verrigelung</td>
+			<td class="table_6 only_here">Zusatz-Bremse</td><!--Nur wenn vorhanden-->
+			<td class="table_r">Bremszylinder - Verriegelung</td>
 		</tr>
 		<tr>
-			<td class="table_6">Kesseldruck</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Kesseldruck</td><!--Nur wenn vorhanden-->
 			<td class="table_r">12 bar</td>
 		</tr>
 		<tr>
-			<td class="table_6">Wasservorrat</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Wasservorrat</td><!--Nur wenn vorhanden-->
 			<td class="table_r">9.9 m<sup>3</sup></td>
 		</tr>
 		<tr>
-			<td class="table_6">Kohlenvorrat</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Kohlenvorrat</td><!--Nur wenn vorhanden-->
 			<td class="table_r">2.5 t</td>
 		</tr>
 	</table>
@@ -866,11 +837,11 @@ var store_lokomotiven = `
 	<table>
 		<div class="list" style="display: none;"></div>
 		<tr>
-			<td class="table_6">Zug-/ Stossvorrichtung</td><!--Nur wenn speziell-->
+			<td class="table_6 only_here">Zug-/ Stossvorrichtung</td><!--Nur wenn vorhanden-->
 			<td class="table_r">Automatische Kupplung (Schwab) / Stangenpuffer</td>
 		</tr>
 		<tr>
-			<td class="table_6">Nylatron-Pufferplatten</td><!--Nur bei Lokomotiven und Rangierlokomotiven-->
+			<td class="table_6 pufferplatten only_here">Nylatron-Pufferplatten</td><!--Nur bei Lokomotiven und Rangierlokomotiven-->
 			<td class="table_r">ja</td>
 		</tr>
 		<tr>
@@ -878,7 +849,7 @@ var store_lokomotiven = `
 			<td class="table_r">WTB-Zugbus <small>(MZST)</small></td>
 		</tr>
 		<tr>
-			<td class="table_6">Funkfernsteuerung</td><!--Nur wenn vorhanden (bei Traktoren immer)-->
+			<td class="table_6 fernsteuerung only_here">Funkfernsteuerung</td><!--Nur wenn vorhanden (bei Traktoren immer)-->
 			<td class="table_r">ja</td>
 		</tr>
 		<tr>
@@ -898,15 +869,15 @@ var store_lokomotiven = `
 			<td class="table_r">Vakuum-Hauptleitung<br>Druckluft-Hauptleitung <small>(Dual-Bremse)</small></td>
 		</tr>
 		<tr>
-			<td class="table_6">LBT-Leitung</td><!--Nur wenn nicht vorhanden-->
+			<td class="table_6 not_here">LBT-Leitung</td><!--Nur wenn nicht vorhanden-->
 			<td class="table_r">keine</td>
 		</tr>
 		<tr>
-			<td class="table_6">Steuerleitung Spurpflug</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Steuerleitung Spurpflug</td><!--Nur wenn vorhanden-->
 			<td class="table_r">ja</td>
 		</tr>
 		<tr>
-			<td class="table_6">Ladefläche</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Ladefläche</td><!--Nur wenn vorhanden-->
 			<td class="table_r">Mulde seitlich kippbar, 7.3 m<sup>3</sup><br>Zuladung 4 t</td>
 		</tr>
 	</table>
@@ -928,15 +899,15 @@ var store_personenwagen = `
 			<td class="table_r">StN, ChA, BB</td>
 		</tr>
 		<tr>
-			<td class="table_6">Ausrangiert</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Ausrangiert</td><!--Nur wenn vorhanden-->
 			<td class="table_r">2356, 2359 - 2365</td>
 		</tr>
 		<tr>
-			<td class="table_6">Noch vorhanden</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Noch vorhanden</td><!--Nur wenn vorhanden-->
 			<td class="table_r">2356, 2359 - 2365</td>
 		</tr>
 		<tr>
-			<td class="table_6">Depot</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Depot</td><!--Nur wenn vorhanden-->
 			<td class="table_r">Landquart</td>
 		</tr>
 	</table>
@@ -974,7 +945,7 @@ var store_personenwagen = `
 	<table>
 		<div class="list" style="display: none;"></div>
 		<tr>
-			<td class="table_6">Zug- / Stossvorrichtung</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Zug- / Stossvorrichtung</td><!--Nur wenn vorhanden-->
 			<td class="table_r">Automatische Kupplung <small>(Schwab)</small> / Stangenpuffer</td>
 		</tr>
 		<tr>
@@ -1006,27 +977,27 @@ var store_personenwagen = `
 			<td class="table_r">Vakuumgesteuerte Druckluftbremse</td>
 		</tr>
 		<tr>
-			<td class="table_6">Bremszahnrad</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Bremszahnrad</td><!--Nur wenn vorhanden-->
 			<td class="table_r">ja</td>
 		</tr>
 		<tr>
-			<td class="table_6">LBT-Leitung</td><!--Nur wenn nicht vorhanden-->
-			<td class="table_r">nein</td>
+			<td class="table_6 not_here">LBT-Leitung</td><!--Nur wenn nicht vorhanden-->
+			<td class="table_r">keine</td>
 		</tr>
 		<tr>
 			<td class="table_6">Türen</td>
 			<td class="table_r">Aussenbündig, elektrisch</td>
 		</tr>
 		<tr>
-			<td class="table_6">Schiebetor</td><!--Nur wenn vorhanden-->
-			<td class="table_r">Manuell, überwacht, elektrisch verrigelt</td>
+			<td class="table_6 only_here">Schiebetor</td><!--Nur wenn vorhanden-->
+			<td class="table_r">Manuell, überwacht, elektrisch verriegelt</td>
 		</tr>
 		<tr>
 			<td class="table_6">Notfalleinrichtung</td>
 			<td class="table_r">NBA</td>
 		</tr>
 		<tr>
-			<td class="table_6">Halbfaltenbalg-Lochung</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Halbfaltenbalg-Lochung</td><!--Nur wenn vorhanden-->
 			<td class="table_r">ja</td>
 		</tr>
 	</table>
@@ -1053,7 +1024,7 @@ var store_personenwagen = `
 			<td class="table_r">1</td>
 		</tr>
 		<tr>
-			<td class="table_6">Ladefläche</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Ladefläche</td><!--Nur wenn vorhanden-->
 			<td class="table_r">1t / 5.9 m<sup>2</sup></td>
 		</tr>
 		<tr>
@@ -1081,15 +1052,15 @@ var store_personenwagen = `
 			<td class="table_r">AFZ - Master</td>
 		</tr>
 		<tr>
-			<td class="table_6">Videoüberwachung</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Videoüberwachung</td><!--Nur wenn vorhanden-->
 			<td class="table_r">ja</td>
 		</tr>
 		<tr>
-			<td class="table_6">Infotainment</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Infotainment</td><!--Nur wenn vorhanden-->
 			<td class="table_r">ja</td>
 		</tr>
 		<tr>
-			<td class="table_6">Tonstudio</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Tonstudio</td><!--Nur wenn vorhanden-->
 			<td class="table_r">ja</td>
 		</tr>
 	</table>
@@ -1123,7 +1094,7 @@ var store_triebwagen = `
 			<td class="table_r">Bremswiderstände / Rekuperationsbremse</td>
 		</tr>
 		<tr>
-			<td class="table_6">Depot</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Depot</td><!--Nur wenn vorhanden-->
 			<td class="table_r">Landquart</td>
 		</tr>
 	</table>
@@ -1150,7 +1121,7 @@ var store_triebwagen = `
 			<td class="table_r">116 t / 136 t</td>
 		</tr>
 		<tr>
-			<td class="table_6">Magnetschienenbremse</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Magnetschienenbremse</td><!--Nur wenn vorhanden-->
 			<td class="table_r">20 t <small>(BG total = 156 t)</small></td>
 		</tr>
 		<tr>
@@ -1158,8 +1129,8 @@ var store_triebwagen = `
 			<td class="table_r">Fsp 122 kN <small>(H 60 t)</small></td>
 		</tr>
 		<tr>
-			<td class="table_6">Zusatz-Bremse</td><!--Nur wenn vorhanden-->
-			<td class="table_r">Bremszylinder - Verrigelung</td>
+			<td class="table_6 only_here">Zusatz-Bremse</td><!--Nur wenn vorhanden-->
+			<td class="table_r">Bremszylinder - Verriegelung</td>
 		</tr>
 	</table>
 </div>
@@ -1169,7 +1140,7 @@ var store_triebwagen = `
 	<table>
 		<div class="list" style="display: none;"></div>
 		<tr>
-			<td class="table_6">Zug- / Stossvorrichtung</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Zug- / Stossvorrichtung</td><!--Nur wenn vorhanden-->
 			<td class="table_r">Automatische Kupplung <small>(Schwab)</small> / Stangenpuffer</td>
 		</tr>
 		<tr>
@@ -1181,7 +1152,7 @@ var store_triebwagen = `
 			<td class="table_r">WTB-Zugbus <small>(MZST)</small></td>
 		</tr>
 		<tr>
-			<td class="table_6">Funkfernsteuerung</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Funkfernsteuerung</td><!--Nur wenn vorhanden-->
 			<td class="table_r">ja</td>
 		</tr>
 		<tr>
@@ -1201,15 +1172,15 @@ var store_triebwagen = `
 			<td class="table_r">Vakuum-Hauptleitung<br>Druckluft-Hauptleitung <small>(Dual-Bremse)</small></td>
 		</tr>
 		<tr>
-			<td class="table_6">Bremszahnrad</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Bremszahnrad</td><!--Nur wenn vorhanden-->
 			<td class="table_r">ja</td>
 		</tr>
 		<tr>
-			<td class="table_6">LBT-Leitung</td><!--Nur wenn nicht vorhanden-->
+			<td class="table_6 not_here">LBT-Leitung</td><!--Nur wenn nicht vorhanden-->
 			<td class="table_r">keine</td>
 		</tr>
 		<tr>
-			<td class="table_6">Steuerleitung Spurpflug</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Steuerleitung Spurpflug</td><!--Nur wenn vorhanden-->
 			<td class="table_r">ja</td>
 		</tr>
 		<tr>
@@ -1217,15 +1188,15 @@ var store_triebwagen = `
 			<td class="table_r">Aussenbündig, elektrisch</td>
 		</tr>
 		<tr>
-			<td class="table_6">Schiebetor</td><!--Nur wenn vorhanden-->
-			<td class="table_r">Manuell, überwacht, elektrisch verrigelt</td>
+			<td class="table_6 only_here">Schiebetor</td><!--Nur wenn vorhanden-->
+			<td class="table_r">Manuell, überwacht, elektrisch verriegelt</td>
 		</tr>
 		<tr>
 			<td class="table_6">Notfalleinrichtung</td>
 			<td class="table_r">NBA</td>
 		</tr>
 		<tr>
-			<td class="table_6">Halbfaltenbalg-Lochung</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Halbfaltenbalg-Lochung</td><!--Nur wenn vorhanden-->
 			<td class="table_r">ja</td>
 		</tr>
 	</table>
@@ -1252,7 +1223,7 @@ var store_triebwagen = `
 			<td class="table_r">1</td>
 		</tr>
 		<tr>
-			<td class="table_6">Ladefläche</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Ladefläche</td><!--Nur wenn vorhanden-->
 			<td class="table_r">1 t / 5.9 m<sup>2</sup></td>
 		</tr>
 		<tr>
@@ -1280,11 +1251,11 @@ var store_triebwagen = `
 			<td class="table_r">AFZ - Master</td>
 		</tr>
 		<tr>
-			<td class="table_6">Videoüberwachung</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Videoüberwachung</td><!--Nur wenn vorhanden-->
 			<td class="table_r">ja</td>
 		</tr>
 		<tr>
-			<td class="table_6">Videokamera Front</td><!--Nur wenn vorhanden-->
+			<td class="table_6 only_here">Videokamera Front</td><!--Nur wenn vorhanden-->
 			<td class="table_r">ja</td>
 		</tr>
 	</table>
