@@ -63,5 +63,11 @@
 	{"type":"ABe 4/4", "description":"TW I", "number":"30", "searchdata":["ABe 4/4", "TW I", "Bernina", "Historische Fahrzeuge", "30"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/bernina-fahrzeuge/historische_fahrzeuge/abe4-4_30.html"},
 	{"type":"ABe 4/4", "description":"TW I", "number":"34", "searchdata":["ABe 4/4", "TW I", "Bernina", "Historische Fahrzeuge", "34"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/bernina-fahrzeuge/historische_fahrzeuge/abe4-4_34.html"},
 	{"type":"Ge 2/2", "description":"", "number":"161", "searchdata":["Ge 2/2", "Bernina", "Historische Fahrzeuge", "161"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/bernina-fahrzeuge/historische_fahrzeuge/ge2-2_161.html"},
-	{"type":"Ge 4/4", "description":"", "number":"182", "searchdata":["Ge 4/4", "Bernina", "Historische Fahrzeuge", "182"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/bernina-fahrzeuge/historische_fahrzeuge/ge4-4_182.html"}
+	{"type":"Ge 4/4", "description":"", "number":"182", "searchdata":["Ge 4/4", "Bernina", "Historische Fahrzeuge", "182"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/bernina-fahrzeuge/historische_fahrzeuge/ge4-4_182.html"},
+
+	{"type":"Ge 6/6<sup>I</sup>", "description":"Krokodil", "number":"414", "searchdata":["Ge 6/6I", "Historische Fahrzeuge", "Lokomotiven", "414"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/historische_fahrzeuge/streckenlokomotiven/ge6-6_414.html"},
+	{"type":"Ge 6/6<sup>I</sup>", "description":"Krokodil", "number":"415", "searchdata":["Ge 6/6I", "Historische Fahrzeuge", "Lokomotiven", "415"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/historische_fahrzeuge/streckenlokomotiven/ge6-6_415.html"},
+	{"type":"Ge 4/6", "description":"", "number":"353", "searchdata":["Ge 4/6", "Historische Fahrzeuge", "Lokomotiven", "353"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/historische_fahrzeuge/streckenlokomotiven/ge4-6_343.html"},
+	{"type":"Ge 2/4", "description":"", "number":"222", "searchdata":["Ge 2/4", "Historische Fahrzeuge", "Lokomotiven", "222"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/historische_fahrzeuge/streckenlokomotiven/ge2-4_222.html"},
+	{"type":"ABe 4/4", "description":"", "number":"501", "searchdata":["ABe 4/4", "Historische Fahrzeuge", "Triebwagen", "501"], "link":"https://rollmaterial-rhb.netlify.app/data/lokomotiven/historische_fahrzeuge/triebwagen/abe4-4_501.html"}
 ]
