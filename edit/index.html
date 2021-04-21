@@ -22,7 +22,7 @@
 <main>
 <!--Auswahl-->
 <div>
-	<h1>Edit Mode</h1>
+	<h1>Edit Mode V2</h1>
 	<p>Wähle die korrekten Bedingungen aus:</p>
 	<div id="selection">
 		<select id="main_group">
@@ -38,8 +38,9 @@
 		<select id="sub_group">
 			<option value="unset">Wähle zuerst die Main Group</option>
 		</select>
-		<div class="pathbox">
-			<input type="checkbox" id="path" class="checkbox"><label for="path">Seite wird eine Unterseite</label>
+		<div class="tooltip">
+			<input type="text" id="subb_group" placeholder="Sub-Sub Group ID">
+			<p>Nur wenn Seite eine Unterseite wird.<br>Beispiel: lokomotiven/bernina-fahrzeuge/<span class="underlined">triebwagen</span></p>
 		</div>
 	</div>
 
@@ -71,7 +72,7 @@
 
 <!--Beschreibung-->
 <div>
-	<p><span style="color: red;">Nur wenn vorhanden </span><span> | </span><span style="color: orange;"> Nur wenn nicht vorhanden</span></p>
+	<p><span style="color: red;">Nur wenn vorhanden </span><span> | </span><span style="color: orange;"> Nur wenn nicht vorhanden</span> | Style löschen: Gesamter Text löschen und Fokus aus Zelle.</p>
 
 	<div>Text Hochstellen: <span style="user-select: all;">&#60;sup&#62;..&#60;/sup&#62;</span></div>
 	<div>Kleiner Text: <span style="user-select: all;">&#60;small&#62;..&#60;/small&#62;</span></div>
@@ -143,8 +144,8 @@
 	<h3 class="spoiler" contenteditable="true" title="Klicke für mehr Informationen">Ausrangierte Fahrzeuge</h3>
 	<div class="spoiler_content">
 		<table>
-			<tr contenteditable="true"><td class="table_2">601</td><td>1989</td></tr>
-			<tr contenteditable="true"><td class="table_2">603</td><td>1992</td></tr>
+			<tr><td class="table_2" contenteditable="true">601</td><td contenteditable="true">1989</td></tr>
+			<tr><td class="table_2" contenteditable="true">603</td><td contenteditable="true">1992</td></tr>
 		</table>
 	</div>
 </div>
@@ -154,8 +155,8 @@
 	<h3 class="spoiler" contenteditable="true" title="Klicke für mehr Informationen">Fernsteuerbar von</h3>
 	<div class="spoiler_content">
 		<table class="table_top">
-			<tr contenteditable="true"><td>ABe 8/12 (max. 3 TZ)</td><td></td></tr>
-			<tr contenteditable="true"><td>ABe 4/16 (max. 3 TZ)</td><td></td></tr>
+			<tr><td contenteditable="true">ABe 8/12 (max. 3 TZ)</td><td contenteditable="true"></td></tr>
+			<tr><td contenteditable="true">ABe 4/16 (max. 3 TZ)</td><td contenteditable="true"></td></tr>
 		</table>
 	</div>
 </div>
@@ -178,13 +179,13 @@
 	<h3 class="spoiler" contenteditable="true" title="Klicke für mehr Informationen">Triebfahrzeug geschleppt überführen</h3>
 	<div class="spoiler_content">
 		<table class="table_top">
-			<tr contenteditable="true">
-				<td class="table_2">Tfz bremst:</td>
-				<td>Einreihung beliebig, BG 0 t, V max. 35 km/h, Reihe A<br>Hauptleitung <small>(Vakuum und/oder Druckluft)</small> und Speiseluft verbinden.</td>
+			<tr>
+				<td class="table_2" contenteditable="true">Tfz bremst:</td>
+				<td contenteditable="true">Einreihung beliebig, BG 0 t, V max. 35 km/h, Reihe A<br>Hauptleitung <small>(Vakuum und/oder Druckluft)</small> und Speiseluft verbinden.</td>
 			</tr>
-			<tr contenteditable="true">
-				<td class="table_2">Tfz ungebremst:</td>
-				<td>Nicht möglich.</td>
+			<tr>
+				<td class="table_2" contenteditable="true">Tfz ungebremst:</td>
+				<td contenteditable="true">Nicht möglich.</td>
 			</tr>
 		</table>
 	</div>
@@ -195,14 +196,14 @@
 	<h3 class="spoiler" contenteditable="true" title="Klicke für mehr Informationen">Namen Fahrzeug</h3>
 	<div class="spoiler_content">
 		<table>
-			<tr contenteditable="true"><td class="table_2">601</td><td>Albula</td></tr>
-			<tr contenteditable="true"><td class="table_2">603</td><td>Badus</td></tr>
+			<tr><td class="table_2" contenteditable="true">601</td><td contenteditable="true">Albula</td></tr>
+			<tr><td class="table_2" contenteditable="true">603</td><td contenteditable="true">Badus</td></tr>
 		</table>
 	</div>
 </div>
 </div>
 <hr>
-<div id="save_spoiler"></div>
+<div id="save_spoiler" style="display: none;"></div>
 
 
 <div style="height: 40px;"></div>

@@ -1,23 +1,24 @@
 function generate() {
-var data = [{main_group:"", group_color:"", sub_group:"", type:"", numbers:"", description:"", id:"", path:"", type_meta:""}];
+var data = [{main_group:"", group_color:"", sub_group:"", subb_group:"", type:"", numbers:"", description:"", description_html:"", id:"", path:"", type_meta:""}];
 
 data[0].main_group = main_group;
 data[0].group_color = group_color;
 data[0].sub_group = sub_group;
+data[0].subb_group = subb_group;
 data[0].type = type;
 data[0].numbers = numbers;
 data[0].description = description;
+data[0].description_html = description_html;
 data[0].id = id;
 data[0].path = path;
 data[0].type_meta = type_meta;
 
-var html_top = data.map(item => `
-<!DOCTYPE html>
+var html_top = data.map(item => `<!DOCTYPE html>
 <html lang="de">
 
 <head>
 <title>Rollmaterial RhB - ${item.type_meta} ${item.numbers}</title>
-<meta name="description" content="${item.type_meta} ${item.numbers} (${item.description})">
+<meta name="description" content="${item.type_meta} ${item.numbers}${item.description}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="${item.path}elements/style/style.css"/>
@@ -34,33 +35,38 @@ var html_top = data.map(item => `
 
 <script type="text/javascript">
 	document.getElementById("${item.main_group}").style.backgroundColor = "${item.group_color}";
-	var header_img = "url('${item.path}elements/pic/${item.main_group}/${item.sub_group}/${item.id}/1.jpg')";
+	var header_img = "url('${item.path}elements/pic/${item.main_group}/${item.sub_group}/${item.subb_group}${item.id}/1.jpg')";
 </script>
 
 <!--Content-->
 <main>
-	<header id="header">
-		<h1>${item.type}&#8199;${item.numbers}</h1>
-		<h2>${item.description}</h2>
-	</header>
+<header id="header">
+	<h1>${item.type}&#8199;${item.numbers}</h1>
+	${item.description_html}
+</header>
 	
-	<div class="content">
-		<div class="left_space">
-			<input class="site_search" type="text" id="Site_Search" onkeyup="siteSearch()" placeholder="Tabelle Durchsuchen...">
-			<img class="hide_mobile" src="${item.path}elements/pic/${item.main_group}/${item.sub_group}/${item.id}/1.jpg">
-			<img class="hide_mobile" src="${item.path}elements/pic/${item.main_group}/${item.sub_group}/${item.id}/2.jpg">
+<div class="content">
+	<div class="left_space">
+		<input class="site_search" type="text" id="Site_Search" onkeyup="siteSearch()" placeholder="Tabelle Durchsuchen...">
+		<img class="hide_mobile" src="${item.path}elements/pic/${item.main_group}/${item.sub_group}/${item.subb_group}${item.id}/1.jpg">
+		<img class="hide_mobile" src="${item.path}elements/pic/${item.main_group}/${item.sub_group}/${item.subb_group}${item.id}/2.jpg">
 
-		
-		</div>
+	
+	</div>
 
-		<div class="right_space">
-			<div class="data_table" id="data_table">
+	<div class="right_space">
+		<div class="data_table" id="data_table">
 `)
 
-var html_center = "</div></div></div>"
+var html_center = `
+		</div>
+	</div>
+</div>
+`
 
 
 var html_bottom = data.map(item => `
+
 <div style="height: 40px;"></div>
 
 </main>
@@ -112,7 +118,6 @@ while (empty_group.length > 0) {
 	empty_group[0].remove();
 }
 
-
 // Remove edit attribute and marking class
 var remove_edit = save_table.getElementsByTagName("td");
 for (var i = 0; i < remove_edit.length; i++) {
@@ -128,7 +133,11 @@ for (var i = 0; i < remove_edit.length; i++) {
 // not_here: Nur wenn nicht vorhanden
 
 
-html_table = document.getElementById("save_table").innerHTML;
+var html_table = document.getElementById("save_table").innerHTML;
+
+// remove empty spaces
+html_table = html_table.replace(/^\s*$(?:\r\n?|\n)/gm, "").replaceAll(`			<div class="group">`, `
+			<div class="group">`);
 
 // #####################################################
 // Get Spoilers
@@ -151,7 +160,7 @@ while (empty_spoiler.length > 0) {
 
 
 // Remove edit attribute and marking class
-var remove_edit = save_spoiler.getElementsByTagName("tr");
+var remove_edit = save_spoiler.getElementsByTagName("td");
 for (var i = 0; i < remove_edit.length; i++) {
 	remove_edit[i].removeAttribute("contenteditable");
 }
@@ -159,10 +168,18 @@ var remove_edit = save_spoiler.getElementsByTagName("h3");
 for (var i = 0; i < remove_edit.length; i++) {
 	remove_edit[i].removeAttribute("contenteditable");
 }
+var remove_edit = save_spoiler.getElementsByTagName("section");
+for (var i = 0; i < remove_edit.length; i++) {
+	remove_edit[i].removeAttribute("contenteditable");
+}
 
 
-html_spoiler = document.getElementById("save_spoiler").innerHTML;
+var html_spoiler = document.getElementById("save_spoiler").innerHTML;
 
+// remove empty spaces
+html_spoiler = html_spoiler.replace(/^\s*$(?:\r\n?|\n)/gm, "").replaceAll(`<div class="spoiler_box">`, `
+
+<div class="spoiler_box">`);
 
 // #####################################################
 // Generate File
@@ -175,6 +192,7 @@ if (id != "") {
 var text = html_top + html_table + html_center + html_spoiler + html_bottom;
 
 text = text.replaceAll("<tbody>", "").replaceAll("</tbody>", "");
+text = text.replaceAll("<br></td>", "</td>");
 
 var element = document.createElement('a');
 element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));

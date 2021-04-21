@@ -2,9 +2,11 @@
 var main_group = ""; // Main Group
 var group_color = ""; // Farbe der Main Group
 var sub_group = ""; // Sub Group
+var subb_group = ""; // Sub-Sub Group (Nur wenn path verändert wurde)
 var type = ""; // Typen Bezeichnung: Ge 4/4¹
 var numbers = ""; // Fahrzeugnummer: 601 / 601 - 605 / 601 ... 605
 var description = ""; // Andere Namen für das Fahrzeuge: Allegra / BoBo I
+var description_html = ""; // Andere Namen für das Fahrzeuge: Allegra / BoBo I
 var id = ""; // Id für Dateiname und Pfad: ge4-4_601
 var path = "../../../"; // Braucht es ein weiteres ../
 var type_meta = ""; // Gleich wie Type nur sup text wird ersetzt (Plain Text)
@@ -106,14 +108,12 @@ function showSubGroup() {
 	
 }
 
-// Get Type, Numbers and Description
+// Get Type and Numbers
 var el_type = document.getElementById("type");
 var el_numbers = document.getElementById("numbers");
-var el_description = document.getElementById("description");
 
 el_type.addEventListener("keyup", function(){ type = el_type.value;getId();getTypeMeta(); });
 el_numbers.addEventListener("keyup", function(){ numbers = el_numbers.value;getId(); });
-el_description.addEventListener("keyup", function(){ description = el_description.value;getId(); });
 
 // Get Id
 var el_id = document.getElementById("id");
@@ -135,18 +135,34 @@ function getId() {
 	}
 }
 
-// Get path
-var el_path = document.getElementById("path");
-el_path.addEventListener("change", getPath);
-
-function getPath() {
-	if (el_path.checked == true) {
-		path = "../../../../";
+// Get Description
+var el_description = document.getElementById("description");
+el_description.addEventListener("keyup", getDescription);
+function getDescription() {
+	if (el_description.value.length >= 1) {
+		description = " (" + el_description.value + ")";
+		description_html = "<h2>" + el_description.value + "</h2>";
 	}
 	else {
-		path = "";
+		description = "";
+		description_html = "";
 	}
 }
+
+// Get Sub-Sub Group and Path
+var el_subb_group = document.getElementById("subb_group");
+el_subb_group.addEventListener("keyup", getSubbGroup);
+function getSubbGroup() {
+	if (el_subb_group.value.length >= 1) {
+		path = "../../../../";
+		subb_group = el_subb_group.value + "/";
+	}
+	else {
+		path = "../../../";
+		subb_group = "";
+	}
+}
+
 
 // Get type_meta
 var el_type_meta = document.getElementById("type_meta");
@@ -168,7 +184,7 @@ function getTypeMeta() {
 
 
 function showData() {
-	console.log(path + main_group + "/" + sub_group + "/" + id);
+	console.log(path + main_group + "/" + sub_group + "/" + subb_group + id);
 	console.log("Type: " + type + " " + numbers);
 	console.log("Description: " + description);
 	console.log("Color: " + group_color);
@@ -179,36 +195,43 @@ function showData() {
 
 // #############################################################################
 // Spoiler
-var spoiler_tr = document.getElementsByClassName("spoiler_box");
+var spoiler_box = document.getElementById("spoiler_box");
+var spoiler_tr = spoiler_box.getElementsByTagName("table");
 for (var i = 0; i < spoiler_tr.length; i++) {
 	spoiler_tr[i].addEventListener("keyup", e => {
+		var selected = e.target.parentNode;
 		if (event.ctrlKey && (event.which == 13 || event.keyCode == 13) ) {
-			var clone = e.target.cloneNode(true);
-			if (e.target.nextSibling) {
-				e.target.parentNode.insertBefore(clone, e.target.nextSibling);
+			var clone = selected.cloneNode(true);
+			if (selected.nextSibling) {
+				selected.parentNode.insertBefore(clone, selected.nextSibling);
 			}
 			else {
-				e.target.parentNode.appendChild(clone);
+				selected.parentNode.appendChild(clone);
 			}
 		}
 		if (event.ctrlKey && (event.which == 46 || event.keyCode == 46) ) {
-			if (e.target.previousSibling) {
-				e.target.previousSibling.focus();
+			if (selected.previousElementSibling != null) {
+				selected.previousElementSibling.firstElementChild.focus();
+				selected.remove();
 			}
-			else {
-				e.target.nextSibling.focus();
+			if (selected.nextElementSibling != null) {
+				selected.nextElementSibling.firstElementChild.focus();
+				selected.remove();
 			}
-			e.target.remove();
 		}
 	});
 }
 
+var add_edit = spoiler_box.getElementsByTagName("td");
+for (var i = 0; i < add_edit.length; i++) {
+	add_edit[i].addEventListener("focusout", function(){ convertit(this); });
+}
 
 
 
 // #############################################################################
 // Add HTML Tags when out of focus
 function convertit(text) {
-	var newtext = text.innerHTML.replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+	var newtext = text.innerHTML.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&nbsp;/g, " ");
 	text.innerHTML = newtext;
 }
