@@ -428,7 +428,7 @@ var store_gleisbaumaschinen = `
 						<td class="table_r">116 t</td>
 					</tr>
 					<tr>
-						<td class="table_6 only_here">Magnetschienenbremse</td><!--Nur wenn vorhanden-->
+						<td class="table_6 only_here">Magnetschienen&shy;bremse</td><!--Nur wenn vorhanden-->
 						<td class="table_r">20t <small>(nur in Eigenfahrt / BG total = 82 t)</small></td>
 					</tr>
 					<tr>
@@ -775,7 +775,7 @@ var store_lokomotiven = `
 						<td class="table_r">StN: 3808 PS / 2800 kW<br>BB: 3264 PS / 2400 kW</td>
 					</tr>
 					<tr>
-						<td class="table_6">Ergänzungsbremse</td>
+						<td class="table_6">Ergänzungs&shy;bremse</td>
 						<td class="table_r">Bremswiderstände / Rekuperationbremse</td>
 					</tr>
 					<tr>
@@ -806,7 +806,7 @@ var store_lokomotiven = `
 						<td class="table_r">116 t</td>
 					</tr>
 					<tr>
-						<td class="table_6 only_here">Magnetschienenbremse</td><!--Nur wenn vorhanden-->
+						<td class="table_6 only_here">Magnetschienen&shy;bremse</td><!--Nur wenn vorhanden-->
 						<td class="table_r">20 t <small>(BG total = 156 t)</small></td>
 					</tr>
 					<tr>
@@ -1090,7 +1090,7 @@ var store_triebwagen = `
 						<td class="table_r">StN: 3808 PS / 2800 kW<br>BB: 3264 PS / 2400 kW</td>
 					</tr>
 					<tr>
-						<td class="table_6">Ergänzungsbremse</td>
+						<td class="table_6">Ergänzungs&shy;bremse</td>
 						<td class="table_r">Bremswiderstände / Rekuperationsbremse</td>
 					</tr>
 					<tr>
@@ -1121,7 +1121,7 @@ var store_triebwagen = `
 						<td class="table_r">116 t / 136 t</td>
 					</tr>
 					<tr>
-						<td class="table_6 only_here">Magnetschienenbremse</td><!--Nur wenn vorhanden-->
+						<td class="table_6 only_here">Magnetschienen&shy;bremse</td><!--Nur wenn vorhanden-->
 						<td class="table_r">20 t <small>(BG total = 156 t)</small></td>
 					</tr>
 					<tr>
@@ -1239,7 +1239,7 @@ var store_triebwagen = `
 						<td class="table_r">4</td>
 					</tr>
 					<tr>
-						<td class="table_6">Fahrgastinfosystem</td>
+						<td class="table_6">Fahrgastinfo&shy;system</td>
 						<td class="table_r">KIS</td>
 					</tr>
 					<tr>
