@@ -2,10 +2,10 @@ const footer = `
 <footer>
 	<div class="footer_text">
 		<div class="footer_links">
-			<a href="https://rollmaterial-rhb.netlify.app/info/impressum.html">Impressum</a>
-			<a href="https://rollmaterial-rhb.netlify.app/info/aenderungen.html">Änderungen</a>
-			<a href="https://rollmaterial-rhb.netlify.app/info/anfragen.html">Anfragen</a>
-			<a href="https://rollmaterial-rhb.netlify.app/info/melden.html">Fehler melden</a>
+			<a href="https://rollmaterial-rhb.ch/info/impressum.html">Impressum</a>
+			<a href="https://rollmaterial-rhb.ch/info/aenderungen.html">Änderungen</a>
+			<a href="https://rollmaterial-rhb.ch/info/anfragen.html">Anfragen</a>
+			<a href="https://rollmaterial-rhb.ch/info/melden.html">Fehler melden</a>
 		</div>
 		<div class="footer_copyright">©2020 - <script>document.write(new Date().getFullYear());</script> by Tobias und Fabian Kaufmann</div>
 	</div>
@@ -28,6 +28,6 @@ for (i = 0; i < notdef.length; i++) {
 // fix broken images / lazy loading
 var images = document.getElementsByTagName("img");
 for (i = 0; i < images.length; i++) {
-	images[i].onerror = function() {this.onerror=null;this.src="https://rollmaterial-rhb.netlify.app/elements/noimage.png";}
+	images[i].onerror = function() {this.onerror=null;this.src="https://rollmaterial-rhb.ch/elements/noimage.png";}
 	images[i].loading = "lazy";
 }
