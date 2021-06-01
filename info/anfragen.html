@@ -14,21 +14,46 @@
 
 <!--Header-->
 <header>
-    <a class="header_center disable_link" href="https://rollmaterial-rhb.ch/">
-        <img class="header_icon" src="../elements/favicon.png">
-        <h1>Anfragen</h1>   
-    </a>
+	<a class="header_center disable_link" href="https://rollmaterial-rhb.ch/">
+		<img class="header_icon" src="../elements/favicon.png">
+		<h1>Anfragen</h1>   
+	</a>
 </header>
 
 
 <!--Content-->
 <main>
 
-	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeZMi9E9qcoW3eH9dpgVhOr7e2UyvMo5Weg6-gj7vTnHoNReg/viewform?embedded=true" width="1000px" height="5000px" style= "border: none; max-width:100%; max-height:100vh" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeZMi9E9qcoW3eH9dpgVhOr7e2UyvMo5Weg6-gj7vTnHoNReg/viewform?embedded=true" style= "border: none;" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
 	
 </main>
 
 <!--Footer-->
+<script type="application/javascript">
+// https://stackoverflow.com/questions/819416/adjust-width-and-height-of-iframe-to-fit-with-content-in-it
+
+window.addEventListener('DOMContentLoaded', function(e) {
+	var iframe_el = document.getElementsByTagName("iframe");
+	for (var i = 0; i < iframe_el.length; i++) {
+		resize(iframe_el[i]);
+	}
+} );
+
+function test() {
+	var iframe_el = document.getElementsByTagName("iframe");
+	for (var i = 0; i < iframe_el.length; i++) {
+		resize(iframe_el[i]);
+	}
+}
+
+
+function resize(iframe) {
+	iframe.width  = iframe.contentWindow.document.body.scrollWidth;
+	iframe.height = iframe.contentWindow.document.body.scrollHeight;
+}
+
+</script>
+
 <script language="javascript" type="text/javascript" src="../elements/nav/footer.js"></script>
 
 </body>
