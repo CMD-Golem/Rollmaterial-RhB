@@ -2,7 +2,6 @@ var store_dienstwagen = `
 			<div class="group">
 				<h3>Allgemein</h3>
 				<table>
-					<div class="list" style="display: none;"></div>
 					<tr>
 						<td class="table_6">Baujahr</td>
 						<td class="table_r">2010 - 2011 / Umbau 1990</td>
@@ -29,7 +28,6 @@ var store_dienstwagen = `
 			<div class="group">
 				<h3>Technische Daten</h3>
 				<table>
-					<div class="list" style="display: none;"></div>
 					<tr>
 						<td class="table_6">Geschwindigkeit max.</td>
 						<td class="table_r">100 km/h <small>(Reihe R)</small></td>
@@ -73,7 +71,6 @@ var store_dienstwagen = `
 			<div class="group">
 				<h3>Fahrzeugausrüstung</h3>
 				<table>
-					<div class="list" style="display: none;"></div>
 					<tr>
 						<td class="table_6 only_here">Zug- / Stossvorrichtung</td><!--Nur wenn vorhanden-->
 						<td class="table_r">Automatische Kupplung <small>(Schwab)</small> / Stangenpuffer</td>
@@ -108,7 +105,6 @@ var store_dienstwagen = `
 			<div class="group">
 				<h3>Fahrzeugaufbau</h3>
 				<table>
-					<div class="list" style="display: none;"></div>
 					<tr>
 						<td class="table_6 only_here">Ladefläche</td><!--Nur wenn vorhanden-->
 						<td class="table_r">5.9 m<sup>2</sup></td>
@@ -188,7 +184,6 @@ var store_dienstwagen = `
 			<div class="group"><!--Nur wenn vorhanden-->
 				<h3 class="only_here">Gewichte mit aufgesetztem Aufbau</h3>
 				<table>
-					<div class="list" style="display: none;"></div>
 					<tr>
 						<td class="table_6">Gewicht <small>(Tara)</small></td>
 						<td class="table_r">26'590 kg</td>
@@ -226,7 +221,6 @@ var store_dienstwagen = `
 var store_gepaeckwagen = `
 			<div class="group">
 				<h3>Allgemein</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6">Baujahr</td>
@@ -253,7 +247,6 @@ var store_gepaeckwagen = `
 
 			<div class="group">
 				<h3>Technische Daten</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6">Geschwindigkeit</td>
@@ -280,7 +273,6 @@ var store_gepaeckwagen = `
 
 			<div class="group">
 				<h3>Fahrzeugausrüstung</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6 only_here">Zug- / Stossvorrichtung</td><!--Nur wenn vorhanden-->
@@ -339,7 +331,6 @@ var store_gepaeckwagen = `
 
 			<div class="group">
 				<h3>Fahrgastausstattung</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6">Ladefläche</td>
@@ -377,7 +368,6 @@ var store_gepaeckwagen = `
 var store_gleisbaumaschinen = `
 			<div class="group">
 				<h3>Allgemein</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6">Fahrzeug-Nummer RhB</td>
@@ -405,7 +395,6 @@ var store_gleisbaumaschinen = `
 
 			<div class="group">
 				<h3>Technische Daten</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6">Geschwindigkeit Eigenfahrt</td>
@@ -440,7 +429,6 @@ var store_gleisbaumaschinen = `
 
 			<div class="group">
 				<h3>Fahrzeugausrüstung</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6 only_here">Zug-/ Stossvorrichtung</td><!--Nur wenn vorhanden-->
@@ -475,7 +463,6 @@ var store_gleisbaumaschinen = `
 
 			<div class="group">
 				<h3>Fahrzeug geschleppt</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6">Einreihung im Zug</td>
@@ -509,7 +496,6 @@ var store_gleisbaumaschinen = `
 var store_gueterwagen = `
 			<div class="group">
 				<h3>Allgemein</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6">Baujahr</td>
@@ -536,7 +522,6 @@ var store_gueterwagen = `
 
 			<div class="group">
 				<h3>Technische Daten</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6">Geschwindigkeit max.</td>
@@ -580,7 +565,6 @@ var store_gueterwagen = `
 
 			<div class="group">
 				<h3>Fahrzeugausrüstung</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6 only_here">Zug- / Stossvorrichtung</td><!--Nur wenn vorhanden-->
@@ -619,7 +603,6 @@ var store_gueterwagen = `
 
 			<div class="group">
 				<h3>Fahrzeugaufbau</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6 only_here">Ladefläche</td><!--Nur wenn vorhanden-->
@@ -717,7 +700,6 @@ var store_gueterwagen = `
 
 			<div class="group"><!--Nur wenn vorhanden-->
 				<h3 class="only_here">Gewichte mit aufgesetztem Aufbau</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6">Gewicht <small>(Tara)</small></td>
@@ -756,7 +738,6 @@ var store_gueterwagen = `
 var store_lokomotiven = `
 			<div class="group">
 				<h3>Allgemein</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6">Baujahr</td>
@@ -787,7 +768,6 @@ var store_lokomotiven = `
 
 			<div class="group">
 				<h3>Technische Daten</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6">Geschwindigkeit</td>
@@ -834,7 +814,6 @@ var store_lokomotiven = `
 
 			<div class="group">
 				<h3>Fahrzeugausrüstung</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6 only_here">Zug-/ Stossvorrichtung</td><!--Nur wenn vorhanden-->
@@ -888,7 +867,6 @@ var store_lokomotiven = `
 var store_personenwagen = `
 			<div class="group">
 				<h3>Allgemein</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6">Baujahr</td>
@@ -915,7 +893,6 @@ var store_personenwagen = `
 
 			<div class="group">
 				<h3>Technische Daten</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6">Geschwindigkeit</td>
@@ -942,7 +919,6 @@ var store_personenwagen = `
 
 			<div class="group">
 				<h3>Fahrzeugausrüstung</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6 only_here">Zug- / Stossvorrichtung</td><!--Nur wenn vorhanden-->
@@ -1005,7 +981,6 @@ var store_personenwagen = `
 
 			<div class="group">
 				<h3>Fahrgastausstattung</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6">Plätze 1. Klasse</td>
@@ -1071,7 +1046,6 @@ var store_personenwagen = `
 var store_triebwagen = `
 			<div class="group">
 				<h3>Allgemein</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6">Baujahr</td>
@@ -1102,7 +1076,6 @@ var store_triebwagen = `
 
 			<div class="group">
 				<h3>Technische Daten</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6">Geschwindigkeit</td>
@@ -1137,7 +1110,6 @@ var store_triebwagen = `
 
 			<div class="group">
 				<h3>Fahrzeugausrüstung</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6 only_here">Zug- / Stossvorrichtung</td><!--Nur wenn vorhanden-->
@@ -1204,7 +1176,6 @@ var store_triebwagen = `
 
 			<div class="group">
 				<h3>Fahrgastausstattung</h3>
-				<div class="list" style="display: none;"></div>
 				<table>
 					<tr>
 						<td class="table_6">Plätze 1. Klasse</td>

@@ -4,6 +4,7 @@
 const search = document.getElementById('search');
 const matchList = document.getElementById('match-list');
 const explore = document.getElementById('explore');
+const not_found = document.getElementById('not_found');
 
 
 // Search search.json and filter it
@@ -15,17 +16,15 @@ const searchData = async searchText => {
     const found = data => (Array.isArray(data) ? data.find(found) : data.match(regex));
     let matches = resJson.filter(data => (found(data.searchdata)));
 
-	if(searchText.length === 0) {
+	if (matches.length === 0) {
+		matchList.innerHTML = '';
+		explore.style.display = 'flex';
+	}
+	if (searchText.length === 0) {
 		matches = [];
 		matchList.innerHTML = '';
 		explore.style.display = 'flex';
 	}
-
-	if(matches.length === 0) {
-		matchList.innerHTML = '';
-		explore.style.display = 'flex';
-	}
-
 	else {
 		explore.style.display = 'none';
 	}
@@ -34,7 +33,6 @@ const searchData = async searchText => {
 };
 
 // Show results in Html
-
 const outputHtml = matches => {
 	if (matches.length > 0) {
 		const html = matches.map(match => `
@@ -47,13 +45,20 @@ const outputHtml = matches => {
 
 			`).join('');
 
+		not_found.style.display = "none";
 		matchList.innerHTML = html;
+	}
+	else {
+		not_found.style.display = "block";
+	}
+	if (search.value.length == 0) {
+		not_found.style.display = "none";
 	}
 };
 
 
-search.addEventListener('input', () => searchData(search.value));
-search.addEventListener('click', () => searchData(search.value));
+search.addEventListener('keyup', () => searchData(search.value));
+window.addEventListener('load', () => searchData(search.value));
 
 
 //Open first child if user press enter

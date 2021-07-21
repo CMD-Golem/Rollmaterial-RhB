@@ -10,6 +10,7 @@ var description_html = ""; // Andere Namen für das Fahrzeuge: Allegra / BoBo I
 var id = ""; // Id für Dateiname und Pfad: ge4-4_601
 var path = "../../../"; // Braucht es ein weiteres ../
 var type_meta = ""; // Gleich wie Type nur sup text wird ersetzt (Plain Text)
+var url = "https://rollmaterial-rhb.ch" // Domain der Webseite. (Kann nicht geändert werden)
 
 
 // Show Table after Main group selection
