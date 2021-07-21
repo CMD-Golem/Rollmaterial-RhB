@@ -1,47 +1,49 @@
-function siteSearch() {
-	var input, filter, table, elements, keyword, i, group;
-	input = document.getElementById("Site_Search");
-	filter = input.value.toUpperCase();
-	table = document.getElementById("data_table");
-	elements = table.getElementsByTagName("tr");
-	group = table.getElementsByClassName("group");
+var data_table = document.getElementById("data_table")
+var elements = data_table.getElementsByClassName("table_6");
 
-	for (i = 0; i < elements.length; i++) {
-		keyword = elements[i].getElementsByClassName("table_6")[0].innerHTML;
-		keyword = keyword.replace(/(\&shy;|­|&#173;)/gi, "");
-		if (keyword.toUpperCase().indexOf(filter) > -1) {
-			elements[i].style.display = "";
-		}
-		else {
-			elements[i].style.display = "none";
+function siteSearch() {
+	var input = document.getElementById("Site_Search");
+	var filter = input.value.toUpperCase();
+
+	for (var i = 0; i < elements.length; i++) {
+		var filterwords = elements[i].innerHTML;
+		filterwords = filterwords.replace(/(\&shy;|­|&#173;)/gi, "");
+		if (filterwords.toUpperCase().indexOf(filter) > -1) {
+			elements[i].parentElement.classList.remove("hide_search");
+		} else {
+			elements[i].parentElement.classList.add("hide_search");
 		}
 	}
-	
-	for (i = 0; i < group.length; i++) {
-		keyword2 = group[i].getElementsByClassName("list")[0].innerHTML;
-		keyword2 = keyword2.replace(/(\&shy;|­|&#173;)/gi, "");
-		if (keyword2.toUpperCase().indexOf(filter) > -1) {
-			group[i].style.display = "";
-		}
-		else {
+	notFound();
+};
+
+function notFound() {
+	// Hide Groups
+	var group = data_table.getElementsByClassName("group");
+	for (var i = 0; i < group.length; i++) {
+		var group_hide_search = group[i].getElementsByClassName("hide_search").length;
+		var group_elements = group[i].getElementsByTagName("tr").length;
+
+		if (group_elements - group_hide_search <= 0) {
 			group[i].style.display = "none";
 		}
+		else {
+			group[i].style.display = "block";
+		}
+	}
+
+	// No results
+	var hide_search = document.getElementsByClassName("hide_search").length;
+
+	try {
+		if (elements.length - hide_search <= 0) {
+			document.getElementById("not_found").style.display = "block";
+		}
+		else {
+			document.getElementById("not_found").style.display = "none";
+		}
+	}
+	catch (e) {
+		console.log("Keine Resultate");
 	}
 }
-
-
-//
-group = document.getElementsByClassName("group");
-var i
-for (i = 0; i < group.length; i++) {
-	list = group[i].getElementsByClassName("table_6");
-	var p, empty
-	var array = [];
-	for (p = 0; p < list.length; p++) {
-		item = list[p].innerHTML;
-		item = item.replace(/(\&shy;|­|&#173;)/gi, "");
-		array = array.concat(item);
-		
-	};
-	group[i].getElementsByClassName("list")[0].innerHTML = array;
-};

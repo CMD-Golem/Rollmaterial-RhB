@@ -10,8 +10,8 @@ const footer = `
 		<div class="footer_copyright">©2020 - <script>document.write(new Date().getFullYear());</script> by Tobias und Fabian Kaufmann</div>
 	</div>
 	<div style="height:20px;"></div>
-	<p>Alle Bilder auf dieser Webseite sind Urheberrechtlich gesch&uuml;tzt und d&uuml;rfen ohne schriftliche Erlaubnis des Betreibers nicht weiterverwendet werden.</p>
-	<p>Diese Webseite ist rein Privat und nicht mit der Rh&auml;tische Bahn verbunden.</p>
+	<p>Alle Bilder auf dieser Webseite sind Urheberrechtlich geschützt und dürfen ohne schriftliche Erlaubnis des Betreibers nicht weiterverwendet werden.</p>
+	<p>Diese Webseite ist rein Privat und nicht mit der Rhätische Bahn verbunden.</p>
 </footer>
 `;
 
