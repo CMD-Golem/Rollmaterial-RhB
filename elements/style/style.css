@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton');
 
+:root {
+	--navbar: #222222;
+	--navbar_hover: #333333;
+	--background: #292929;
+	--elements: #333333;
+	--elements_hover: #222222;
+	--elements_dark: #1C1C1C;
+}
+
 html {
 	height: 100%;
 	scroll-behavior: smooth;
@@ -12,7 +21,7 @@ body {
 	flex-direction: column;
 	min-height: 100%;
 	background-color: #2a292c;
-	color: white;
+	color: #CCCCCC;
 	font-size: 20px;
 	min-width: 300px;
 }
@@ -43,6 +52,15 @@ h1 {
 h2 {
 	font-size: 20px;
 	font-weight: bold;
+	text-align: center;
+}
+
+h4 {
+	background-color: #E2001A;
+	padding: 10px;
+	margin-bottom: 5px;
+	font-size: 20px;
+	width: 100%;
 	text-align: center;
 }
 

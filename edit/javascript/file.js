@@ -18,15 +18,8 @@ var html_top = `<!DOCTYPE html>
 
 <body>
 
-<!--Menu-->
-<script language="javascript" type="text/javascript" src="${path}elements/nav/navbar.js"></script>
+<nav class="${main_group}"></nav>
 
-<script type="text/javascript">
-	document.getElementById("${main_group}").style.backgroundColor = "${group_color}";
-	var header_img = "url('${path}elements/pic/${main_group}/${sub_group}/${subb_group}${id}/1.jpg')";
-</script>
-
-<!--Content-->
 <main>
 <header id="header">
 	<h1>${type}&#8199;${numbers}</h1>
@@ -60,17 +53,14 @@ var html_bottom = `
 
 </main>
 
-<!--Script-->
-<script language="javascript" type="text/javascript" src="${path}elements/javascript/spoiler.js"></script>
-<script language="javascript" type="text/javascript" src="${path}elements/javascript/site_search.js"></script>
-<script language="javascript" type="text/javascript" src="${path}elements/javascript/header_img.js"></script>
+<footer></footer>
 
-<!--Footer-->
-<script language="javascript" type="text/javascript" src="${path}elements/nav/footer.js"></script>
+<script language="javascript" type="text/javascript" src="${path}elements/javascript/site_search.js"></script>
+<script language="javascript" type="text/javascript" src="${path}elements/javascript/menu_lvl3.js"></script>
+<script language="javascript" type="text/javascript" src="${path}elements/javascript/nav.js"></script>
 
 </body>
 </html>
-
 `
 
 // #####################################################
