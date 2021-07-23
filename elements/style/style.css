@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton');
+@font-face {
+	font-family: Anton;
+	src: url(../images/anton.ttf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: FiraSans;
+	src: url(../images/fira_sans.ttf);
+	font-weight: normal;
+}
 
 :root {
 	--navbar: #222222;
@@ -15,7 +25,7 @@ html {
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: FiraSans;
 	margin: 0;
 	display: flex;
 	flex-direction: column;
@@ -24,6 +34,7 @@ body {
 	color: #CCCCCC;
 	font-size: 20px;
 	min-width: 300px;
+	hyphens: auto;
 }
 
 /* Main */
@@ -44,7 +55,7 @@ main {
 h1 {
 	color: #e2001a;
 	font-size: 40px;
-	font-family: 'Anton';
+	font-family: Anton;
 	text-align: center;
 	letter-spacing: 2px;
 }

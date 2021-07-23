@@ -231,8 +231,13 @@ for (var i = 0; i < add_edit.length; i++) {
 
 
 // #############################################################################
-// Add HTML Tags when out of focus
+// Add HTML Tags when out of focus and remove background from Ladegewichtsraster
 function convertit(text) {
 	var newtext = text.innerHTML.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&nbsp;/g, " ");
 	text.innerHTML = newtext;
+
+	var ladegewicht_table = text.getElementsByClassName("ladegewicht_table");
+	for (var i = 0; i < ladegewicht_table.length; i++) {
+		ladegewicht_table[i].style.backgroundColor = null;
+	}
 }

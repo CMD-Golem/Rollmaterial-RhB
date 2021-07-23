@@ -78,6 +78,9 @@ for (var i = 0; i < table_tr.length; i++) {
 	if (table_td != undefined && (table_td.innerHTML == "" || table_td.innerHTML == "<br>") ) {
 		table_tr[i].classList.add("empty_td");
 	}
+	else {
+		
+	}
 }
 var empty_td = save_table.getElementsByClassName("empty_td");
 while (empty_td.length > 0) {
@@ -110,9 +113,6 @@ for (var i = 0; i < remove_edit.length; i++) {
 
 // only_here: Nur wenn vorhanden
 // not_here: Nur wenn nicht vorhanden
-
-// Add &shy; element
-
 
 var html_table = document.getElementById("save_table").innerHTML;
 
