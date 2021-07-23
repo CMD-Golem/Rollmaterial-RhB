@@ -22,7 +22,7 @@ function notFound() {
 	var group = data_table.getElementsByClassName("group");
 	for (var i = 0; i < group.length; i++) {
 		var group_hide_search = group[i].getElementsByClassName("hide_search").length;
-		var group_elements = group[i].getElementsByTagName("tr").length;
+		var group_elements = group[i].getElementsByClassName("table_6").length;
 
 		if (group_elements - group_hide_search <= 0) {
 			group[i].style.display = "none";

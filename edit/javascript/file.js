@@ -111,6 +111,8 @@ for (var i = 0; i < remove_edit.length; i++) {
 // only_here: Nur wenn vorhanden
 // not_here: Nur wenn nicht vorhanden
 
+// Add &shy; element
+
 
 var html_table = document.getElementById("save_table").innerHTML;
 
@@ -138,7 +140,7 @@ while (empty_spoiler.length > 0) {
 }
 
 
-// Remove edit attribute and marking class
+// Remove edit attribute
 var remove_edit = save_spoiler.getElementsByTagName("td");
 for (var i = 0; i < remove_edit.length; i++) {
 	remove_edit[i].removeAttribute("contenteditable");
