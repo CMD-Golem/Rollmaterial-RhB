@@ -10,6 +10,26 @@ nav {
 }
 
 
+/* Color */
+nav.lokomotiven #lokomotiven {
+	background-color: #2F4C2B;
+}
+nav.personenwagen #personenwagen {
+	background-color: #803034;
+}
+nav.gepaeckwagen #gepaeckwagen {
+	background-color: #31459C;
+}
+nav.gueterwagen #gueterwagen {
+	background-color: #5B493D;
+}
+nav.dienstwagen #dienstwagen {
+	background-color: #555655;
+}
+nav.gleisbaumaschinen #gleisbaumaschinen {
+	background-color: #906D11;
+}
+
 
 /* List */
 .nav_list {
@@ -70,7 +90,7 @@ nav img {
 	padding-top: 8px;
 	height: 40px;
 	width: 40px;
-	background: transparent url('https://rollmaterial-rhb.netlify.app/elements/nav/menu.svg') center/contain no-repeat;
+	background: transparent url('https://rollmaterial-rhb.netlify.app/elements/images/menu.svg') center/contain no-repeat;
 }
 
 #menu {
@@ -140,7 +160,7 @@ nav img {
 	}
 
 	#menu:checked ~ .nav_menu {
-		background: transparent url('https://rollmaterial-rhb.netlify.app/elements/nav/close.svg') center/contain no-repeat;
+		background: transparent url('https://rollmaterial-rhb.netlify.app/elements/images/close.svg') center/contain no-repeat;
 	}
 }
 

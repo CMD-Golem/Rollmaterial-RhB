@@ -4,6 +4,8 @@
 <head>
 <title>Rollmaterial RhB</title>
 <meta name="description" content="Verschaffen Sie sich einen Überblick vom Rollmaterial der Rhätischen Bahn.">
+<meta rel="canonical" href="https://rollmaterial-rhb.ch">
+<meta name="robots" content="index, follow, archive"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="elements/style/index.css"/>
@@ -111,12 +113,19 @@
 
 </main>
 
+<footer></footer>
+
 <!--Scripts-->
 <script language="javascript" type="text/javascript" src="elements/javascript/search.js"></script>
-<script language="javascript" type="text/javascript" src="elements/javascript/background.js"></script>
+<script language="javascript" type="text/javascript" src="elements/javascript/nav.js"></script>
+<script type="text/javascript">
 
-<!--Footer-->
-<script language="javascript" type="text/javascript" src="elements/nav/footer.js"></script>
+var images = new Array("elements/background/1.jpg", "elements/background/2.jpg", "elements/background/3.jpg", "elements/background/4.jpg"); 
+var x = (Math.floor(Math.random() * 4));
+
+document.getElementById("background").style.backgroundImage = "url("+ images[x] +")"; 
+
+</script>
 
 
 </body>
