@@ -40,7 +40,7 @@ main img {
 }
 
 .site_search {
-	width: 96%;
+	width: calc(100% - 24px);;
 	color: white;
  	background-color: transparent;
 	font-size: 15px;
@@ -51,22 +51,23 @@ main img {
 	margin-right: auto;
 }
 
+.site_search:focus {
+	border: 2px solid #950011;
+}
+
 
 /* Data Table */
 .right_space {
-	flex: 50%;
-	margin-left: 20px;
+	flex: 40%;
+	margin: 20px;
+	margin-top: 0;
 }
 
 .group {
 	page-break-inside: avoid;
 }
 
-.data_table {
-	padding-right: 3%;
-}
-
-table {
+.group table {
 	margin-bottom: 50px;
 }
 
@@ -77,11 +78,9 @@ table {
 	.hide_mobile {
 		display: none;
 	}
-
 	.content {
 		flex-direction: column;
 	}
-
 	header {
 		background: rgba(0, 0, 0, 0.7) center/cover no-repeat;
 		background-blend-mode: overlay;
@@ -89,10 +88,14 @@ table {
 		display: block;
  		margin-left: auto;
 		margin-right: auto;
-		height: 200px;
+		height: 300px;
+		position: relative;
 	}
-
-	img {
+	h4 {
+		position: absolute;
+		bottom: 0;
+	}
+	main img {
 		width: 80%;
 		display: block;
  	 	margin-left: auto;
@@ -106,27 +109,29 @@ table {
 		width: 90%;
 	}
 
-	.right_space {
-		margin-left: 0px;
-	}
-
-	.left_space {
+	.right_space, .left_space {
 		margin: 0px;
-	}
-
-	.site_search {
-		width: 90%;
 	}
 }
 
 @media print {
+	main {
+		width: 100%;
+		padding: 0;
+	}
 	.site_search {
 		display: none;
 	}
 	.left_space {
-		flex: 30%;
+		margin: 10px;
+		margin-top: 50px;
+		flex: 40%;
 	}
 	.right_space {
-		flex: 60%;
+		margin: 10px;
+		flex: 50%;
+	}
+	.group table, header {
+		margin-bottom: 20px;
 	}
 }

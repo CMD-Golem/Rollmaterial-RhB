@@ -97,7 +97,7 @@ nav img {
 	display: none;
 }
 
-/* Change padding 1600*/
+/* Change padding*/
 @media (max-width: 1700px) {
 	nav {
 		padding-right: 5%;
@@ -113,7 +113,7 @@ nav img {
 }
 
 
-/* Enable Menu 1100*/
+/* Enable Menu*/
 @media (max-width: 1175px) {
 	.nav_menu {
 		display: block;
@@ -135,7 +135,8 @@ nav img {
 	}
 
 	.nav_search {
-		padding: 8px 16px 5px 16px;
+		padding: 8px 16px;
+		padding-bottom: 0;
 	}
 
 	.nav_list li {
@@ -181,7 +182,7 @@ nav img {
 	}
 	.nav_search {
 		padding: 8px;
-		padding-bottom: 5px;
+		padding-bottom: 0;
 	}
 	nav {
 		padding-left: 0;

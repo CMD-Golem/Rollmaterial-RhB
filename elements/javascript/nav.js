@@ -27,7 +27,7 @@ var footer = `
 	<div class="footer_links">
 		<a href="https://rollmaterial-rhb.ch/info/impressum.html">Impressum</a>
 		<a href="https://rollmaterial-rhb.ch/info/aenderungen.html">Änderungen</a>
-		<a href="https://rollmaterial-rhb.ch/info/anfragen.html">Anfragen</a>
+		<a href="https://rollmaterial-rhb.ch/info/anfragen.html">Bilder Anfragen</a>
 		<a href="https://rollmaterial-rhb.ch/info/melden.html">Fehler melden</a>
 	</div>
 	<div class="footer_copyright">©2020 - ${year} by Tobias und Fabian Kaufmann</div>
@@ -47,7 +47,7 @@ catch (e) {}
 
 // Add title to not definitive Data
 var notdef = document.getElementsByTagName("u");
-for (i = 0; i < notdef.length; i++) {
+for (var i = 0; i < notdef.length; i++) {
     notdef[i].title = "Angabe kann Fehlerhaft sein!";
 }
 
@@ -55,7 +55,7 @@ for (i = 0; i < notdef.length; i++) {
 
 // fix broken images / lazy loading
 var images = document.getElementsByTagName("img");
-for (i = 0; i < images.length; i++) {
+for (var i = 0; i < images.length; i++) {
 	images[i].onerror = function() {this.onerror=null;this.src="https://rollmaterial-rhb.ch/elements/images/noimage.png";}
 	images[i].loading = "lazy";
 }
