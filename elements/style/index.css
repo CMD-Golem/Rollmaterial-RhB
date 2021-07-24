@@ -129,8 +129,8 @@ header {
 	}
 }
 
-@media screen and (max-height: 500px) {
-	.explore_center {
+@media screen and (max-height: 570px) {
+	.explore {
 		display: none;
 	}
 }
@@ -139,13 +139,13 @@ header {
 
 /* Scrollbar */
 .search_outputs::-webkit-scrollbar {
-	width: 4px;
+	width: 6px;
 }
 .search_outputs::-webkit-scrollbar-track {
-	background: #312f33;
+	background-color: #2A292C;
 	border-radius: 2px;
 }
 .search_outputs::-webkit-scrollbar-thumb {
-	background: #808080;
+	background-color: #808080;
 	border-radius: 2px;
 }

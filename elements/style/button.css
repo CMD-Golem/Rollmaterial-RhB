@@ -10,8 +10,8 @@
 }
 
 .button:hover, .button:focus {
-	border: 2px solid #b0081c;
-	transition: 0.5s;
+	border: 2px solid #950011;
+	/*transition: 0.5s;*/
 }
 
 /* Menu 3 (next to site search) */
@@ -44,5 +44,11 @@
 	.button {
 		margin-right: 0px;
 		margin-bottom: 20px;
+	}
+}
+
+@media print {
+	.button_menu, .button {
+		display: none;
 	}
 }
