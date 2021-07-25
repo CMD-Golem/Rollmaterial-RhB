@@ -5,8 +5,9 @@
 <title>Rollmaterial RhB - Anfragen</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="../elements/style/index.css"/>
 <link rel="stylesheet" type="text/css" href="../elements/style/style.css"/>
+<link rel="stylesheet" type="text/css" href="../elements/style/index.css"/>
+<link rel="stylesheet" type="text/css" href="../elements/style/form.css"/>
 <link rel="icon" href="../elements/favicon.png">
 </head>
 
@@ -14,22 +15,58 @@
 
 <!--Header-->
 <header>
-    <a class="header_center disable_link" href="https://rollmaterial-rhb.ch/">
-        <img class="header_icon" src="../elements/favicon.png">
-        <h1>Anfragen</h1>   
-    </a>
+	<a class="header_center disable_link" href="https://rollmaterial-rhb.ch/">
+		<img class="header_icon" src="../elements/favicon.png">
+		<h1>Anfragen</h1>   
+	</a>
 </header>
 
 
 <!--Content-->
 <main>
+	<p>Wollen Sie Bilder von dieser Webseite für Ihre Zwecke zu nutzen, dann beantragen Sie hier bitte die entsprechende Erlaubnis.</p>
+	<p>Durch die Anfrage erhalten Sie ein Bild mit höherer Qualität und ohne Wasserzeichen.</p>
 
-	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeZMi9E9qcoW3eH9dpgVhOr7e2UyvMo5Weg6-gj7vTnHoNReg/viewform?embedded=true" width="1000px" height="5000px" style= "border: none; max-width:100%; max-height:100vh" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
-	
+	<form name="picture_request" netlify onsubmit="return validateForm()">
+		<section>
+			<label>Ihre E-Mail Adresse <span class="form_needed">*</span></label>
+			<input type="email" name="email" placeholder="Meine Antwort" class="form_check">
+		</section>
+		<section>
+			<label>Link zu der Seite, welche das Bild zeigt <span class="form_needed">*</span></label>
+			<input type="text" name="link" placeholder="Meine Antwort" class="form_check">
+		</section>
+		<section>
+			<label>Nummer des Bildes <span class="form_needed">*</span></label><br>
+			<small>Nummeriert von links oben nach rechts unten. (Es können auch mehrere Nummern aufgeschrieben werden.)</small>
+			<input type="text" name="number" placeholder="Meine Antwort" class="form_check">
+		</section>
+		<section>
+			<label>Nutzen <span class="form_needed">*</span></label><br>
+			<small>Wo werden Sie das Bild nutzten. Bei Webseiten nach Möglichkeit auch URL erwähnen.</small>
+			<textarea type="text" name="usage" placeholder="Meine Antwort" rows="1" class="form_check"></textarea>
+		</section>
+		<section>
+			<label>Kommerzielle Nutzung <span class="form_needed">*</span></label><br>
+			<small>Werden Sie das Bild an Orten nutzten, bei welchen Sie Geld verdienen werden.</small>
+			<div class="form_check_select">
+				<input type="checkbox" name="commercial_use" id="comuse_true" class="checkbox"><label for="comuse_true">Ja</label>
+				<input type="checkbox" name="non_commercial_use" id="comuse_false" class="checkbox"><label for="comuse_false">Nein</label>
+			</div>
+		</section>
+		<section>
+			<label>Bemerkungen</label>
+			<textarea type="text" name="notes" placeholder="Meine Antwort" rows="1"></textarea>
+		</section>
+
+		<button type="submit">Senden</button>
+	</form>
 </main>
 
-<!--Footer-->
-<script language="javascript" type="text/javascript" src="../elements/nav/footer.js"></script>
+<footer></footer>
+
+<script language="javascript" type="text/javascript" src="../elements/javascript/forms.js"></script>
+<script language="javascript" type="text/javascript" src="../elements/javascript/nav.js"></script>
 
 </body>
 </html>
