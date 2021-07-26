@@ -39,12 +39,22 @@
 
 <footer></footer>
 
-<script language="javascript" type="text/javascript" src="../elements/javascript/search.js"></script>
 <script language="javascript" type="text/javascript" src="../elements/javascript/nav.js"></script>
 <script type="text/javascript">
 
 function goBack() {
-	window.history.go(-2);
+	var history_length = history.length;
+	if (history_length >= 3) {
+		window.history.go(-2);
+	}
+
+	else if (history_length == 2) {
+		window.history.go(-1);
+	}
+
+	else {
+		window.location.href = "https://rollmaterial-rhb.ch/";
+	}
 }
 
 </script>
