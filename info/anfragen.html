@@ -27,37 +27,37 @@
 	<p>Wollen Sie Bilder von dieser Webseite für Ihre Zwecke zu nutzen, dann beantragen Sie hier bitte die entsprechende Erlaubnis.</p>
 	<p>Durch die Anfrage erhalten Sie ein Bild mit höherer Qualität und ohne Wasserzeichen.</p>
 
-	<form name="picture_request" netlify onsubmit="return validateForm()">
-		<section>
-			<label>Ihre E-Mail Adresse <span class="form_needed">*</span></label>
-			<input type="email" name="email" placeholder="Meine Antwort" class="form_check">
-		</section>
-		<section>
-			<label>Link zu der Seite, welche das Bild zeigt <span class="form_needed">*</span></label>
-			<input type="text" name="link" placeholder="Meine Antwort" class="form_check">
-		</section>
-		<section>
-			<label>Nummer des Bildes <span class="form_needed">*</span></label><br>
+	<form name="Bilder Anfragen" netlify onsubmit="return validateForm()" action="form_success.html">
+		<fieldset>
+			<legend>Ihre E-Mail Adresse <span class="form_needed">*</span></legend>
+			<input type="email" name="E-Mail" placeholder="Meine Antwort" class="form_check">
+		</fieldset>
+		<fieldset>
+			<legend>Link zu der Seite, welche das Bild zeigt <span class="form_needed">*</span></legend>
+			<input type="url" name="Link" placeholder="Meine Antwort" class="form_check">
+		</fieldset>
+		<fieldset>
+			<legend>Nummer des Bildes <span class="form_needed">*</span></legend><br>
 			<small>Nummeriert von links oben nach rechts unten. (Es können auch mehrere Nummern aufgeschrieben werden.)</small>
-			<input type="text" name="number" placeholder="Meine Antwort" class="form_check">
-		</section>
-		<section>
-			<label>Nutzen <span class="form_needed">*</span></label><br>
+			<input type="text" name="Nummer" placeholder="Meine Antwort" class="form_check">
+		</fieldset>
+		<fieldset>
+			<legend>Nutzen <span class="form_needed">*</span></legend><br>
 			<small>Wo werden Sie das Bild nutzten. Bei Webseiten nach Möglichkeit auch URL erwähnen.</small>
-			<textarea type="text" name="usage" placeholder="Meine Antwort" rows="1" class="form_check"></textarea>
-		</section>
-		<section>
-			<label>Kommerzielle Nutzung <span class="form_needed">*</span></label><br>
+			<textarea type="text" name="Nutzen" placeholder="Meine Antwort" rows="1" class="form_check"></textarea>
+		</fieldset>
+		<fieldset>
+			<legend>Kommerzielle Nutzung <span class="form_needed">*</span></legend><br>
 			<small>Werden Sie das Bild an Orten nutzten, bei welchen Sie Geld verdienen werden.</small>
 			<div class="form_check_select">
-				<input type="checkbox" name="commercial_use" id="comuse_true" class="checkbox"><label for="comuse_true">Ja</label>
-				<input type="checkbox" name="non_commercial_use" id="comuse_false" class="checkbox"><label for="comuse_false">Nein</label>
+				<label><input type="radio" name="Kommerzielle Nutzung" class="radio" value="Ja"> Ja</label><br>
+				<label><input type="radio" name="Kommerzielle Nutzung" class="radio" value="Nein"> Nein</label>
 			</div>
-		</section>
-		<section>
-			<label>Bemerkungen</label>
-			<textarea type="text" name="notes" placeholder="Meine Antwort" rows="1"></textarea>
-		</section>
+		</fieldset>
+		<fieldset>
+			<legend>Bemerkungen</legend>
+			<textarea type="text" name="Bemerkungen" placeholder="Meine Antwort" rows="1"></textarea>
+		</fieldset>
 
 		<button type="submit">Senden</button>
 	</form>

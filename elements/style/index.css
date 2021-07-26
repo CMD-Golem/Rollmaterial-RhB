@@ -48,7 +48,11 @@ header {
 	font-size: 18px;
 	padding: 11px;
 	border: 4px solid #e2001a;
-	width: 90%;
+	width: calc(100% - 30px);
+}
+
+.search_box:focus {
+	border: 4px solid #950011;
 }
 
 .search_outputs {
@@ -110,7 +114,13 @@ header {
 
 
 /* Transformation when width*/
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1750px) {
+	.welcome_screen {
+		width: 60vw;
+	}
+}
+
+@media screen and (max-width: 1150px) {
 	.welcome_screen {
 		width: 80vw;
 	}

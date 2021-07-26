@@ -26,20 +26,20 @@
 <main>
     <p>Wenn Sie falsche Daten oder Copyright-Verletzungen auf dieser Seite gefunden haben, wären wir Ihnen sehr dankbar, wenn Sie uns diese im folgenden Formular melden könnten.</p>
 
-    <form name="report" netlify onsubmit="return validateForm()">
-        <section>
-            <label>Ihre E-Mail Adresse</label><br>
+    <form name="Fehler melden" netlify onsubmit="return validateForm()" action="form_success.html">
+        <fieldset>
+            <legend>Ihre E-Mail Adresse</legend><br>
             <small>Für allfällige Rückfragen</small>
-            <input type="email" name="email" placeholder="Meine Antwort">
-        </section>
-        <section>
-            <label>Link zu der Seite, auf welcher Sie den Fehler entdeckt haben <span class="form_needed">*</span></label>
-            <input type="text" name="link" placeholder="Meine Antwort" class="form_check">
-        </section>
-        <section>
-            <label>Beschreibung <span class="form_needed">*</span></label>
-            <textarea type="text" name="description" placeholder="Meine Antwort" rows="1" class="form_check"></textarea>
-        </section>
+            <input type="email" name="E-Mail" placeholder="Meine Antwort">
+        </fieldset>
+        <fieldset>
+            <legend>Link zu der Seite, auf welcher Sie den Fehler entdeckt haben <span class="form_needed">*</span></legend>
+            <input type="text" name="Link" placeholder="Meine Antwort" class="form_check">
+        </fieldset>
+        <fieldset>
+            <legend>Beschreibung <span class="form_needed">*</span></legend>
+            <textarea type="text" name="Beschreibung" placeholder="Meine Antwort" rows="1" class="form_check"></textarea>
+        </fieldset>
 
         <button type="submit">Senden</button>
     </form>

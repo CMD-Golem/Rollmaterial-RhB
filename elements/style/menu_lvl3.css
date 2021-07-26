@@ -40,7 +40,7 @@ main img {
 }
 
 .site_search {
-	width: calc(100% - 24px);;
+	width: calc(100% - 24px);
 	color: white;
  	background-color: transparent;
 	font-size: 15px;

@@ -20,11 +20,19 @@ form {
 	color: red;
 }
 
-section {
+fieldset {
+	margin: 0;
+	border: none;
 	background-color: #312F33;
 	border-radius: 8px;
 	margin-bottom: 12px;
 	padding: 24px;
+}
+
+legend {
+	float: left;
+	width: 100%;
+	padding: 0;
 }
 
 small {
@@ -56,31 +64,26 @@ input:focus, textarea:focus {
 	outline: none;
 }
 
-.checkbox + label {
-	display: block;
-	padding-top: 5px;
-}
-
-.checkbox + label::before {
-	width: 15px;
-	height: 15px;
-	border-radius: 5px;
+input[type=radio] {
+	appearance: none;
+	padding: 0;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;/*5px for checkboxes / 50% for radios */
 	border: 2px solid #e2001a;
 	background-color: transparent;
-	display: block;
-	content: "";
-	float: left;
-	margin-right: 5px;
-	margin-top: 2px;
+	display: inline-block;
+	vertical-align: sub;
 }
 
-.checkbox:checked + label::before {
+input[type=radio]:checked {
 	box-shadow: inset 0px 0px 0px 2.5px #312F33;
 	background-color: #e2001a;
+	border-radius: 50%;
 }
 
-input[type=checkbox] {
-	display: none;
+input[type=radio]:focus, input[type=radio]:hover:focus {
+	border-radius: 50%;
 }
 
 button {
