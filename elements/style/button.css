@@ -5,14 +5,14 @@
 	font-size: 15px;
 	padding: 10px;
 	border: 2px solid #e2001a;
-	width: 90%;
-	margin-right: 10px;
+	width: calc(100% - 24px);
 }
 
 .button:hover, .button:focus {
 	border: 2px solid #950011;
 	/*transition: 0.5s;*/
 }
+
 
 /* Menu 3 (next to site search) */
 .button_menu {
@@ -22,17 +22,10 @@
 }
 
 
-.button_menu .site_search {
-	width: 90%;
+.button_menu .site_search, .button_menu .button {
+	margin: 0;
 	margin-left: 10px;
 	margin-right: 10px;
-}
-
-.button_menu .site_search {
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: initial;
-	margin-right: initial;
 }
 
 
@@ -41,9 +34,12 @@
 	.button_menu {
 		flex-direction: column;
 	}
-	.button {
-		margin-right: 0px;
+	.button_menu .button {
+		margin: 0px;
 		margin-bottom: 20px;
+	}
+	.button_menu .site_search {
+		margin: 0px;
 	}
 }
 
