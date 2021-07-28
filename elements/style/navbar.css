@@ -97,6 +97,32 @@ nav img {
 	display: none;
 }
 
+/* Back Button */
+.nav_back_button_container {
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin-top: 105px;
+	margin-left: 40px;
+}
+
+#nav_back_button {
+	outline: none;
+	background-color: #312F33;
+	color: white;
+	font-size: 15px;
+	padding: 10px 25px;
+	border: 0;
+	border-radius: 8px;
+	text-align: center;
+	display: inline-block;
+}
+
+#nav_back_button:hover {
+	border: 2px solid #e2001a;
+	padding: 8px 23px;
+}	
+
 /* Change padding*/
 @media (max-width: 1700px) {
 	nav {
@@ -170,6 +196,14 @@ nav img {
 }
 
 
+@media (max-width: 1000px) {
+	.nav_back_button_container {
+		position: static;
+		margin-top: 20px;
+	}
+}
+
+
 @media (max-width: 400px) {
 	.nav_list {
 		width: 100%;
@@ -186,6 +220,9 @@ nav img {
 	}
 	nav {
 		padding-left: 0;
+	}
+	.nav_back_button_container {
+		margin-left: 8px;
 	}
 }
 

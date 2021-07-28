@@ -15,7 +15,15 @@ var navbar = `
 `;
 
 try {
-	document.getElementsByTagName("nav")[0].innerHTML = navbar;
+	var el_navbar = document.getElementsByTagName("nav")[0];
+	el_navbar.innerHTML = navbar;
+
+	var nav_back_button = document.createElement("div");
+	nav_back_button.classList.add("nav_back_button_container");
+	nav_back_button.innerHTML = '<button id="nav_back_button" title="Klicke um ins übergeordnete Verzeichnis zu kommen" onclick="backButton()">< Zurück</button>';
+
+	el_navbar.parentNode.insertBefore(nav_back_button, el_navbar.nextSibling);
+	
 }
 catch (e) {}
 
@@ -58,4 +66,19 @@ var images = document.getElementsByTagName("img");
 for (var i = 0; i < images.length; i++) {
 	images[i].onerror = function() {this.onerror=null;this.src="https://rollmaterial-rhb.ch/elements/images/noimage.png";}
 	images[i].loading = "lazy";
+}
+
+
+
+// Back
+function backButton() {
+	var url = window.location.href;
+	var url_remove = url.lastIndexOf("/");
+	url = url.substring(0, url_remove) + ".html"
+
+	if (url == "https://rollmaterial-rhb.ch/data.html") {
+		url = "https://rollmaterial-rhb.ch/";
+	}
+
+	window.location.href = url;
 }
