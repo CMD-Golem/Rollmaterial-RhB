@@ -38,6 +38,10 @@ hr {
 	color: orange;
 }
 
+.hidden {
+	display: none;
+}
+
 /* Preview */
 #preview {
 	display: none;

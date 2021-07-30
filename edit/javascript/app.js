@@ -58,7 +58,7 @@ function showMainGroup() {
 		}
 		if (sel_main_group.value == "lokomotiven") {
 			document.getElementById("main_table").innerHTML = store_lokomotiven;
-			document.getElementById("sub_group").innerHTML = '<option value="unset">Wähle die Sub Group</option><option value="bernina-fahrzeuge">Bernina-Fahrzeuge</option><option value="dienstfahrzeuge">Dienstfahrzeuge</option><option value="historische_fahrzeuge">Historische Fahrzeuge</option><option value="lokomotiven">Lokomotiven</option><option value="rangierlokomotiven">Rangierlokomotiven</option><option value="rangiertraktoren">Rangiertraktoren</option><option value="schneeschleudern">Schneeschleudern</option>';
+			document.getElementById("sub_group").innerHTML = '<option value="unset">Wähle die Sub Group</option><option value="bernina-fahrzeuge">Bernina-Fahrzeuge</option><option value="dienstfahrzeuge">Dienstfahrzeuge</option><option value="historische_fahrzeuge">Historische Fahrzeuge</option><option value="lokomotiven">Lokomotiven</option><option value="rangierlokomotiven">Rangierlokomotiven</option><option value="rangiertraktoren">Rangiertraktoren</option><option value="schneeraeumung">Schneeräumung</option>';
 			group_color = "#2F4C2B";
 		}
 		if (sel_main_group.value == "personenwagen") {
@@ -83,8 +83,37 @@ function showMainGroup() {
 // Get Sub Group
 var sel_sub_group = document.getElementById("sub_group");
 sel_sub_group.addEventListener("change", showSubGroup);
+var always_here_sub;
+var unhidden_sub;
 
 function showSubGroup() {
+	sub_group = sel_sub_group.value;
+
+	// Show always (remove red text when specific sub group is selected)
+	if (always_here_sub != undefined) {
+		for (var i = 0; i < always_here_sub.length; i++) {
+			always_here_sub[i].classList.add("only_here");
+		}
+	}
+	always_here_sub = main_table.getElementsByClassName("always_here_" + sub_group);
+	for (var i = 0; i < always_here_sub.length; i++) {
+		always_here_sub[i].classList.remove("only_here");
+	}
+
+
+	// Unhide hidden tables (unhide rows when specific sub group is selected)
+	if (unhidden_sub != undefined) {
+		for (var i = 0; i < unhidden_sub.length; i++) {
+			unhidden_sub[i].classList.add("hidden");
+		}
+	}
+	unhidden_sub = main_table.getElementsByClassName("unhidden_" + sub_group);
+	for (var i = 0; i < unhidden_sub.length; i++) {
+		unhidden_sub[i].classList.remove("hidden");
+	}
+}
+
+function showSubGroup2() {
 	sub_group = sel_sub_group.value;
 
 	// Pufferplatten
@@ -122,8 +151,8 @@ el_id.addEventListener("keyup", function(){ id = el_id.value;el_id.placeholder =
 
 function getId() {
 	if (el_id.value == "" && type != "" && numbers != "") {
-		var edit_type = type.replace(" ", "");
-		var edit_type = edit_type.replace("/", "-");
+		var edit_type = type.replaceAll(" ", "");
+		var edit_type = edit_type.replaceAll("/", "-");
 		var edit_type = edit_type.toLowerCase();
 		var edit_type = edit_type.split("<");
 
@@ -172,7 +201,7 @@ function getTypeMeta() {
 	if (el_type_meta.value == "") {
 		if (type.includes("<sup>") == true) {
 			var edit_type = type.split("<sup>");
-			var edit_type_1 = edit_type[1].replace("</sup>", "");
+			var edit_type_1 = edit_type[1].replaceAll("</sup>", "");
 			var edit_type_1 = edit_type_1.replaceAll("I", "¹");
 			type_meta = edit_type[0] + edit_type_1;
 		}
@@ -233,7 +262,7 @@ for (var i = 0; i < add_edit.length; i++) {
 // #############################################################################
 // Add HTML Tags when out of focus and remove background from Ladegewichtsraster
 function convertit(text) {
-	var newtext = text.innerHTML.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&nbsp;/g, " ");
+	var newtext = text.innerHTML.replaceAll(/&lt;/g, "<").replaceAll(/&gt;/g, ">").replaceAll(/&nbsp;/g, " ");
 	text.innerHTML = newtext;
 
 	var ladegewicht_table = text.getElementsByClassName("ladegewicht_table");

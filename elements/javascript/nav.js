@@ -62,11 +62,20 @@ for (var i = 0; i < notdef.length; i++) {
 
 
 // fix broken images / lazy loading
-var images = document.getElementsByTagName("img");
-for (var i = 0; i < images.length; i++) {
-	images[i].onerror = function() {this.onerror=null;this.src="https://rollmaterial-rhb.ch/elements/images/noimage.png";}
-	images[i].loading = "lazy";
+function errorImage() {
+	var images = document.getElementsByTagName("img");
+	for (var i = 0; i < images.length; i++) {
+		images[i].loading = "lazy";
+		if (images[i].complete == true && images[i].naturalHeight == 0) {
+			images[i].src = "https://rollmaterial-rhb.ch/elements/images/noimage.png";
+		}
+	}
 }
+
+window.addEventListener("load", errorImage);
+
+	
+
 
 
 

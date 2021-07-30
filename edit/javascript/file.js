@@ -71,20 +71,44 @@ var save_table = document.getElementById("save_table");
 save_table.innerHTML = main_table.innerHTML;
 
 
-// Remove empty table rows
+// Change Table
 var table_tr = save_table.getElementsByTagName("tr");
 for (var i = 0; i < table_tr.length; i++) {
-	var table_td = table_tr[i].getElementsByClassName("table_r")[0];
-	if (table_td != undefined && (table_td.innerHTML == "" || table_td.innerHTML == "<br>") ) {
-		table_tr[i].classList.add("empty_td");
+	var table_l = table_tr[i].getElementsByClassName("table_6")[0];
+	var table_r = table_tr[i].getElementsByClassName("table_r")[0];
+
+	// Remove empty table rows
+	if (table_r != undefined && (table_r.innerHTML == "" || table_r.innerHTML == "<br>") || table_tr[i].classList.contains("hidden") == true) {
+		table_tr[i].classList.add("empty_tr");
 	}
-	else {
-		
+
+	// Remove marking classes
+	table_l.classList.remove("only_here"); // Nur wenn vorhanden
+	table_l.classList.remove("not_here"); // Nur wenn nicht vorhanden
+
+	// Remove edit attribute
+	table_l.removeAttribute("contenteditable");
+	table_r.removeAttribute("contenteditable");
+
+	// Remove always_here classes (removes only_here)
+	var class_list = table_l.classList.value.match(/(\balways_here\S+\b)/ig);
+	if (class_list != undefined) {
+		for (var j = 0; j < class_list.length; j++) {
+			table_l.classList.remove(class_list[j]);
+		}
+	}
+
+	// Remove unhidden classes (removes hidden)
+	var class_list = table_tr[i].classList.value.match(/(\bunhidden\S+\b)/ig);
+	if (class_list != undefined) {
+		for (var j = 0; j < class_list.length; j++) {
+			table_tr[i].classList.remove(class_list[j]);
+		}
 	}
 }
-var empty_td = save_table.getElementsByClassName("empty_td");
-while (empty_td.length > 0) {
-	empty_td[0].remove();
+var empty_tr = save_table.getElementsByClassName("empty_tr");
+while (empty_tr.length > 0) {
+	empty_tr[0].remove();
 }
 
 
@@ -100,20 +124,8 @@ while (empty_group.length > 0) {
 	empty_group[0].remove();
 }
 
-// Remove edit attribute and marking class
-var remove_edit = save_table.getElementsByTagName("td");
-for (var i = 0; i < remove_edit.length; i++) {
-	remove_edit[i].removeAttribute("contenteditable");
-	remove_edit[i].classList.remove("only_here");
-	remove_edit[i].classList.remove("not_here");
 
-	remove_edit[i].classList.remove("pufferplatten");
-	remove_edit[i].classList.remove("fernsteuerung");
-}
-
-// only_here: Nur wenn vorhanden
-// not_here: Nur wenn nicht vorhanden
-
+// Save Table
 var html_table = document.getElementById("save_table").innerHTML;
 
 // remove empty spaces
@@ -126,6 +138,7 @@ html_table = html_table.replace(/^\s*$(?:\r\n?|\n)/gm, "").replaceAll(`			<div c
 var main_spoiler = document.getElementById("spoiler_box");
 var save_spoiler = document.getElementById("save_spoiler");
 save_spoiler.innerHTML = main_spoiler.innerHTML;
+
 
 // Remove empty groups
 var save_box = save_spoiler.getElementsByClassName("spoiler_box");
@@ -155,6 +168,7 @@ for (var i = 0; i < remove_edit.length; i++) {
 }
 
 
+// Save Spoilers
 var html_spoiler = document.getElementById("save_spoiler").innerHTML;
 
 // remove empty spaces

@@ -11,13 +11,13 @@
 }
 
 .selbox_left {
-	flex: 1;
 	margin-right: 15px;
 }
 
 
 .selbox_right {
-	flex: 1;
+	width: 100%;
+	min-width: 330px;
 	margin-left: 15px;
 }
 
@@ -32,6 +32,23 @@ h3 {
 	margin-top: 0;
 }
 
+@media screen and (max-width: 950px) {
+	.table_r {
+		text-align: right;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	table {
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	td {
+		padding: 5px;
+	}
+}
+
 @media screen and (max-width: 700px) {
 	.selbox {
 		flex-direction: column;
@@ -39,6 +56,7 @@ h3 {
 	.selbox_left, .selbox_right {
 		margin-right: 0;
 		margin-left: 0;
+		min-width: unset;
 	}
 	.selbox_img {
 		width: 80%;
