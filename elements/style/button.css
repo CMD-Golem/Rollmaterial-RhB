@@ -22,14 +22,19 @@
 }
 
 
-.button_menu .site_search, .button_menu .button {
-	margin: 0;
-	margin-left: 10px;
-	margin-right: 10px;
+/* Transformation */
+@media screen and (min-width: 721px) {
+	.button_menu .button:nth-child(2), .button_menu .site_search:nth-child(2) {
+		margin: 0;
+		margin-left: 10px;
+	}
+
+	.button_menu .button:nth-child(1), .button_menu .site_search:nth-child(1) {
+		margin: 0;
+		margin-right: 10px;
+	}
 }
 
-
-/* Transformation */
 @media screen and (max-width: 720px) {
 	.button_menu {
 		flex-direction: column;

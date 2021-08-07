@@ -123,9 +123,19 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://rollmaterial-rhb.ch/data/lokomotiven/triebzuege/abe8-12_3501/werbefahrzeuge.html</loc>
+  <lastmod>2021-08-07T10:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
   <loc>https://rollmaterial-rhb.ch/data/lokomotiven/triebzuege/abe4-16_3101.html</loc>
   <lastmod>2021-07-24T10:00:00+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rollmaterial-rhb.ch/data/lokomotiven/triebzuege/abe4-16_3101/werbefahrzeuge.html</loc>
+  <lastmod>2021-08-07T10:00:00+00:00</lastmod>
+  <priority>0.60</priority>
 </url>
 <url>
   <loc>https://rollmaterial-rhb.ch/data/lokomotiven/triebzuege/abe4-16_3111.html</loc>
@@ -507,14 +517,57 @@
   <lastmod>2021-07-24T10:00:00+00:00</lastmod>
   <priority>0.60</priority>
 </url>
+<url>
+  <loc>https://rollmaterial-rhb.ch/data/lokomotiven/schneeraeumung.html</loc>
+  <lastmod>2021-08-07T10:00:00+00:00</lastmod>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>https://rollmaterial-rhb.ch/data/lokomotiven/schneeraeumung/schneeschleudern.html</loc>
+  <lastmod>2021-08-07T10:00:00+00:00</lastmod>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>https://rollmaterial-rhb.ch/data/lokomotiven/schneeraeumung/schneeschleudern/xrotd6-6_9213.html</loc>
+  <lastmod>2021-08-07T10:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rollmaterial-rhb.ch/data/lokomotiven/schneeraeumung/schneeschleudern/xrot_9214.html</loc>
+  <lastmod>2021-08-07T10:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rollmaterial-rhb.ch/data/lokomotiven/schneeraeumung/schneeschleudern/xrotmt_9217.html</loc>
+  <lastmod>2021-08-07T10:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rollmaterial-rhb.ch/data/lokomotiven/schneeraeumung/schneeschleudern/xrotmt_95401.html</loc>
+  <lastmod>2021-08-07T10:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rollmaterial-rhb.ch/data/lokomotiven/schneeraeumung/schneeschleudern/xrotmt_95403.html</loc>
+  <lastmod>2021-08-07T10:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 
 </urlset>
 
 <!--
-  Priorities:
-    0.8:  Hauptseiten
-    0.6:  Hauptseiten welche unterteilt werden (ge4-4_601)
-          Unterseiten
-    0.5:  Auswahl Seiten
+https://rollmaterial-rhb.ch/data/lokomotiven/lokomotiven/ge4-4_611/ge4-4_621/werbefahrzeuge.html
+lokomotiven         0.6
+lokomotiven         0.5
+ge4-4_611           0.8
+ge4-4_621           0.6
+werbefahrzeuge      0.6
+
+
+https://rollmaterial-rhb.ch/data/lokomotiven/bernina-fahrzeuge/triebwagen/abe4-4_51.html
+lokomotiven         0.6
+bernina-fahrzeuge   0.5
+triebwagen          0.5
+abe4-4_51           0.8
 -->

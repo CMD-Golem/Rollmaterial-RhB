@@ -11,6 +11,7 @@ main {
 	}
 }
 
+/* Form */
 form {
 	margin-top: 80px;
 
@@ -39,6 +40,7 @@ small {
 	font-size: 12px;
 }
 
+/* Text Input */
 input, textarea {
 	border: none;
 	border-radius: 0;
@@ -64,28 +66,34 @@ input:focus, textarea:focus {
 	outline: none;
 }
 
-input[type=radio] {
+
+/* Checkbox / Radio */
+input[type=checkbox], input[type=radio] {
 	appearance: none;
 	padding: 0;
 	width: 20px;
 	height: 20px;
-	border-radius: 50%;/*5px for checkboxes / 50% for radios */
 	border: 2px solid #e2001a;
 	background-color: transparent;
 	display: inline-block;
 	vertical-align: sub;
 }
 
-input[type=radio]:checked {
+input[type=checkbox]:checked, input[type=radio]:checked {
 	box-shadow: inset 0px 0px 0px 2.5px #312F33;
 	background-color: #e2001a;
+}
+
+input[type=checkbox], input[type=checkbox]:focus, input[type=checkbox]:hover:focus, input[type=checkbox]:checked {
+	border-radius: 5px;
+}
+
+input[type=radio], input[type=radio]:focus, input[type=radio]:hover:focus, input[type=radio]:checked {
 	border-radius: 50%;
 }
 
-input[type=radio]:focus, input[type=radio]:hover:focus {
-	border-radius: 50%;
-}
 
+/* Button */
 button {
 	outline: none;
 	background-color: #e2001a;
@@ -95,4 +103,8 @@ button {
 	border: 0;
 	border-radius: 8px;
 	margin-top: 10px;
+}
+
+button:hover , button:active, button:focus {
+	background-color: #950011;
 }
