@@ -819,9 +819,9 @@ var store_lokomotiven = `
 					</tr>
 					<tr class="hidden unhidden_schneeraeumung">
 						<td class="table_6">Räumbreite</td>
-						<td class="table_r">max. 3.6m</td>
+						<td class="table_r">max. 3.6 m</td>
 					</tr>
-					<tr class="hidden unhidden_schneeraeumung only_here">
+					<tr class="hidden unhidden_schneeraeumung">
 						<td class="table_6 only_here">Räumleistung</td>
 						<td class="table_r">6'000 t/h</td>
 					</tr>
