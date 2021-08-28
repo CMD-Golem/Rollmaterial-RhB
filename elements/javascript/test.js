@@ -19,7 +19,7 @@ var update = (id, collection) => {
 
 // ###########################################################
 // set id and collection name of counter
-var id = "REF_NUMBER";
+var id = "308175711959515721";
 var collection = "counter";
 
 
