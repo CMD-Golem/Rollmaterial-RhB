@@ -1,0 +1,8 @@
+{
+  "name": "netlify-fauna",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "faunadb": "^2.13.1"
+  }
+}
