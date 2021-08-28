@@ -3,16 +3,17 @@ var read = (id, collection) => {
   return fetch(`/.netlify/functions/read/${collection}/${id}`, {
     method: 'POST',
   }).then(response => {
-    return response.json();
+    return response.json()
   })
 }
 
 // update db
-var update = (id, collection) => {
+var update = (id, collection, data) => {
   return fetch(`/.netlify/functions/update/${collection}/${id}`, {
-    method: 'POST',
+    body: JSON.stringify(data),
+    method: 'POST'
   }).then(response => {
-    return response.json();
+    return response.json()
   })
 }
 
@@ -23,10 +24,15 @@ var id = "308175711959515721";
 var collection = "counter";
 
 
-// show counter in html
+// get counter from db
+var counter
+
 Promise.resolve( read(id, collection) ).then( function(value) {
+  counter = value.data.count;
+
+  // show counter in html
   try {
-    document.getElementById("show_counter").innerHTML = value.data.count;
+    document.getElementById("show_counter").innerHTML = counter;
   }
   catch (e) {
     console.log("Counter isn't shown on page");
@@ -36,5 +42,8 @@ Promise.resolve( read(id, collection) ).then( function(value) {
 
 // update counter
 function updateCounter() {
-  update(id, collection)//.then((value) => { console.log(value); });
+  update(id, collection, {
+    count: counter + 1,
+    date: new Date()
+  })//.then((value) => { console.log(value); });
 }
