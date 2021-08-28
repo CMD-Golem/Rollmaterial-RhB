@@ -832,6 +832,10 @@ var store_lokomotiven = `
 				<h3>Fahrzeugausrüstung</h3>
 				<table>
 					<tr>
+						<td class="table_6 only_here">Aufbau</td>
+						<td class="table_r">Fahrleitungs-Sprüheinrichtung</td>
+					</tr>
+					<tr>
 						<td class="table_6 only_here">Zug-/ Stossvorrichtung</td>
 						<td class="table_r">Automatische Kupplung (Schwab) / Stangenpuffer</td>
 					</tr>
@@ -1131,6 +1135,10 @@ var store_triebwagen = `
 			<div class="group">
 				<h3>Fahrzeugausrüstung</h3>
 				<table>
+					<tr>
+						<td class="table_6 only_here">Aufbau</td>
+						<td class="table_r">Fahrleitungs-Sprüheinrichtung</td>
+					</tr>
 					<tr>
 						<td class="table_6 only_here">Zug- / Stossvorrichtung</td>
 						<td class="table_r">Automatische Kupplung <small>(Schwab)</small> / Stangenpuffer</td>
