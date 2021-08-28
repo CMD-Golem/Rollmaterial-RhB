@@ -19,7 +19,7 @@ var update = (id, collection) => {
 
 // ###########################################################
 // set id and collection name of counter
-var id = "308175711959515721";
+var id = "REF_NUMBER";
 var collection = "counter";
 
 
@@ -35,14 +35,6 @@ Promise.resolve( read(id, collection) ).then( function(value) {
 
 
 // update counter
-var already_download = false;
-
 function updateCounter() {
-  if (already_download != true) {
-    already_download = true;
-    update(id, collection)//.then((value) => { console.log(value); });
-  }
-  else {
-    console.log("Already downloaded");
-  }
+  update(id, collection)//.then((value) => { console.log(value); });
 }
