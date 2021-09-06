@@ -16,6 +16,14 @@ td {
 	/*user-select: all;*/
 }
 
+.table_shrink {
+	width: var(--table_shrink_width);
+}
+
+.table_num:not(:last-child) {
+	width: 50px;
+}
+
 .table_6 {
 	width: 45%;
 }
@@ -50,14 +58,12 @@ h3 {
 
 
 /* Transformation */
-@media screen and (max-width: 800px) {
-	table {
-		width: 100%;
-		margin-left: 0px;
-		margin-right: 0px;
+@media screen and (max-width: 600px) {
+	.table_shrink {
+		width: unset;
 	}
-	td {
-		padding: 5px;
+	.table_num {
+		width: 50px;
 	}
 }
 
@@ -68,6 +74,14 @@ h3 {
 }
 
 @media (max-width: 800px) {
+	table {
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	td {
+		padding: 5px;
+	}
 	.table_top, .table_top thead, .table_top tbody, .table_top th, .table_top td, .table_top tr {
 		display: block;
 	}

@@ -363,11 +363,6 @@
   <priority>0.60</priority>
 </url>
 <url>
-  <loc>https://rollmaterial-rhb.ch/data/lokomotiven/rangiertraktoren/tmf2-2_85/tmf2-2_85_alt.html</loc>
-  <lastmod>2021-07-24T10:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
   <loc>https://rollmaterial-rhb.ch/data/lokomotiven/rangiertraktoren/tmf2-2_85/tmf2-2_85.html</loc>
   <lastmod>2021-07-24T10:00:00+00:00</lastmod>
   <priority>0.60</priority>
@@ -550,6 +545,21 @@
 <url>
   <loc>https://rollmaterial-rhb.ch/data/lokomotiven/schneeraeumung/schneeschleudern/xrotmt_95403.html</loc>
   <lastmod>2021-08-07T10:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>link":"https://rollmaterial-rhb.ch/data/lokomotiven/historische_fahrzeuge/dampflokomotiven/g3-4_1.html</loc>
+  <lastmod>2021-09-06T10:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>link":"https://rollmaterial-rhb.ch/data/lokomotiven/historische_fahrzeuge/dampflokomotiven/g3-4_11.html</loc>
+  <lastmod>2021-09-06T10:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>link":"https://rollmaterial-rhb.ch/data/lokomotiven/historische_fahrzeuge/dampflokomotiven/g4-5_107.html</loc>
+  <lastmod>2021-09-06T10:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
