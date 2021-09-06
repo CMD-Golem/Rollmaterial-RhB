@@ -11,8 +11,8 @@
 	{"type":"Ge 4/4<sup>II</sup>", "description":"BoBo II", "number":"611 ... 633", "searchdata":["Ge 4/4II", "BoBo II", "Lokomotiven"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/lokomotiven/ge4-4_611.html"},
 	{"type":"Ge 4/4<sup>II</sup>", "description":"BoBo II", "number":"611 - 620", "searchdata":["613", "616", "617", "618", "619"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/lokomotiven/ge4-4_611/ge4-4_611_alt.html"},
 	{"type":"Ge 4/4<sup>II</sup>", "description":"BoBo II", "number":"611 - 620", "searchdata":["611", "612", "614", "615", "620"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/lokomotiven/ge4-4_611/ge4-4_611.html"},
-	{"type":"Ge 4/4<sup>II</sup>", "description":"BoBo II", "number":"621 ... 633", "searchdata":["622", "627", "632", "633"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/lokomotiven/ge4-4_611/ge4-4_621_alt.html"},
-	{"type":"Ge 4/4<sup>II</sup>", "description":"BoBo II", "number":"621 ... 633", "searchdata":["621", "623", "624", "625", "626", "628", "629", "630", "631"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/lokomotiven/ge4-4_611/ge4-4_621.html"},
+	{"type":"Ge 4/4<sup>II</sup>", "description":"BoBo II", "number":"621 ... 633", "searchdata":["622", "632", "633"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/lokomotiven/ge4-4_611/ge4-4_621_alt.html"},
+	{"type":"Ge 4/4<sup>II</sup>", "description":"BoBo II", "number":"621 ... 633", "searchdata":["621", "623", "624", "625", "626", "627", "628", "629", "630", "631"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/lokomotiven/ge4-4_611/ge4-4_621.html"},
 	{"type":"Ge 4/4<sup>III</sup>", "description":"BoBo III", "number":"641 - 653", "searchdata":["Ge 4/4III", "BoBo III", "Lokomotiven"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/lokomotiven/ge4-4_641.html"},
 	{"type":"Ge 4/4<sup>III</sup>", "description":"BoBo III", "number":"641 - 649", "searchdata":["641", "642", "643", "644", "645", "646", "647", "648", "649", "649"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/lokomotiven/ge4-4_641/ge4-4_641.html"},
 	{"type":"Ge 4/4<sup>III</sup>", "description":"BoBo III", "number":"650 - 652", "searchdata":["650", "651", "652"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/lokomotiven/ge4-4_641/ge4-4_650.html"},
@@ -26,8 +26,7 @@
 	{"type":"Gm 4/4", "description":"", "number":"241", "searchdata":["Gm 4/4", "Rangierlokomotiven", "Rangierdienst", "241"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/rangierlokomotiven/gm4-4_241.html"},
 	{"type":"Geaf 2/2", "description":"", "number":"20601 - 20607", "searchdata":["Geaf 2/2", "Rangierlokomotiven", "Rangierdienst", "20601", "20602", "20603", "20604", "20605", "20606", "20607"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/rangierlokomotiven/geaf2-2_20601.html"},
 	{"type":"Tmf 2/2", "description":"", "number":"85 - 90", "searchdata":["Tmf 2/2", "Rangiertraktoren", "Bahndienst", "Rangierdienst"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/rangiertraktoren/tmf2-2_85.html"},
-	{"type":"Tmf 2/2", "description":"", "number":"85", "searchdata":["85"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/rangiertraktoren/tmf2-2_85/tmf2-2_85_alt.html"},
-	{"type":"Tmf 2/2", "description":"", "number":"86 - 89", "searchdata":["86", "87", "88", "89"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/rangiertraktoren/tmf2-2_85/tmf2-2_85.html"},
+	{"type":"Tmf 2/2", "description":"", "number":"85 - 89", "searchdata":["85", "86", "87", "88", "89"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/rangiertraktoren/tmf2-2_85/tmf2-2_85.html"},
 	{"type":"Tmf 2/2", "description":"", "number":"90", "searchdata":["90"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/rangiertraktoren/tmf2-2_85/tmf2-2_90.html"},
 	{"type":"Tm 2/2", "description":"", "number":"93", "searchdata":["Tm 2/2", "Rangiertraktoren", "Rangierdienst", "93"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/rangiertraktoren/tm2-2_93.html"},
 	{"type":"Tm 2/2", "description":"", "number":"111 - 120", "searchdata":["Tm 2/2", "Rangiertraktoren", "Rangierdienst"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/rangiertraktoren/tm2-2_111.html"},
@@ -66,12 +65,15 @@
 	{"type":"Ge 4/6", "description":"", "number":"353", "searchdata":["Ge 4/6", "Historische Fahrzeuge", "Lokomotiven", "353"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/historische_fahrzeuge/streckenlokomotiven/ge4-6_343.html"},
 	{"type":"Ge 2/4", "description":"", "number":"222", "searchdata":["Ge 2/4", "Historische Fahrzeuge", "Lokomotiven", "222"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/historische_fahrzeuge/streckenlokomotiven/ge2-4_222.html"},
 	{"type":"ABe 4/4", "description":"", "number":"501", "searchdata":["ABe 4/4", "Historische Fahrzeuge", "Triebwagen", "501"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/historische_fahrzeuge/triebwagen/abe4-4_501.html"},
-
 	{"type":"X rot d 6/6", "description":"Dampf-Schneeschleuder", "number":"9213", "searchdata":["X rot d 6/6", "Schneeräumung", "Schneeschleudern", "Dampf-Schneeschleuder", "9213"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/schneeraeumung/schneeschleudern/xrotd6-6_9213.html"},
 	{"type":"X rot", "description":"", "number":"9214", "searchdata":["X rot", "Schneeräumung", "Schneeschleudern", "9214"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/schneeraeumung/schneeschleudern/xrot_9214.html"},
 	{"type":"X rot mt", "description":"", "number":"9217", "searchdata":["X rot mt", "Schneeräumung", "Schneeschleudern", "9217"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/schneeraeumung/schneeschleudern/xrotmt_9217.html"},
 	{"type":"X rot mt", "description":"", "number":"95401 - 95402", "searchdata":["X rot mt", "Schneeräumung", "Schneeschleudern", "95401", "95402"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/schneeraeumung/schneeschleudern/xrotmt_95401.html"},
 	{"type":"X rot mt", "description":"", "number":"95403 - 95404", "searchdata":["X rot mt", "Schneeräumung", "Schneeschleudern", "95403", "95404"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/schneeraeumung/schneeschleudern/xrotmt_95403.html"},
+	
+	{"type":"G 3/4", "description":"", "number":"1", "searchdata":["G 3/4", "Historische Fahrzeuge", "Dampflokomotiven", "1"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/historische_fahrzeuge/dampflokomotiven/g3-4_1.html"},
+	{"type":"G 3/4", "description":"", "number":"11", "searchdata":["G 3/4", "Historische Fahrzeuge", "Dampflokomotiven", "11"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/historische_fahrzeuge/dampflokomotiven/g3-4_11.html"},
+	{"type":"G 4/5", "description":"", "number":"107 - 108", "searchdata":["G 4/5", "Historische Fahrzeuge", "Dampflokomotiven", "107", "108"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/historische_fahrzeuge/dampflokomotiven/g4-5_107.html"},
 
 
 	{"old":"true", "type":"Gm 3/3", "description":"Moyse", "number":"231 - 233", "searchdata":["Gm 3/3", "Moyse", "231", "232", "233"], "link":"https://rollmaterial-rhb.ch/data/lokomotiven/rangierlokomotiven/gm3-3_231.html"},
