@@ -1,6 +1,4 @@
 // Source: https://www.youtube.com/watch?v=1iysNUrI3lw and https://stackoverflow.com/a/64197394/14225364
-
-
 const search = document.getElementById('search');
 const matchList = document.getElementById('match-list');
 const explore = document.getElementById('explore');
@@ -63,10 +61,7 @@ window.addEventListener('load', () => searchData(search.value));
 
 //Open first child if user press enter
 function enter() {
-	var pressedKey = event.key;
-
-	if (pressedKey == "Enter") {
-		url = matchList.getElementsByClassName("link")[0].href
-		window.location.href = url;
+	if (event.key == "Enter") {
+		window.location.href = matchList.getElementsByClassName("link")[0].href;
 	}
 }
