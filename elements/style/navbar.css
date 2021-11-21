@@ -227,7 +227,7 @@ nav img {
 }
 
 @media print {
-	nav {
+	nav, #nav_back_button {
 		display: none;
 	}
 }
