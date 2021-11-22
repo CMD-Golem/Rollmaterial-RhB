@@ -1,25 +1,45 @@
-// Source: https://www.youtube.com/watch?v=1iysNUrI3lw and https://stackoverflow.com/a/64197394/14225364
-const search = document.getElementById('search');
-const matchList = document.getElementById('match-list');
-const explore = document.getElementById('explore');
-const not_found = document.getElementById('not_found');
+var search = document.getElementById('search');
+var matchList = document.getElementById('match-list');
+var not_found = document.getElementById('not_found');
+var explore = document.getElementById('explore');
 
+search.addEventListener('keyup', searchData);
+searchData();
 
 // Search search.json and filter it
-const searchData = async searchText => {
-    const res = await fetch('https://raw.githubusercontent.com/CMD-Golem/rollmaterial-rhb/master/elements/search.json');
-    const resJson = await res.json();
-    const regex = new RegExp(`^${searchText}`, 'gi');
-    // Recursion.
-    const found = data => (Array.isArray(data) ? data.find(found) : data.match(regex));
-    let matches = resJson.filter(data => (found(data.searchdata)));
+async function searchData(search_input) {
+    var res = await fetch('https://raw.githubusercontent.com/CMD-Golem/rollmaterial-rhb/master/elements/search.json');
+    var resJson = await res.json();
+	var matches = [];
+	var search_input = search.value;
+    
+	var filter = search_input.toUpperCase().split(" ");
 
-	if (matches.length === 0) {
-		matchList.innerHTML = '';
-		explore.style.display = 'flex';
+	if (search_input != "") {
+		for (var i = 0; i < resJson.length; i++) {
+			var filterwords = resJson[i].searchdata.toUpperCase().split(" ");
+			var hide = false;
+	
+			for (var j = 0; j < filter.length; j++) {
+				var prehide = true;
+	
+				for (var k = 0; k < filterwords.length; k++) {
+					if (filterwords[k].startsWith(filter[j])) { var prehide = false; }
+				}
+				if (prehide == false && hide != true) { var hide = false; }
+				else { var hide = true; }
+			}
+	
+			if (hide != true) {
+				matches.push(resJson[i]);
+			}
+		}
 	}
-	if (searchText.length === 0) {
-		matches = [];
+	else {
+		var matches = [];
+	}
+
+	if (matches.length == 0 || search_input.length == 0) {
 		matchList.innerHTML = '';
 		explore.style.display = 'flex';
 	}
@@ -31,9 +51,9 @@ const searchData = async searchText => {
 };
 
 // Show results in Html
-const outputHtml = matches => {
+function outputHtml(matches) {
 	if (matches.length > 0) {
-		const html = matches.map(match => `
+		var html = matches.map(match => `
 			<div class="search_output">
 				<a class="link disable_link" href="${match.link}">
 					<h2>${match.type}&#8199;${match.number}</h2>
@@ -54,12 +74,7 @@ const outputHtml = matches => {
 	}
 };
 
-
-search.addEventListener('keyup', () => searchData(search.value));
-window.addEventListener('load', () => searchData(search.value));
-
-
-//Open first child if user press enter
+//Open first result if user press enter
 function enter() {
 	if (event.key == "Enter") {
 		window.location.href = matchList.getElementsByClassName("link")[0].href;
