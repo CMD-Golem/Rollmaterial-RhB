@@ -840,7 +840,7 @@ var store_lokomotiven = `
 						<td class="table_r">Automatische Kupplung (Schwab) / Stangenpuffer</td>
 					</tr>
 					<tr>
-						<td class="table_6 only_here always_here_lokomotiven always_here_rangierlokomotiven">Nylatron-Pufferplatten</td><!--Nur bei Lokomotiven und Rangierlokomotiven-->
+						<td class="table_6 only_here revert_only_lokomotiven revert_only_rangierlokomotiven">Nylatron-Pufferplatten</td><!--Nur bei Lokomotiven und Rangierlokomotiven-->
 						<td class="table_r">ja</td>
 					</tr>
 					<tr>
@@ -848,7 +848,7 @@ var store_lokomotiven = `
 						<td class="table_r">WTB-Zugbus <small>(MZST)</small></td>
 					</tr>
 					<tr>
-						<td class="table_6 only_here always_here_rangiertraktoren">Funkfernsteuerung</td><!--Nur wenn vorhanden (bei Traktoren immer)-->
+						<td class="table_6 only_here revert_only_rangiertraktoren">Funkfernsteuerung</td><!--Nur wenn vorhanden (bei Traktoren immer)-->
 						<td class="table_r">ja</td>
 					</tr>
 					<tr>
@@ -872,7 +872,7 @@ var store_lokomotiven = `
 						<td class="table_r">Vakuum-Hauptleitung<br>Druckluft-Hauptleitung <small>(Dual-Bremse)</small></td>
 					</tr>
 					<tr>
-						<td class="table_6 not_here">LBT-Leitung</td><!--Nur wenn nicht vorhanden-->
+						<td class="table_6 not_here revert_not_historische_fahrzeuge">LBT-Leitung</td><!--Nur wenn nicht vorhanden-->
 						<td class="table_r">keine</td>
 					</tr>
 					<tr>
