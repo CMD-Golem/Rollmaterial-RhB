@@ -83,21 +83,31 @@ function showMainGroup() {
 // Get Sub Group
 var sel_sub_group = document.getElementById("sub_group");
 sel_sub_group.addEventListener("change", showSubGroup);
-var always_here_sub;
-var unhidden_sub;
+var revert_only_sub, revert_not_sub, unhidden_sub;
 
 function showSubGroup() {
 	sub_group = sel_sub_group.value;
 
 	// Show always (remove red text when specific sub group is selected)
-	if (always_here_sub != undefined) {
-		for (var i = 0; i < always_here_sub.length; i++) {
-			always_here_sub[i].classList.add("only_here");
+	if (revert_only_sub != undefined) {
+		for (var i = 0; i < revert_only_sub.length; i++) {
+			revert_only_sub[i].classList.add("only_here");
 		}
 	}
-	always_here_sub = main_table.getElementsByClassName("always_here_" + sub_group);
-	for (var i = 0; i < always_here_sub.length; i++) {
-		always_here_sub[i].classList.remove("only_here");
+	revert_only_sub = main_table.getElementsByClassName("revert_only_" + sub_group);
+	for (var i = 0; i < revert_only_sub.length; i++) {
+		revert_only_sub[i].classList.remove("only_here");
+	}
+
+	// Show always (remove orange text when specific sub group is selected)
+	if (revert_not_sub != undefined) {
+		for (var i = 0; i < revert_not_sub.length; i++) {
+			revert_not_sub[i].classList.add("not_here");
+		}
+	}
+	revert_not_sub = main_table.getElementsByClassName("revert_not_" + sub_group);
+	for (var i = 0; i < revert_not_sub.length; i++) {
+		revert_not_sub[i].classList.remove("not_here");
 	}
 
 

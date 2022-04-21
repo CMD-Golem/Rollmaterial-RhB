@@ -5,8 +5,9 @@ for (var i = 0; i < el_spoiler.length; i++) {
 }
 
 function spoiler(selected_spoiler) {
-	selected_spoiler.target.classList.toggle("active");
-	var spoiler_content = selected_spoiler.target.nextElementSibling;
+	var spoiler_button = selected_spoiler.target.closest(".spoiler");
+	var spoiler_content = spoiler_button.nextElementSibling;
+	spoiler_button.classList.toggle("active");
 
 	if (spoiler_content.style.maxHeight) {
 		spoiler_content.lastElementChild.style.marginBottom = null;
