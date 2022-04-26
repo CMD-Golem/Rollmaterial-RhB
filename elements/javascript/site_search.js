@@ -9,7 +9,7 @@ function siteSearch() {
 
 	for (var i = 0; i < elements.length; i++) {
 		var filterwords = elements[i].innerHTML;
-		filterwords = filterwords.replace(/(\&shy;|­|&#173;)/gi, "");
+		filterwords = filterwords.replace(/(\&shy;||&#173;)/gi, "");
 		if (filterwords.toUpperCase().indexOf(filter) > -1) {
 			elements[i].parentElement.classList.remove("hide_search");
 		} else {
