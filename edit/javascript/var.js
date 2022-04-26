@@ -761,7 +761,7 @@ var store_lokomotiven = `
 					</tr>
 					<tr>
 						<td class="table_6">Ergänzungsbremse</td>
-						<td class="table_r">Wider­stands&shy;bremse / Rekuperationbremse</td>
+						<td class="table_r">Widerstands&shy;bremse / Rekuperationbremse</td>
 					</tr>
 					<tr class="hidden unhidden_schneeraeumung">
 						<td class="table_6">Achsen</td>
@@ -1089,7 +1089,7 @@ var store_triebwagen = `
 					</tr>
 					<tr>
 						<td class="table_6">Ergänzungsbremse</td>
-						<td class="table_r">Wider­stands&shy;bremse / Rekuperationsbremse</td>
+						<td class="table_r">Widerstands&shy;bremse / Rekuperationsbremse</td>
 					</tr>
 					<tr>
 						<td class="table_6 only_here">Depot</td>
