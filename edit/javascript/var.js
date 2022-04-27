@@ -73,7 +73,7 @@ var store_dienstwagen = `
 				<table>
 					<tr>
 						<td class="table_6 only_here">Zug- / Stossvorrichtung</td>
-						<td class="table_r">Automatische Kupplung <small>(Schwab)</small> / Stangenpuffer</td>
+						<td class="table_r">automatische Kupplung <small>(Schwab)</small> / Stangenpuffer</td>
 					</tr>
 					<tr>
 						<td class="table_6">Heizleitung</td>
@@ -176,7 +176,7 @@ var store_dienstwagen = `
 					</tr>
 					<tr>
 						<td class="table_6 only_here">Spezielles</td>
-						<td class="table_r">Darf ohne Container nur ungebremst verkehren</td>
+						<td class="table_r">darf ohne Container nur ungebremst verkehren</td>
 					</tr>
 				</table>
 			</div>
@@ -276,7 +276,7 @@ var store_gepaeckwagen = `
 				<table>
 					<tr>
 						<td class="table_6 only_here">Zug- / Stossvorrichtung</td>
-						<td class="table_r">Automatische Kupplung <small>(Schwab)</small> / Stangenpuffer</td>
+						<td class="table_r">automatische Kupplung <small>(Schwab)</small> / Stangenpuffer</td>
 					</tr>
 					<tr>
 						<td class="table_6">Vielfachsteuerung</td>
@@ -312,11 +312,11 @@ var store_gepaeckwagen = `
 					</tr>
 					<tr>
 						<td class="table_6">Türen</td>
-						<td class="table_r">Aussenbündig, elektrisch</td>
+						<td class="table_r">aussenbündig, elektrisch</td>
 					</tr>
 					<tr>
 						<td class="table_6">Schiebetor</td>
-						<td class="table_r">Manuell, überwacht, elektrisch verriegelt</td>
+						<td class="table_r">manuell, überwacht, elektrisch verriegelt</td>
 					</tr>
 					<tr>
 						<td class="table_6">Notfalleinrichtung</td>
@@ -432,7 +432,7 @@ var store_gleisbaumaschinen = `
 				<table>
 					<tr>
 						<td class="table_6 only_here">Zug-/ Stossvorrichtung</td>
-						<td class="table_r">Automatische Kupplung (Schwab) / Stangenpuffer</td>
+						<td class="table_r">automatische Kupplung (Schwab) / Stangenpuffer</td>
 					</tr>
 					<tr>
 						<td class="table_6 only_here">Nylatron-Pufferplatten</td>
@@ -568,7 +568,7 @@ var store_gueterwagen = `
 				<table>
 					<tr>
 						<td class="table_6 only_here">Zug- / Stossvorrichtung</td>
-						<td class="table_r">Automatische Kupplung <small>(Schwab)</small> / Stangenpuffer</td>
+						<td class="table_r">automatische Kupplung <small>(Schwab)</small> / Stangenpuffer</td>
 					</tr>
 					<tr>
 						<td class="table_6 only_here">Vielfachsteuerung</td>
@@ -618,7 +618,7 @@ var store_gueterwagen = `
 					</tr>
 					<tr>
 						<td class="table_6 only_here">Schiebetor</td>
-						<td class="table_r">Isolierte Schiebewände</td>
+						<td class="table_r">isolierte Schiebewände</td>
 					</tr>
 					<tr>
 						<td class="table_6 only_here">Kühlaggregat</td>
@@ -663,11 +663,11 @@ var store_gueterwagen = `
 
 					<tr>
 						<td class="table_6">Aufteilung</td><!--Gruppe 3-->
-						<td class="table_r">2 Silo</td>
+						<td class="table_r">2 Silos</td>
 					</tr>
 					<tr>
 						<td class="table_6">Schüttung</td><!--Gruppe 3-->
-						<td class="table_r">Hydraulisch, aussen und innen</td>
+						<td class="table_r">hydraulisch, aussen und innen</td>
 					</tr>
 					<tr>
 						<td class="table_6">Rüttler</td><!--Gruppe 3-->
@@ -680,7 +680,7 @@ var store_gueterwagen = `
 					</tr>
 					<tr>
 						<td class="table_6">Kippvorrichtung</td><!--Gruppe 4-->
-						<td class="table_r">Elektro-Hydraulisch</td>
+						<td class="table_r">elektro-hydraulisch</td>
 					</tr>
 					<tr>
 						<td class="table_6">Zusätzliche Schüttklappe</td><!--Gruppe 4-->
@@ -693,7 +693,7 @@ var store_gueterwagen = `
 
 					<tr>
 						<td class="table_6">Spezielles</td>
-						<td class="table_r">Darf ohne Container nur ungebremst verkehren</td>
+						<td class="table_r">darf ohne Container nur ungebremst verkehren</td>
 					</tr>
 				</table>
 			</div>
@@ -748,7 +748,7 @@ var store_lokomotiven = `
 						<td class="table_r">StN, ChA, BB</td>
 					</tr>
 					<tr class="hidden unhidden_schneeraeumung">
-						<td class="table_6">Selbstfahrend</td>
+						<td class="table_6">selbstfahrend</td>
 						<td class="table_r">ja <small>(Bahnhofbereich)</small></td>
 					</tr>
 					<tr>
@@ -837,7 +837,7 @@ var store_lokomotiven = `
 					</tr>
 					<tr>
 						<td class="table_6 only_here">Zug-/ Stossvorrichtung</td>
-						<td class="table_r">Automatische Kupplung (Schwab) / Stangenpuffer</td>
+						<td class="table_r">automatische Kupplung (Schwab) / Stangenpuffer</td>
 					</tr>
 					<tr>
 						<td class="table_6 only_here revert_only_lokomotiven revert_only_rangierlokomotiven">Nylatron-Pufferplatten</td><!--Nur bei Lokomotiven und Rangierlokomotiven-->
@@ -920,19 +920,19 @@ var store_personenwagen = `
 				<table>
 					<tr>
 						<td class="table_6">Geschwindigkeit</td>
-						<td class="table_r">100 km/h</td>
+						<td class="table_r">90 km/h</td>
 					</tr>
 					<tr>
 						<td class="table_6">Länge</td>
-						<td class="table_r">49.50 m</td>
+						<td class="table_r">18.50 m</td>
 					</tr>
 					<tr>
 						<td class="table_6">Gewicht <small>(Tara / Brutto)</small></td>
-						<td class="table_r">106 t / 122 t</td>
+						<td class="table_r">16 t / 20 t</td>
 					</tr>
 					<tr>
 						<td class="table_6">Bremsgewicht</td>
-						<td class="table_r">116 t</td>
+						<td class="table_r">18 t</td>
 					</tr>
 					<tr>
 						<td class="table_6">Feststellbremse</td>
@@ -946,7 +946,7 @@ var store_personenwagen = `
 				<table>
 					<tr>
 						<td class="table_6 only_here">Zug- / Stossvorrichtung</td>
-						<td class="table_r">Automatische Kupplung <small>(Schwab)</small> / Stangenpuffer</td>
+						<td class="table_r">automatische Kupplung <small>(Schwab)</small> / Stangenpuffer</td>
 					</tr>
 					<tr>
 						<td class="table_6">Nylatron-Pufferplatten</td>
@@ -957,7 +957,7 @@ var store_personenwagen = `
 						<td class="table_r">WTB-Zugbus <small>(MZST)</small></td>
 					</tr>
 					<tr>
-						<td class="table_6">Zugbeeinflussung</td>
+						<td class="table_6 only_here revert_only_steuerwagen">Zugbeeinflussung</td>
 						<td class="table_r">ZSI 127</td>
 					</tr>
 					<tr>
@@ -986,11 +986,11 @@ var store_personenwagen = `
 					</tr>
 					<tr>
 						<td class="table_6">Türen</td>
-						<td class="table_r">Aussenbündig, elektrisch</td>
+						<td class="table_r">aussenbündig, elektrisch</td>
 					</tr>
 					<tr>
 						<td class="table_6 only_here">Schiebetor</td>
-						<td class="table_r">Manuell, überwacht, elektrisch verriegelt</td>
+						<td class="table_r">manuell, überwacht, elektrisch verriegelt</td>
 					</tr>
 					<tr>
 						<td class="table_6">Notfalleinrichtung</td>
@@ -1007,11 +1007,11 @@ var store_personenwagen = `
 				<h3>Fahrgastausstattung</h3>
 				<table>
 					<tr>
-						<td class="table_6">Plätze 1. Klasse</td>
+						<td class="table_6 only_here">Plätze 1. Klasse</td>
 						<td class="table_r">24</td>
 					</tr>
 					<tr>
-						<td class="table_6">Plätze 2. Klasse</td>
+						<td class="table_6 only_here">Plätze 2. Klasse</td>
 						<td class="table_r">76</td>
 					</tr>
 					<tr>
@@ -1024,7 +1024,7 @@ var store_personenwagen = `
 					</tr>
 					<tr>
 						<td class="table_6 only_here">Ladefläche</td>
-						<td class="table_r">1t / 5.9 m<sup>2</sup></td>
+						<td class="table_r">1 t / 5.9 m<sup>2</sup></td>
 					</tr>
 					<tr>
 						<td class="table_6">Rollstuhlplätze</td>
@@ -1039,7 +1039,7 @@ var store_personenwagen = `
 						<td class="table_r">4</td>
 					</tr>
 					<tr>
-						<td class="table_6">Fahrgastinfosystem</td>
+						<td class="table_6 only_here">Fahrgastinfosystem</td>
 						<td class="table_r">KIS</td>
 					</tr>
 					<tr>
@@ -1141,7 +1141,7 @@ var store_triebwagen = `
 					</tr>
 					<tr>
 						<td class="table_6 only_here">Zug- / Stossvorrichtung</td>
-						<td class="table_r">Automatische Kupplung <small>(Schwab)</small> / Stangenpuffer</td>
+						<td class="table_r">automatische Kupplung <small>(Schwab)</small> / Stangenpuffer</td>
 					</tr>
 					<tr>
 						<td class="table_6">Nylatron-Pufferplatten</td>
@@ -1185,11 +1185,11 @@ var store_triebwagen = `
 					</tr>
 					<tr>
 						<td class="table_6">Türen</td>
-						<td class="table_r">Aussenbündig, elektrisch</td>
+						<td class="table_r">aussenbündig, elektrisch</td>
 					</tr>
 					<tr>
 						<td class="table_6 only_here">Schiebetor</td>
-						<td class="table_r">Manuell, überwacht, elektrisch verriegelt</td>
+						<td class="table_r">manuell, überwacht, elektrisch verriegelt</td>
 					</tr>
 					<tr>
 						<td class="table_6">Notfalleinrichtung</td>
@@ -1206,11 +1206,11 @@ var store_triebwagen = `
 				<h3>Fahrgastausstattung</h3>
 				<table>
 					<tr>
-						<td class="table_6">Plätze 1. Klasse</td>
+						<td class="table_6 only_here">Plätze 1. Klasse</td>
 						<td class="table_r">24</td>
 					</tr>
 					<tr>
-						<td class="table_6">Plätze 2. Klasse</td>
+						<td class="table_6 only_here">Plätze 2. Klasse</td>
 						<td class="table_r">76</td>
 					</tr>
 					<tr>
