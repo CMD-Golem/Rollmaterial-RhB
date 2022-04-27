@@ -48,36 +48,3 @@ function notFound() {
 		console.log("Keine Resultate");
 	}
 }
-
-//Test for old or wrong elements
-// test canonical
-var canonical = document.querySelectorAll('meta[rel="canonical"]')
-if (canonical.length == 0) {
-	console.log("Meta cononical nicht vorhanden");
-}
-else if (canonical[0].getAttribute("href") != window.location.href) {
-	console.log("Meta cononical falsch");
-}
-// test robots
-if (document.querySelectorAll('meta[name="robots"]').length == 0) {
-	console.log("Meta robots nicht vorhanden");
-}
-
-// test if not found is in code
-if (not_found == null) {
-	console.log('"Keine Resultate" nicht vorhanden.\n Seite melden!');
-}
-// test if old search elements are still present
-if (document.getElementsByClassName("list") == 0) {
-	console.log("Elemente von alter Suche vorhanden");
-}
-
-// test nav
-var nav = document.getElementsByTagName("nav")[0];
-if (nav.innerHTML != "" || !nav.classList.contains("lokomotiven")) {
-	console.log("Alte Navbar");
-}
-// test footer
-if (document.getElementsByTagName("footer").length == 0) {
-	console.log("Kein Footer");
-}
