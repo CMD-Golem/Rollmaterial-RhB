@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+	  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+			http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
@@ -568,16 +568,16 @@
 
 <!--
 https://rollmaterial-rhb.ch/data/lokomotiven/lokomotiven/ge4-4_611/ge4-4_621/werbefahrzeuge.html
-lokomotiven         0.6
-lokomotiven         0.5
-ge4-4_611           0.8
-ge4-4_621           0.6
-werbefahrzeuge      0.6
+lokomotiven		 0.6
+lokomotiven		 0.5
+ge4-4_611		   0.8
+ge4-4_621		   0.6
+werbefahrzeuge	  0.6
 
 
 https://rollmaterial-rhb.ch/data/lokomotiven/bernina-fahrzeuge/triebwagen/abe4-4_51.html
-lokomotiven         0.6
+lokomotiven		 0.6
 bernina-fahrzeuge   0.5
-triebwagen          0.5
-abe4-4_51           0.8
+triebwagen		  0.5
+abe4-4_51		   0.8
 -->

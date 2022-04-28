@@ -2,17 +2,19 @@ var search = document.getElementById('search');
 var matchList = document.getElementById('match-list');
 var not_found = document.getElementById('not_found');
 var explore = document.getElementById('explore');
+var domain = window.location.origin;
 
 search.addEventListener('keyup', searchData);
 searchData();
 
 // Search search.json and filter it
 async function searchData(search_input) {
-    var res = await fetch('https://raw.githubusercontent.com/CMD-Golem/rollmaterial-rhb/master/elements/search.json');
-    var resJson = await res.json();
+	var res = await fetch('https://raw.githubusercontent.com/CMD-Golem/rollmaterial-rhb/master/elements/search.json');
+	// var res = await fetch('http://127.0.0.1:5500/elements/search.json');
+	var resJson = await res.json();
 	var matches = [];
 	var search_input = search.value;
-    
+	
 	var filter = search_input.toUpperCase().split(" ");
 
 	if (search_input != "") {
@@ -55,7 +57,7 @@ function outputHtml(matches) {
 	if (matches.length > 0) {
 		var html = matches.map(match => `
 			<div class="search_output">
-				<a class="link disable_link" href="${match.link}">
+				<a class="link disable_link" href="${domain}${match.link}">
 					<h2>${match.type}&#8199;${match.number}</h2>
 					<p>${match.description}</p>
 				</a>
