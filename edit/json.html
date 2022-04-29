@@ -11,8 +11,8 @@
 
 <style>
 
-.search_output p {
-	color: red;
+table {
+	width: 100%;
 }
 
 </style>
@@ -30,15 +30,18 @@
 </header>
 
 
-<main style="text-align: center;">
-	<div id="show_wrong_url" class="search_outputs"></div>
-
+<main>
+	<h2>Fehler in JSON-Datei von Suche:</h2>
+	<table id="container_json" class="search_outputs"></table>
+	<br>
+	<h2>Fehler in Sitemap:</h2>
+	<table id="container_sitemap" class="search_outputs"></table>
 </main>
 
 <footer></footer>
 
 <script language="javascript" type="text/javascript" src="../elements/javascript/nav.js"></script>
-<script language="javascript" type="text/javascript" src="../elements/javascript/monitor.js"></script>
+<script language="javascript" type="text/javascript" src="javascript/monitor.js"></script>
 
 </body>
 </html>
