@@ -213,11 +213,6 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rollmaterial-rhb.ch/data/lokomotiven/dienstfahrzeuge/xm2-2_9912.html</loc>
-  <lastmod>2021-07-24T10:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://rollmaterial-rhb.ch/data/lokomotiven/dienstfahrzeuge/xm2-2_9916.html</loc>
   <lastmod>2021-07-24T10:00:00+00:00</lastmod>
   <priority>0.80</priority>
@@ -403,11 +398,6 @@
   <priority>0.60</priority>
 </url>
 <url>
-  <loc>https://rollmaterial-rhb.ch/data/lokomotiven/bernina-fahrzeuge/triebwagen/abe4-4_46.html</loc>
-  <lastmod>2021-07-24T10:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://rollmaterial-rhb.ch/data/lokomotiven/bernina-fahrzeuge/triebwagen/abe4-4_51.html</loc>
   <lastmod>2021-07-24T10:00:00+00:00</lastmod>
   <priority>0.80</priority>
@@ -423,7 +413,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://rollmaterial-rhb.ch/data/lokomotiven/bernina-fahrzeuge/rangierlokomotiven/ge2-2_161.html</loc>
+  <loc>https://rollmaterial-rhb.ch/data/lokomotiven/bernina-fahrzeuge/rangierlokomotiven/ge2-2_162.html</loc>
   <lastmod>2021-07-24T10:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -468,6 +458,11 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://rollmaterial-rhb.ch/data/lokomotiven/bernina-fahrzeuge/historische_fahrzeuge/abe4-4_46.html</loc>
+  <lastmod>2021-07-24T10:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://rollmaterial-rhb.ch/data/lokomotiven/historische_fahrzeuge/streckenlokomotiven/ge6-6_414.html</loc>
   <lastmod>2021-07-24T10:00:00+00:00</lastmod>
   <priority>0.80</priority>
@@ -489,6 +484,11 @@
 </url>
 <url>
   <loc>https://rollmaterial-rhb.ch/data/lokomotiven/historische_fahrzeuge/triebwagen/abe4-4_501.html</loc>
+  <lastmod>2021-07-24T10:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rollmaterial-rhb.ch/data/lokomotiven/historische_fahrzeuge/rangiertraktoren/tm2-2_62.html</loc>
   <lastmod>2021-07-24T10:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
