@@ -8,8 +8,8 @@ getSearchJson();
 getSitemap();
 
 async function getSearchJson() {
-	// var res = await fetch('https://raw.githubusercontent.com/CMD-Golem/rollmaterial-rhb/master/elements/search.json');
-	var res = await fetch('http://127.0.0.1:5500/elements/search.json');
+	var res = await fetch('https://raw.githubusercontent.com/CMD-Golem/rollmaterial-rhb/master/elements/search.json');
+	// var res = await fetch('http://127.0.0.1:5500/elements/search.json');
 	var resJson = await res.json();
 	count_json = resJson.length;
 
@@ -20,8 +20,8 @@ async function getSearchJson() {
 }
 
 async function getSitemap() {
-	// var res = await fetch('https://raw.githubusercontent.com/CMD-Golem/rollmaterial-rhb/master/sitemap.xml');
-	var res = await fetch('http://127.0.0.1:5500/sitemap.xml');
+	var res = await fetch('https://raw.githubusercontent.com/CMD-Golem/rollmaterial-rhb/master/sitemap.xml');
+	// var res = await fetch('http://127.0.0.1:5500/sitemap.xml');
 	var resXml = await res.text();
 
 	var parser = new DOMParser();

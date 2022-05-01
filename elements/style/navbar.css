@@ -7,6 +7,7 @@ nav {
 	top: 0;
 	z-index: 2;
 	background-color: #3B3A3D;
+	overflow: hidden;
 }
 
 

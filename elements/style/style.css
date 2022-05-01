@@ -197,6 +197,18 @@ footer {
 }
 
 
+.print_footer {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+}
+
+.print_footer span {
+	float: right;
+}
+
+
 @media print {
 	body {
 		background-color: white;
@@ -220,6 +232,9 @@ footer {
 	}
 	footer {
 		display: none;
+	}
+	.print_footer {
+		display: block
 	}
 }
 
