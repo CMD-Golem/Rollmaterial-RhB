@@ -2,19 +2,68 @@
 var pathname = window.location.pathname;
 var domain = window.location.origin;
 
-try {
-	var nav = document.getElementsByTagName("nav")[0];
-	if (!nav.classList.contains(pathname.split("/")[2])) {
-		console.error("Nav Titel falsch");
+if (localStorage.getItem("testing") == "true") {
+	testSearch();
+	testSitemap();
+	testHead();
+
+	console.log('Testing deaktiviert.\nlocalStorage.removeItem("testing")')
+}
+else {
+	console.error('Testing ist nicht aktiviert.\nlocalStorage.setItem("testing", "true")');
+}
+
+function testHead() {
+	try {
+		var nav = document.getElementsByTagName("nav")[0];
+		if (!nav.classList.contains(pathname.split("/").replace(".html", "")[2])) {
+			console.error("Nav Titel falsch");
+		}
+		
+		var canonical = document.querySelectorAll('meta[rel="canonical"]')
+		if (canonical[0].getAttribute("href") != "https://rollmaterial-rhb.ch" + pathname) {
+			console.error("Cononical falsch");
+		}
 	}
-	
-	var canonical = document.querySelectorAll('meta[rel="canonical"]')
-	if (canonical[0].getAttribute("href") != "https://rollmaterial-rhb.ch" + pathname) {
-		console.error("Cononical falsch");
+	catch (e) {}
+}
+
+async function testSearch() {
+	var res = await fetch('https://raw.githubusercontent.com/CMD-Golem/rollmaterial-rhb/master/elements/search.json');
+	var resJson = await res.json();
+	var in_search = false;
+
+	for (var i = 0; i < resJson.length; i++) {
+		if (resJson[i].link == pathname) {
+			in_search = true;
+		}
+	}
+	if (in_search == false) {
+		console.error("Nicht in Suche (Ok wenn Seite nicht gefunden werden muss)");
 	}
 }
-catch (e) {}
 
+async function testSitemap() {
+	var res = await fetch('https://raw.githubusercontent.com/CMD-Golem/rollmaterial-rhb/master/sitemap.xml');
+	var resXml = await res.text();
+
+	var parser = new DOMParser();
+	xml = parser.parseFromString(resXml, 'text/xml');
+	var links = xml.getElementsByTagName("loc");
+	var in_search = false;
+
+	for (var i = 0; i < links.length; i++) {
+		var link = links[i].innerHTML.replace("https://rollmaterial-rhb.ch", "");
+		if (link == pathname) {
+			in_search = true;
+		}
+	}
+	if (in_search == false) {
+		console.error("Nicht in Sitemap");
+	}
+}
+
+// #################################################################################################
 // Navbar
 var navbar = `
 <input type="checkbox" id="menu">
@@ -64,19 +113,23 @@ var footer = `
 
 
 try {
-	document.getElementsByTagName("footer")[0].innerHTML = footer;
+	var footer_el = document.getElementsByTagName("footer")[0];
+	footer_el.innerHTML = footer;
+
+	var print_footer = document.createElement("p");
+	print_footer.classList.add("print_footer");
+	print_footer.innerHTML = "© Tobias Kaufmann <span>rollmaterial-rhb.ch</span>";
+	footer_el.parentNode.insertBefore(print_footer, footer_el.nextSibling);
 }
 catch (e) {}
 
 
-
+// #################################################################################################
 // Add title to not definitive Data
 var notdef = document.getElementsByTagName("u");
 for (var i = 0; i < notdef.length; i++) {
 	notdef[i].title = "Angabe kann Fehlerhaft sein!";
 }
-
-
 
 // fix broken images / lazy loading
 function errorImage() {
@@ -90,7 +143,6 @@ function errorImage() {
 }
 
 window.addEventListener("load", errorImage);
-
 
 // Back
 function backButton() {

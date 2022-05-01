@@ -49,8 +49,6 @@ var html_center = `
 
 var html_bottom = `
 
-<div style="height: 40px;"></div>
-
 </main>
 
 <footer></footer>

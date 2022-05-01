@@ -3,6 +3,7 @@ main {
 	padding: 20px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 40px;
 }
 
 @media screen and (max-width: 1240px) {
@@ -19,13 +20,11 @@ h1 {
 	display: flex;
 	border-top: 3px solid #808080;
 	margin-top: 20px;
-	page-break-after: always;
 	page-break-inside: avoid;
 }
 
 .content_gallery {
 	margin-top: 20px;
-	page-break-after: always;
 	page-break-inside: avoid;
 }
 
@@ -86,6 +85,11 @@ h1 {
 }
 
 @media print {
+	main {
+		width: 100%;
+		padding: 0;
+		margin-bottom: 0;
+	}
 	.content {
 		border-top: none;
 	}
