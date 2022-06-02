@@ -326,6 +326,14 @@ var store_gepaeckwagen = `
 						<td class="table_6 only_here">Halbfaltenbalg-Lochung</td>
 						<td class="table_r">ja</td>
 					</tr>
+					<tr>
+						<td class="table_6 only_here">Stromabnehmer</td>
+						<td class="table_r">ja <small>(Panto Seite Komp / MALA)</small></td>
+					</tr>
+					<tr>
+						<td class="table_6 only_here">Heizmodul</td>
+						<td class="table_r">300 V, für nachfolgende Wagen</td>
+					</tr>
 				</table>
 			</div>
 
@@ -353,7 +361,7 @@ var store_gepaeckwagen = `
 						<td class="table_r">KIS</td>
 					</tr>
 					<tr>
-						<td class="table_6 only_here">Zugzielanzeigen</td>
+						<td class="table_6">Zugzielanzeigen</td>
 						<td class="table_r">innen und aussen</td>
 					</tr>
 					<tr>
