@@ -2,8 +2,7 @@
 	{"type": "ABe 8/12", "description": "ZTZ,&#8199;Allegra", "number": "3501 - 3515", "searchdata": "ABe 8/12 ZTZ Allegra Triebzug 3501 3502 3503 3504 3505 3506 3507 3508 3509 3510 3511 3512 3513 3514 3515", "link": "/data/lokomotiven/triebzuege/abe8-12_3501.html"}, 
 	{"type": "ABe 4/16", "description": "STZ", "number": "3101 – 3105", "searchdata": "ABe 4/16 STZ Triebzug 3101 3102 3103 3104 3105", "link": "/data/lokomotiven/triebzuege/abe4-16_3101.html"}, 
 	{"type": "ABe 4/16", "description": "RTZ,&#8199;Capricorn", "number": "3111 – 3166", "searchdata": "ABe 4/16 RTZ Capricorn Triebzug 3111 3112 3113 3114 3115 3116 3117 3118 3119 3120 3121 3122 3123 3124 3125 3126 3127 3128 3129 3130 3131 3132 3133 3134 3135 3136 3137 3138 3139 3140 3141 3142 3143 3144 3145 3146 3147 3148 3149 3150 3151 3152 3153 3154 3155 3156 3157 3158 3159 3160 3161 3162 3163 3164 3165 3166", "link": "/data/lokomotiven/triebzuege/abe4-16_3111.html"}, 
-	{"type": "Be 4/4", "description": "StN-Pendel", "number": "511 - 516", "searchdata": "Be 4/4 StN-Pendel Triebwagen", "link": "/data/lokomotiven/triebwagen.html"}, 
-	{"type": "Be 4/4", "description": "StN-Pendel", "number": "511 - 514", "searchdata": "511 512 513 514", "link": "/data/lokomotiven/triebwagen/be4-4_511.html"}, 
+	{"type": "Be 4/4", "description": "StN-Pendel", "number": "511 - 516", "searchdata": "Be 4/4 StN-Pendel Triebwagen", "link": "/data/lokomotiven/triebwagen.html"},  
 	{"type": "Be 4/4", "description": "StN-Pendel", "number": "515 - 516", "searchdata": "515 516", "link": "/data/lokomotiven/triebwagen/be4-4_515.html"}, 
 	{"type": "Ge 4/4<sup>I</sup>", "description": "BoBo I", "number": "601 ... 610", "searchdata": "Ge 4/4I BoBo I Lokomotiven", "link": "/data/lokomotiven/lokomotiven/ge4-4_601.html"}, 
 	{"type": "Ge 4/4<sup>I</sup>", "description": "BoBo I", "number": "601 ... 604", "searchdata": "Ge 4/4I BoBo I Lokomotiven 601 602 603 604", "link": "/data/lokomotiven/lokomotiven/ge4-4_601/ge4-4_601.html"}, 
@@ -73,7 +72,17 @@
 	{"type": "G 3/4", "description": "", "number": "11", "searchdata": "G 3/4 Historische Fahrzeuge Dampflokomotiven 11", "link": "/data/lokomotiven/historische_fahrzeuge/dampflokomotiven/g3-4_11.html"}, 
 	{"type": "G 4/5", "description": "", "number": "107 - 108", "searchdata": "G 4/5 Historische Fahrzeuge Dampflokomotiven 107 108", "link": "/data/lokomotiven/historische_fahrzeuge/dampflokomotiven/g4-5_107.html"}, 
 
-
 	{"old":"true", "type": "Gm 3/3", "description": "Moyse", "number": "231 - 233", "searchdata": "Gm 3/3 Moyse 231 232 233", "link": "/data/lokomotiven/rangierlokomotiven/gm3-3_231.html"}, 
-	{"old":"true", "type": "Tm 2/2", "description": "", "number": "15 ... 26", "searchdata": "Tm 2/2 15 16 17 18 19 20 21 22 23 24 25 26", "link": "/data/lokomotiven/rangiertraktoren/tm2-2_15.html"}
+	{"old":"true", "type": "Tm 2/2", "description": "", "number": "15 ... 26", "searchdata": "Tm 2/2 15 16 17 18 19 20 21 22 23 24 25 26", "link": "/data/lokomotiven/rangiertraktoren/tm2-2_15.html"},
+	{"old":"true", "type": "Be 4/4", "description": "StN-Pendel", "number": "511 - 514", "searchdata": "511 512 513 514", "link": "/data/lokomotiven/triebwagen/be4-4_511.html"},
+
+	{"type": "D", "description": "", "number": "4204 ... 4232", "searchdata": "D Gepäckwagen", "link": "/data/gepaeckwagen/gepaeckwagen.html"},
+	{"type": "D", "description": "", "number": "4204 ... 4208", "searchdata": "D Gepäckwagen 4204 4205 4206 4207 4208", "link": "/data/gepaeckwagen/gepaeckwagen/d_4204.html"},
+	{"type": "D", "description": "", "number": "4209", "searchdata": "D Gepäckwagen 4209", "link": "/data/gepaeckwagen/gepaeckwagen/d_4209.html"},
+	{"type": "D", "description": "", "number": "4210 ... 4212", "searchdata": "D Gepäckwagen 4210 4211 4212", "link": "/data/gepaeckwagen/gepaeckwagen/d_4210.html"},
+	{"type": "D", "description": "", "number": "4213", "searchdata": "D Gepäckwagen 4213", "link": "/data/gepaeckwagen/gepaeckwagen/d_4213.html"},
+	{"type": "D", "description": "", "number": "4214 ... 4218", "searchdata": "D Gepäckwagen 4214 4215 4216 4217 4218", "link": "/data/gepaeckwagen/gepaeckwagen/d_4214.html"},
+	{"type": "DS", "description": "", "number": "4219 ... 4226", "searchdata": "DS Heizwagen 4220 4222 4226", "link": "/data/gepaeckwagen/gepaeckwagen/ds_4219.html"},
+	{"type": "D", "description": "", "number": "4219 ... 4226", "searchdata": "D Gepäckwagen 4219 4221 4223 4225", "link": "/data/gepaeckwagen/gepaeckwagen/d_4219.html"},
+	{"type": "D", "description": "", "number": "4231 - 4232", "searchdata": "D Gepäckwagen 4231 4232", "link": "/data/gepaeckwagen/gepaeckwagen/d_4231.html"}
 ]
