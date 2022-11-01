@@ -29,7 +29,7 @@ function testHead() {
 }
 
 async function testSearch() {
-	var res = await fetch('https://raw.githubusercontent.com/CMD-Golem/rollmaterial-rhb/master/elements/search.json');
+	var res = await fetch('/elements/search.json');
 	var resJson = await res.json();
 	var in_search = false;
 
@@ -44,7 +44,7 @@ async function testSearch() {
 }
 
 async function testSitemap() {
-	var res = await fetch('https://raw.githubusercontent.com/CMD-Golem/rollmaterial-rhb/master/sitemap.xml');
+	var res = await fetch('/sitemap.xml');
 	var resXml = await res.text();
 
 	var parser = new DOMParser();
@@ -137,7 +137,7 @@ function errorImage() {
 	for (var i = 0; i < images.length; i++) {
 		images[i].loading = "lazy";
 		if (images[i].complete == true && images[i].naturalHeight == 0) {
-			images[i].src = "https://raw.githubusercontent.com/CMD-Golem/rollmaterial-rhb/master/elements/images/noimage.png";
+			images[i].src = "/elements/images/noimage.png";
 		}
 	}
 }
