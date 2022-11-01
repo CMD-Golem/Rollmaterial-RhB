@@ -9,8 +9,7 @@ searchData();
 
 // Search search.json and filter it
 async function searchData(search_input) {
-	var res = await fetch('https://raw.githubusercontent.com/CMD-Golem/rollmaterial-rhb/master/elements/search.json');
-	// var res = await fetch('http://127.0.0.1:5500/elements/search.json');
+	var res = await fetch('/elements/search.json');
 	var resJson = await res.json();
 	var matches = [];
 	var search_input = search.value;
