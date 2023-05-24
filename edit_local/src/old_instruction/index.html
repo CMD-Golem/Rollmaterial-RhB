@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+<title>Rollmaterial RhB - Anleitung</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="icon" href="favicon.png">
+</head>
+
+<body>
+<main>
+	<h1 style="text-align: center;" >Anleitung</h1>
+
+	<div class="spoiler_box">
+		<h3 class="spoiler" title="Klicke für mehr Informationen">Infos</h3>
+		<div class="spoiler_content">
+			<table>
+				<tr>
+					<th colspan="2">Name</th>
+				</tr>
+				<tr>
+					<td>Übergruppe</td>
+					<td>Lokomotiven, Passagierwagen</td>
+				</tr>
+				<tr>
+					<td>Untergruppe</td>
+					<td>Triebzüge, Kranwagen</td>
+				</tr>
+				<tr>
+					<td>verlinkter Wagen</td>
+					<td>Wagen zudem der Link führt</td>
+				</tr>
+				<tr>
+					<td>Wagen</td>
+					<td>Der Wagen</td>
+				</tr>
+				<tr>
+					<th colspan="2">Inserts</th>
+				</tr>
+				<tr>
+					<td>Typ</td>
+					<td>Der Name des Wagens wie ABe 8/12 oder A 1225 - 1226 (Beachte das die Nummer nur bei den Wagen hingeschrieben werden, welche keinen eigenen Antrieb haben.)</td>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td>Der Abgekürzte Name wie ZTZ</td>
+				</tr>
+				<tr>
+					<td>Name2</td>
+					<td>Der Taufname wie Allegra</td>
+				</tr>
+				<tr>
+					<td>Nummer</td>
+					<td>Die Nummer des Wagens wie 3501 - 3515 oder 1223</td>
+				</tr>
+				<tr>
+					<td>id</td>
+					<td>Die id des Wagens entspricht meistens dem Namen des Wagens. Im Allgemeinen darf er aber nur kleine Buchstaben, Zahlen, sowie Binde- und Unterstrich enthalten. Zusätzlich müssen ü mit ue, ä mit ae und ö mit oe ersetzt werden.<br>Beispiel id: abe8-12_3501 , Ge4-4I_601 , a_1225 , haik-v_5101<br>Im Grundsätzlichen werden Lehrzeichen mit einem Unterrich und Schrägstriche mit einem Bindestrich ersetzt.</td>
+				</tr>
+				<tr>
+					<td>Farbe</td>
+					<td>#2f4c2b lokomotiven<br>
+						#803034 personenwagen<br>
+						#31459c gepaeckwage<br>
+						#5b493d gueterwagen<br>
+						#555655 dienstwagen<br>
+						#906d11 gleisbaumschienen</td>
+				</tr>
+				<tr>
+					<th colspan="2">Spezialzeichen</th>
+				</tr>
+				<tr>
+					<td>Text in Klammern</td>
+					<td>In einen &#60;small&#62; tag</td>
+				</tr>
+				<tr>
+					<td>Grösserer Abstand</td>
+					<td>Spezialzeichen &amp;#8199; eingefügen. Dabei kann mit Leerschlägen vor und nach dem Zeichen noch grösserer Abstand erstellt werden.</td>
+				</tr>
+				<tr>
+					<td>Neue Zeile</td>
+					<td>Spezialzeichen &#60;br&#62; tag eingefügen</td>
+				</tr>
+				<tr>
+					<td style="white-space: nowrap;">Nicht definitive Daten</td>
+					<td>In ein &#60;u&#62; tag</td>
+				</tr>
+				
+			</table>
+		</div>
+	</div>
+
+	<div class="spoiler_box">
+		<h3 class="spoiler" title="Klicke für mehr Informationen">1. Untergruppe</h3>
+		<div class="spoiler_content">
+			<ol>
+				<li>Öffne <u>1 auswahlseite.html</u></li>
+				<li>Zeile 5: Ersetze <u>Triebzüge</u> mit der Untergruppe. <br>Wiederholen auf Zeile 6 und 30.</li>
+				<li>Zeile 24: Ersetzte <u>lokomotiven</u> mit der id der Übergruppe und <u>#2f4c2b</u> mit der Farbe der Übergruppe.</li>
+				<li>Öffne <u>1.1 auswahlseite link.html</u></li>
+				<ol>
+					<li>Zeile 3: Ersetze <u>triebzuege</u> mit der id der Untergruppe und <u>abe8-12_3501</u> mit der id des verlinkten Wagens.</li>
+					<li>Zeile 5: Ersetze <u>lokomotiven</u> mit der id der Übergruppe, <u>triebzuege</u> mit der id der Untergruppe und <u>abe8-12_3501</u> mit der id des verlinkten Wagens.</li>
+					<li>Zeile 8: Ersetze <u>ABe 8/12</u> mit dem Typ des verlinkten Wagen und <u>3501 - 3515</u> mit der Nummer des verlinkten Wagens.</li>
+					<li>Zeile 12: Ersetze den weissen Inhalt mit dem derüberstehenden Thema des verlinkten Wagens. <br>Wiederholen auf Zeile 14, 18, 22 und 26.</li>
+					<li>Kopiere den gesammten Text mit Ctrl + a und halte danach Ctrl + z gedrückt, bis sich der Text nicht mehr verändert und gehe zurück in das Dokument <u>1 auswahlseite.html</u>.</li>
+				</ol>
+				<li>Zeile 33: Drücke die Taste Home und füge den kopierten Text mit Ctrl + v ein</li>
+				<li>Wiederhole die Schritte ab 4. bis alle verlinkten Wagen eingefügt sind. Achte darauf, dass der erste verlinkte Wagen, später der unterste in der Liste sein wird.</li>
+				<li>Speichere das Dokument mit Ctrl + Shift + s im Ordner der Webseite unter <u>rollmaterial-rhb/data/"id der Übergruppe dar Untergruppe"/"id der Untergruppe".html</u></li>
+				<li>Schliesse das Dokument ohne zu speichern.</li>
+			</ol>
+		</div>
+	</div>
+
+	<div class="spoiler_box">
+		<h3 class="spoiler" title="Klicke für mehr Informationen">2. Gesammt Komposition</h3>
+		<div class="spoiler_content">
+			<ol>
+				<li>Öffne <u>2 gesammt_komposition.html</u></li>
+				<li>Drücke Ctrl + H und gib im ersten Feld <u>ABe 8/12</u> ein und im zweiten Feld der Typ des Wagens. Drücke danach auf Replace All.</li>
+				<li>Drücke Ctrl + H und gib im ersten Feld <u>3501 - 3515</u> ein und im zweiten Feld die Nummer des Wagens. Drücke danach auf Replace All.</li>
+				<li>Drücke Ctrl + H und gib im ersten Feld <u>ZTZ</u> ein und im zweiten Feld der Name des Wagens. Drücke danach auf Replace All.</li>
+				<li>Drücke Ctrl + H und gib im ersten Feld <u>Allegra</u> ein und im zweiten Feld der Name2 des Wagens. Drücke danach auf Replace All.</li>
+				<li>Drücke Ctrl + H und gib im ersten Feld <u>abe8-12_3501</u> ein und im zweiten Feld der id des Wagens. Drücke danach auf Replace All.</li>
+				<li>Wenn eine der Daten nicht vorhanden ist, kann sie einfach mit einem leeren Feld ersetzt werden. Beachte, dass wenn kein Name gegeben ist, <u>ZTZ,</u> durch ein leeres Feld ersetzt werden muss.</li>
+				<li>Zeile 23: Ersetzte <u>lokomotiven</u> mit der id der Übergruppe des Wagens und <u>#2f4c2b</u> mit der Farbe der Übergruppe des Wagens.</li>
+				<li>Zeile 262: Ersetze den weissen Inhalt mit den Fahrzeugen, welche diesen Wagen fernsteuern können. <br> Wenn zu viele oder zu wenige Linien vorhanden sind, kann die gesammte Zeile kopiert oder gelöscht werden. <br>Wenn der Wagen nicht ferngesteuert werden kann, kann der gesammte Inhalt von Zeile 258 bis und mit Zeile 269 gelöscht werden.</li>
+				<li>Zeile 278: Ersetze den weissen Inhalt mit den FDV des Wagens. Für Formatierung Gegebenes beachten. <br>Wenn der Wagen keine FDV hat, kann der gesammte Inhalt von Zeile 273 bis und mit Zeile 285 gelöscht werden.</li>
+				<li>Zeile 290: Ersetze den weissen Inhalt mit den geschleppt Überführungsmöglichkeiten des Wagens. Für Formatierung Gegebenes beachten. <br>Wenn der Wagen dazu keine speziellen Vorgaben hat, kann der gesammte Inhalt von Zeile 289 bis und mit Zeile 307 gelöscht werden.</li>
+				<li>Zeile 316: Ersetze den weissen Inhalt mit den Name, welche dieser Wagen mit dazugehöriger Nummer hat. <br> Wenn zu viele oder zu wenige Linien vorhanden sind, kann die gesammte Zeile kopiert oder gelöscht werden. <br>Wenn der Wagen keine Namen hat, kann der gesammte Inhalt von Zeile 312 bis und mit Zeile 333 gelöscht werden.</li>
+				<li>Ab Zeile 70: Ersetze den weissen Inhalt mit dem derüberstehenden Thema des Wagens. <br>Wenn am Ende der oberen Linie ein <u>&#60;!--Löschbar--&#62;</u> steht, kann, wenn die Daten für den Wagen nicht gegeben sind, dieser Eintrag gelöscht werden. Dafür muss die gesammte Linie von <u>&#60;tr&#62;</u> bis <u>&#60;/tr&#62;</u> gelöscht werden.<br>
+					<img src="2.8-1.png" width="100%">
+					<br>Beachte, dass wenn ein Eintrag gelöscht wird, dass in <u>class="list"</u> der Eintrag ebenfalls gelöscht werden muss.<br>
+					<img src="2.8-2.png" width="100%">
+				</li>
+				<li>Speichere das Dokument mit Ctrl + Shift + s im Ordner der Webseite unter <u>rollmaterial-rhb/data/"id der Übergruppe dar Untergruppe"/"id der Untergruppe"/"id des Wagens".html</u></li>
+				<li>Schliesse das Dokument ohne zu speichern.</li>
+			</ol>
+		</div>
+	</div>
+
+	<div class="spoiler_box">
+		<h3 class="spoiler" title="Klicke für mehr Informationen">3. Einzelwagen (Nur Triebzüge)</h3>
+		<div class="spoiler_content">
+			<ol>
+				<li>Öffne <u>3 einzelwagen.html</u></li>
+				<li>Drücke Ctrl + H und gib im ersten Feld <u>ABe 8/12</u> ein und im zweiten Feld der Typ des Wagens. Drücke danach auf Replace All.</li>
+				<li>Drücke Ctrl + H und gib im ersten Feld <u>3501 - 3515</u> ein und im zweiten Feld die Nummer des Wagens. Drücke danach auf Replace All.</li>
+				<li>Drücke Ctrl + H und gib im ersten Feld <u>ZTZ</u> ein und im zweiten Feld der Name des Wagens. Drücke danach auf Replace All.</li>
+				<li>Drücke Ctrl + H und gib im ersten Feld <u>Allegra</u> ein und im zweiten Feld der Name2 des Wagens. Drücke danach auf Replace All.</li>
+				<li>Drücke Ctrl + H und gib im ersten Feld <u>abe8-12_3501</u> ein und im zweiten Feld der id des Wagens. Drücke danach auf Replace All.</li>
+				<li>Zeile 23: Ersetzte <u>lokomotiven</u> mit der id der Übergruppe des Wagens und <u>#2f4c2b</u> mit der Farbe der Übergruppe des Wagens.</li>
+				<li>Öffne <u>3.1 einzelwagen wagen.html</u></li>
+				<ol>
+					<li>Zeile 3: Ersetze <u>lokomotiven</u> mit der id der Übergruppe, <u>triebzuege</u> mit der id der Untergruppe und <u>abe8-12_3501</u> mit der id des verlinkten Wagens.</li>
+					<li>Zeile 6: Ersetze <u>ABe 4/4</u> mit dem Typ des Einzelwagen, <u>35601 - 35615</u> mit der Nummer des Einzelwagens und <u>MWC</u> mit der Wagenposition des Einzelwagen.</li>
+					<li>Ab Zeile 9: Ersetze den weissen Inhalt mit dem derüberstehenden Thema des Einzelwagens. <br>Wenn die Daten für den Einzelwagen nicht gegeben sind, kann dieser Eintrag gelöscht werden. Dafür muss die gesammte Linie von <u>&#60;tr&#62;</u> bis <u>&#60;/tr&#62;</u> gelöscht werden.<br>
+						<img src="2.8-1.png" width="100%">
+					</li>
+					<li>Kopiere den gesammten Text mit Ctrl + a und halte danach Ctrl + z gedrückt, bis sich der Text nicht mehr verändert und gehe zurück in das Dokument <u>3 einzelwagen.html</u>.</li>
+				</ol>
+				<li>Zeile 31: Drücke die Taste Home und füge den kopierten Text mit Ctrl + v ein</li>
+				<li>Wiederhole die Schritte ab 8. bis alle Einzelwagen eingefügt sind. Achte darauf, dass der erste Einzelwagen, später der unterste in der Liste sein wird.</li>
+				<li>Speichere das Dokument mit Ctrl + Shift + s im Ordner der Webseite unter <u>rollmaterial-rhb/data/"id der Übergruppe dar Untergruppe"/"id der Untergruppe"/"id des Wagens"/einzelwagen.html</u></li>
+				<li>Schliesse das Dokument ohne zu speichern.</li>
+			</ol>
+		</div>
+	</div>
+
+</main>
+<!--Script-->
+<script language="javascript" type="text/javascript" src="spoiler.js"></script>
+</body>
+</html>
