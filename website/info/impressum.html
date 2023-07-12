@@ -8,6 +8,56 @@
 <link rel="stylesheet" type="text/css" href="../elements/style/index.css"/>
 <link rel="stylesheet" type="text/css" href="../elements/style/style.css"/>
 <link rel="icon" href="../elements/favicon.png">
+
+<style>
+
+h3 {
+	background-color: #3B3A3D;
+	padding: 10px;
+	margin-bottom: 5px;
+	border-top: 1px solid #808080;
+	font-size: 20px;
+	width: calc(100% - 20px);
+}
+
+.spoiler {
+	cursor: pointer;
+	margin-bottom: 0px;
+}
+
+.spoiler:hover {
+	background-color: #808080;
+}
+
+.spoiler_content {
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.2s ease-out;
+}
+
+.spoiler_content section {
+	margin-left: 10px;
+	border-bottom: 1px solid #808080;
+	padding-left: 10px;
+}
+
+
+@media screen and (min-width: 500px) {
+	.spoiler:after {
+		content: "\002B";
+		color: white;
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+		margin-right: 15px;
+	}
+
+	.spoiler.active:after {
+		content: "\2212";
+	}
+}
+
+</style>
 </head>
 
 <body>
@@ -20,38 +70,67 @@
 	</a>
 </header>
 
-
-
 <main>
-	<p>E-Mail: <a href="mailto:info@rollmaterial-rhb.ch">info@rollmaterial-rhb.ch</a></p>
+	<div class="spoiler_box" id="contact">
+		<h3 class="spoiler" title="Klicke für mehr Informationen">Kontakt des Verantwortlichen</h3>
+		<div class="spoiler_content">
+			<p><a href="kontakt.html">Kontaktformular</a></p>
+			<p><a href="mailto:info@rollmaterial-rhb.ch">info@rollmaterial-rhb.ch</a></p>
+			<p>Bei der Kontaktaufnahme werden ihre E-Mail Adresse gespeichert. Der Zeitpunkt des Sendes, sowie Ihre IP-Adresse werden ebenfalls bei Ihrer Kontaktaufnahme mitgesendet. Diese Daten werden auf den Netlify Servern <a href="https://www.netlify.com/gdpr-ccpa/" target="_blank">[Siehe GDPR Netlify (EN)]</a> gespeichert. Diese Daten bleiben ohne Aufforderung zur Löschung gespeichert. Die Löschung dieser Daten könne Sie über das Kontaktformaler beantragen.</p>
+		</div>
+	</details>
 
-	<h2>Haftungsausschluss</h2>
-	<p>Unsere Website enthält Links zu externen Webseiten. Da wir auf die Inhalte dieser Seiten keinen Einfluss haben, können wir für diese auch keine Gewähr übernehmen.</p>
-	<p>Wir bemühen uns unsere Webseite möglichst fehlerfrei zu veröffentlichen. Allerdings können wir kein Gewähr bezüglich der Vollständigkeit, Korrektheit oder Aktualität der veröffentlichten Informationen übernehmen.</p>
+	<div class="spoiler_box" id="general">
+		<h3 class="spoiler" title="Klicke für mehr Informationen">Allgemein</h3>
+		<div class="spoiler_content">
+			<p>Wenn Sie unsere Webseite besuchen, speichert unser Hoster, Netlify Inc., San Francisco, CA 94107, USA, vorübergehend technische Informationen, wie IP-Adresse, welche nach 30 Tagen wieder gelöscht werden. <a href="https://www.netlify.com/gdpr-ccpa/" target="_blank">[Siehe GDPR Netlify (EN)]</a></p>
+			<p>Unsere Webseite beinhaltet externe Links, auf dessen Inhalt und Datenerfassung wir keinen Einfluss haben.</p>
+			<p>Wir bemühen uns Ihre Daten so sicher wie möglich aufzubewahren. Allerdings ist dies ein Freizeitprojekt und wir können keine 100% Datensicherheit zusichern und übernehmen somit auch keine Verantwortung.</p>
+			<p>Sie haben das Recht unentgeltlich Auskunft über Ihre gespeicherten Daten zu erhalten. Ausserdem können Sie die Löschung dieser Daten beantragen.</p>
+			<p>Wir behalten uns das Recht vor, unsere Datenschutzerklärung zu ändern, falls wir dies für nötig halten.</p>
+		</div>
+	</details>
 
-	<h2>Datenschutz</h2>
-	<p>Beim Besuch dieser Website werden keine persönlichen Daten gespeichert, mit Ausnahme der IP-Adresse. Wir weisen darauf hin, dass bei der ungesicherten Datenübertragung im Internet (z.B. per E-Mail) die Sicherheit nicht gewährleistet ist. Diese Daten können möglicherweise von Dritten eingesehen werden.</p>
+	<!-- <div class="spoiler_box" id="user_analysis">
+		<h3 class="spoiler" title="Klicke für mehr Informationen">Nutzeranalyse</h3>
+		<div class="spoiler_content">
+			<p>Wenn Sie unsere Webseite besuchen, wird das Land, in welchem Sie sich zum Zeitpunkt des Besuches der Webseite befanden, gespeichert. Die gesendeten und gespeicherten Daten beinhalten lediglich den Namen des Landes.</p>
+			<p>Die Daten werden von den Netlify Servern <a href="https://www.netlify.com/gdpr-ccpa/" target="_blank">[Siehe GDPR Netlify (EN)]</a> durch den Standort Ihrer IP-Adresse ermittelt. Die Daten werden zur Nutzerzählung genutzt und nicht weitergegeben</p>
+			<p>Gespeichert werden die Daten von Fauna Inc., San Mateo, CA 94402, USA. <a href="https://fauna.com/privacy" target="_blank">[Siehe Fauna Datenschutz]</a></p>
+		</div>
+	</details> -->
 
-	<h2>Copyright-Hinweis</h2>
-	<p>Alle Inhalte dieser Website (Bilder, Fotos, Texte, Videos) unterliegen dem Copyright der Schweiz. Bitte konsultieren Sie uns, bevor Sie die Inhalte dieser Website verbreiten, vervielfältigen oder verwerten, wie z.B. auf anderen Websites veröffentlichen.<br>Sollten Sie auf dieser Website Inhalte finden, die das Urheberrecht verletzen, kontaktieren Sie uns bitte.</p>
-	<p>Die folgenden Inhalte unserer Website gehören anderen:</p>
-	<ul>
-		<li>Das Copyright der Bilder liegt ausschliesslich bei Tobias und Fabian Kaufmann.</li>
-		<li>Icons: <a href="https://material.io/resources/icons/?style=baseline" target="_blank">Material.io</a></li>
-		<li>Titel Font: <a href="https://fonts.google.com/specimen/Anton?selected=Material+Icons&query=anton" target="_blank">Google Font von Vernon Adams</a></li>
-		<li>Font: <a href="https://fonts.google.com/specimen/Fira+Sans?selected=Material+Icons&query=fira" target="_blank">Google Font von Carrois Apostrophe</a></li>
-	</ul>
+	<!-- <div class="spoiler_box" id="cookies">
+		<h3 class="spoiler" title="Klicke für mehr Informationen">Cookies</h3>
+		<div class="spoiler_content">
+			<p>Wir nutzen Cookies um Ihnen auch ohne Account eine funktionsfähige Webseite zu ermöglichen. Cookies sind kleine Textdateien, welche auf Ihrem Computer gespeichert werden können. Diese bleiben auch nach dem Neuladen der Webseite erhalten, wodurch persönliche Einstellungen vorhanden bleiben.</p>
+			<p>Wir nutzen keine drittanbieter Cookies und verwenden auch kein Nutzertracking weder über Cookies, noch andere Methoden.</p>
+		</div>
+	</details> -->
 
-	<h2>Netlify</h2>
-	<p>Diese Website wird bei Netlify Inc. in San Francisco, CA 94107, USA gehostet.<br>Deren Haftungsausschlüsse finden Sie hier:<br><a href="https://www.netlify.com/privacy" target="_blank">https://www.netlify.com/privacy</a><br><a href="https://www.netlify.com/gdpr" target="_blank">https://www.netlify.com/gdpr</a></p>
+	<div class="spoiler_box" id="copyright">
+		<h3 class="spoiler" title="Klicke für mehr Informationen">Copyright</h3>
+		<div class="spoiler_content">
+			<p>Alle Inhalte dieser Website (Bilder, Fotos, Texte, Videos) gehören dem Webseiten betreiber und unterliegen dem Copyright der Schweiz. Bitte kontaktieren Sie uns, bevor Sie die Inhalte dieser Website weiterverwenden möchten.</p>
+			<p>Sollten Sie auf dieser Website Inhalte finden, die das Urheberrecht verletzen, kontaktieren Sie uns bitte.</p>
+			<p>Im Folgenden sind alle Daten, welche nicht von uns erstellt wurden, verlinkt:</p>
+			<ul>
+				<li>Titel Schriftart: <a href="https://fonts.google.com/specimen/Anton?selected=Material+Icons&query=anton" target="_blank">Anton by Vernon Adams</a></li>
+				<li>Text Schriftart: <a href="https://fonts.google.com/specimen/Fira+Sans?selected=Material+Icons&query=fira" target="_blank">Fira Sans by Carrois Apostrophe</a></li>
+				<li>Icons: <a href="https://fonts.google.com/icons?icon.style=Filled&icon.set=Material+Icons" target="_blank">Material Icons by Google Fonts</a></li>
+			</ul>
+			<a href="/graphics/icon.svg" target="_blank">Unser Logo</a>
+		</div>
+	</details>
 
-	<div style="height:10vw;"></div>
+	<p><small>Zuletzt aktualisiert: 12.07.2023</small></p>
 
 </main>
 
 <footer></footer>
 
 <script language="javascript" type="text/javascript" src="../elements/javascript/nav.js"></script>
+<script language="javascript" type="text/javascript" src="../elements/javascript/spoiler.js"></script>
 
 </body>
 </html>
