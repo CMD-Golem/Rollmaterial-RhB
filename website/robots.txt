@@ -4,4 +4,6 @@ Disallow: /info/
 Disallow: /edit/
 Disallow: /404.html
 
+Disallow: /
+
 Sitemap: https://rollmaterial-rhb.ch/sitemap.xml
