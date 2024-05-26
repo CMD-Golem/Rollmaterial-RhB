@@ -68,15 +68,15 @@ async function testSitemap() {
 var navbar = `
 <input type="checkbox" id="menu">
 <label for="menu" class="nav_menu nav_hover"></label>
-<a class="nav_home disable_link nav_hover" href="https://rollmaterial-rhb.ch/" title="Home"><img src="${domain}/elements/favicon.png"><p>Rollmaterial-RhB</p></a>
-<a class="nav_search disable_link nav_hover" href="${domain}/data.html" title="Suchen"><img src="${domain}/elements/images/search.svg"></a>
+<a class="nav_home disable_link nav_hover" href="/" title="Home"><img src="/elements/favicon.png"><p>Rollmaterial-RhB</p></a>
+<a class="nav_search disable_link nav_hover" href="/data.html" title="Suchen"><img src="/elements/images/search.svg"></a>
 <ul class="nav_list">
-	<li><a class="nav_link disable_link nav_hover" href="${domain}/data/lokomotiven.html" id="lokomotiven">Lokomotiven</a></li>
-	<li><a class="nav_link disable_link nav_hover" href="${domain}/data/personenwagen.html" id="personenwagen">Personenwagen</a></li>
-	<li><a class="nav_link disable_link nav_hover" href="${domain}/data/gepaeckwagen.html" id="gepaeckwagen">Gep&auml;ckwagen</a></li>
-	<li><a class="nav_link disable_link nav_hover" href="${domain}/data/gueterwagen.html" id="gueterwagen">G&uuml;terwagen</a></li>
-	<li><a class="nav_link disable_link nav_hover" href="${domain}/data/dienstwagen.html" id="dienstwagen">Dienstwagen</a></li>
-	<li><a class="nav_link disable_link nav_hover" href="${domain}/data/gleisbaumaschinen.html" id="gleisbaumaschinen">Gleisbaumaschinen</a></li>
+	<li><a class="nav_link disable_link nav_hover" href="/data/lokomotiven.html" id="lokomotiven">Lokomotiven</a></li>
+	<li><a class="nav_link disable_link nav_hover" href="/data/personenwagen.html" id="personenwagen">Personenwagen</a></li>
+	<li><a class="nav_link disable_link nav_hover" href="/data/gepaeckwagen.html" id="gepaeckwagen">Gep&auml;ckwagen</a></li>
+	<li><a class="nav_link disable_link nav_hover" href="/data/gueterwagen.html" id="gueterwagen">G&uuml;terwagen</a></li>
+	<li><a class="nav_link disable_link nav_hover" href="/data/dienstwagen.html" id="dienstwagen">Dienstwagen</a></li>
+	<li><a class="nav_link disable_link nav_hover" href="/data/gleisbaumaschinen.html" id="gleisbaumaschinen">Gleisbaumaschinen</a></li>
 </ul>
 `;
 
@@ -99,10 +99,10 @@ var year = new Date().getFullYear();
 var footer = `
 <div class="footer_text">
 	<div class="footer_links">
-		<a href="${domain}/info/impressum.html">Impressum</a>
-		<a href="${domain}/info/aenderungen.html">Änderungen</a>
-		<a href="${domain}/info/anfragen.html">Bilder Anfragen</a>
-		<a href="${domain}/info/melden.html">Fehler melden</a>
+		<a href="/info/impressum.html">Impressum</a>
+		<a href="/info/aenderungen.html">Änderungen</a>
+		<a href="/info/anfragen.html">Bilder Anfragen</a>
+		<a href="/info/melden.html">Fehler melden</a>
 	</div>
 	<div class="footer_copyright">©2020 - ${year} by Tobias und Fabian Kaufmann</div>
 </div>
