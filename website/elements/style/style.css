@@ -1,12 +1,12 @@
 @font-face {
 	font-family: Anton;
-	src: url(/images/anton.ttf);
+	src: url(/elements/images/anton.ttf);
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: FiraSans;
-	src: url(/images/fira_sans.ttf);
+	src: url(/elements/images/fira_sans.ttf);
 	font-weight: normal;
 }
 
