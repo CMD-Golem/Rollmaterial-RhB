@@ -1,3 +1,9 @@
+function goBack() {
+	var history_length = history.length;
+	if (history_length >= 2) window.history.go(-1);
+	else window.location.href = "/";
+}
+
 // Textarea
 var el_textarea = document.getElementsByTagName("textarea");
 for (var i = 0; i < el_textarea.length; i++) {
@@ -10,39 +16,53 @@ function textarea(edited_textarea) {
 }
 
 
-// validate Form
-function validateForm() {
-	var check = document.getElementsByTagName("form")[0].getElementsByClassName("form_check");
+// send Form
+var el_mains = document.getElementsByTagName("main");
+
+async function sendForm(request_form) {
+	var check = document.querySelector("form").querySelectorAll("form_check");
 	for (i = 0; i < check.length; i++) {
 		if (check[i].value == "") {
-			alert("Alle Felder mit dem roten Stern müssen ausgefüllt werden");
-			return false;
+			return alert("Alle Felder mit dem roten Stern müssen ausgefüllt werden");
 		}
 	}
-	
-	var check_select = document.getElementsByTagName("form")[0].getElementsByClassName("form_check_select");
-	for (var i = 0; i < check_select.length; i++) {
-		var check_box = check_select[i].getElementsByClassName("radio");
+
+	if (request_form) {
+		var commercial_use = document.getElementById("commercial_use").checked;
+		var no_commercial_use = document.getElementById("no_commercial_use").checked;
 		
-		for (var i = 0; i < check_box.length; i++) {
-			if (check_box[i].checked == true) {var checked_box = 1;}
-		}
+		if (commercial_use) var commercial = "Kommerzielle Nutzung";
+		else if (no_commercial_use) var commercial = "Keine Kommerzielle Nutzung";
+		else return alert("Alle Felder mit dem roten Stern müssen ausgefüllt werden");
 
-		if (checked_box != 1) {
-			alert("Alle Felder mit dem roten Stern müssen ausgefüllt werden");
-			return false;
-		}
+		var additional_text = `
+			<p>Nummer: ${document.getElementById("number").value}</p>
+			<p>Nutzen: ${document.getElementById("use_case").value}</p>
+			<p>${commercial}</p>`;
+	}
+	else var additional_text = "";
+
+	var form_body = {
+		subject: `Rollmaterial-RhB Bilderanfrage`,
+		body: `
+			<p>Email: ${document.getElementById("email").value}</p>
+			<p>Link: ${document.getElementById("link").value}</p>
+			${additional_text}
+			<p>Bemerkungen:<br>${document.getElementById("comments").value}</p>`
+	};
+
+	var response = await fetch("https://api.tabq.ch/forms-fg/mail", {
+		method: "POST",
+		body: JSON.stringify(form_body),
+	});
+
+	if (response.ok) {
+		el_mains[0].style.display = "none";
+		el_mains[1].style.display = "block";
+	}
+	else {
+		var error = await response.text();
+		console.error(error);
+		alert("Es ist ein Fehler aufgetreten: " + error);
 	}
 }
-
-
-// Prevent sending when pressing enter in input elements
-var el_input = document.getElementsByTagName("input");
-for (var i = 0; i < el_input.length; i++) {
-	el_input[i].addEventListener("keydown", e => {
-		if ((e.which == 13 || e.keyCode == 13) ) {
-			e.preventDefault();
-		}
-	});
-}
-
