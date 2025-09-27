@@ -8,7 +8,7 @@ var numbers = ""; // Fahrzeugnummer: 601 / 601 - 605 / 601 ... 605
 var description = ""; // Andere Namen für das Fahrzeuge: Allegra / BoBo I
 var description_html = ""; // Andere Namen für das Fahrzeuge: Allegra / BoBo I
 var id = ""; // Id für Dateiname und Pfad: ge4-4_601
-var path = "../../../"; // Braucht es ein weiteres ../
+var path = "/"; // Braucht es ein weiteres /
 var type_meta = ""; // Gleich wie Type nur sup text wird ersetzt (Plain Text)
 var url = "https://rollmaterial-rhb.ch" // Domain der Webseite. (Kann nicht geändert werden)
 
@@ -194,11 +194,11 @@ var el_subb_group = document.getElementById("subb_group");
 el_subb_group.addEventListener("keyup", getSubbGroup);
 function getSubbGroup() {
 	if (el_subb_group.value.length >= 1) {
-		path = "../../../../";
+		path = "/";
 		subb_group = el_subb_group.value + "/";
 	}
 	else {
-		path = "../../../";
+		path = "/";
 		subb_group = "";
 	}
 }

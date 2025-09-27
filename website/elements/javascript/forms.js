@@ -18,9 +18,9 @@ function textarea(edited_textarea) {
 
 // send Form
 var el_mains = document.getElementsByTagName("main");
+var check = document.querySelectorAll("form_check");
 
 async function sendForm(request_form) {
-	var check = document.querySelector("form").querySelectorAll("form_check");
 	for (i = 0; i < check.length; i++) {
 		if (check[i].value == "") {
 			return alert("Alle Felder mit dem roten Stern müssen ausgefüllt werden");

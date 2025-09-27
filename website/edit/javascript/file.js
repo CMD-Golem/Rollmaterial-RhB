@@ -29,8 +29,8 @@ var html_top = `<!DOCTYPE html>
 <div class="content">
 	<div class="left_space">
 		<input class="site_search" type="text" id="Site_Search" onkeyup="siteSearch()" placeholder="Tabelle Durchsuchen...">
-		<img class="hide_mobile" src="${path}elements/pic/${main_group}/${sub_group}/${subb_group}${id}/1.jpg">
-		<img class="hide_mobile" src="${path}elements/pic/${main_group}/${sub_group}/${subb_group}${id}/2.jpg">
+		<img class="hide_mobile" src="${path}https://files.rollmaterial-rhb.ch/img/${main_group}/${sub_group}/${subb_group}${id}/1.jpg">
+		<img class="hide_mobile" src="${path}https://files.rollmaterial-rhb.ch/img/${main_group}/${sub_group}/${subb_group}${id}/2.jpg">
 
 	
 	</div>
